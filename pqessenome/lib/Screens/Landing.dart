@@ -1,10 +1,9 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Conta/Login.dart';
-import 'package:pqessenome/Screens/Menu.dart';
+import 'package:pqessenome/Screens/Landing/Menu.dart';
+import 'package:pqessenome/Screens/Landing/Tutorial.dart';
 import 'package:pqessenome/Screens/Quizz/Medalhas.dart';
-import 'package:pqessenome/Screens/Quizz/Quizz.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -17,24 +16,13 @@ class _LandingState extends State<Landing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-              icon: const Icon(
-                Icons.person,
-                color: Color.fromARGB(255, 247, 102, 62),
-              ),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Login()));
-              }),
-        ),
         body: SingleChildScrollView(
             scrollDirection: Axis.vertical,
             child: Center(
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                  const SizedBox(height: 50.0),
+                  const SizedBox(height: 100.0),
                   Image.asset(
                     "assets/Components/Logo.png",
                     height: 200.0,
@@ -121,7 +109,7 @@ class _LandingState extends State<Landing> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Quizz()));
+                                  builder: (context) => const Tutorial()));
                         },
                         icon: const Icon(Icons.help_center,
                             color: Color.fromRGBO(50, 50, 50, 1)),

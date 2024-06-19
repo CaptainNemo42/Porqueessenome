@@ -1,10 +1,11 @@
 // ignore_for_file: file_names, unused_import
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Marco.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Batistacampos.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Campinas.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Nazare.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Marco.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Batistacampos.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Campinas.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Nazare.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/LDABEL2.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel2.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel3.dart';
@@ -22,20 +23,13 @@ class _LDabelState extends State<LDabel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        extendBodyBehindAppBar: true,
         appBar: AppBar(
           toolbarHeight: 90,
-          forceMaterialTransparency: true,
           centerTitle: true,
-          title: const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image(
-                image: AssetImage("assets/Components/LOGOBG.png"),
-                height: 91.0,
-                width: 90.0,
-              )
-            ],
+          title: Image(
+            image: AssetImage("assets/Components/LOGOBG.png"),
+            height: 91.0,
+            width: 90.0,
           ),
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
@@ -69,7 +63,7 @@ class _LDabelState extends State<LDabel> {
               ),
               const SizedBox(height: 15.0),
               SizedBox(
-                width: 200,
+                width: 250,
                 child: TextButton.icon(
                     onPressed: () {
                       Navigator.push(
@@ -90,13 +84,13 @@ class _LDabelState extends State<LDabel> {
                       style: TextStyle(
                           fontFamily: "SemiBold",
                           color: Color.fromRGBO(50, 50, 50, 1),
-                          fontSize: 15.0,
+                          fontSize: 20.0,
                           fontWeight: FontWeight.bold),
                     )),
               ),
               const SizedBox(height: 15.0),
               SizedBox(
-                width: 200,
+                width: 250,
                 child: TextButton.icon(
                     onPressed: () {
                       Navigator.push(
@@ -117,13 +111,13 @@ class _LDabelState extends State<LDabel> {
                       style: TextStyle(
                           fontFamily: "SemiBold",
                           color: Color.fromRGBO(50, 50, 50, 1),
-                          fontSize: 15.0,
+                          fontSize: 20.0,
                           fontWeight: FontWeight.bold),
                     )),
               ),
               const SizedBox(height: 15.0),
               SizedBox(
-                width: 200,
+                width: 250,
                 child: TextButton.icon(
                     onPressed: () {
                       Navigator.push(
@@ -144,13 +138,13 @@ class _LDabelState extends State<LDabel> {
                       style: TextStyle(
                           fontFamily: "SemiBold",
                           color: Color.fromRGBO(50, 50, 50, 1),
-                          fontSize: 15.0,
+                          fontSize: 20.0,
                           fontWeight: FontWeight.bold),
                     )),
               ),
               const SizedBox(height: 15.0),
               SizedBox(
-                width: 200,
+                width: 250,
                 child: TextButton.icon(
                   onPressed: () {
                     Navigator.push(
@@ -171,9 +165,44 @@ class _LDabelState extends State<LDabel> {
                     style: TextStyle(
                         fontFamily: "SemiBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
-                        fontSize: 15.0,
+                        fontSize: 20.0,
                         fontWeight: FontWeight.bold),
                   ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    FloatingActionButton(
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const LDabel2()));
+                      },
+                      backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+                      child: const Icon(Icons.keyboard_arrow_left_outlined),
+                    ),
+                    const SizedBox(width: 10),
+                    const Image(
+                      image: AssetImage("assets/Components/Component 6.png"),
+                      height: 91.0,
+                      width: 90.0,
+                    ),
+                    const SizedBox(width: 10),
+                    FloatingActionButton(
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const LDabel2()));
+                      },
+                      backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+                      child: const Icon(Icons.keyboard_arrow_right_outlined),
+                    ),
+                  ],
                 ),
               ),
             ])));

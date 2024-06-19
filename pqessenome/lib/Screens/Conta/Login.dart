@@ -1,6 +1,5 @@
 // ignore_for_file: file_names, avoid_unnecessary_containers
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Conta/Cadastro.dart';
 import 'Senha.dart';
@@ -16,26 +15,16 @@ class _LoginState extends State<Login> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
-  void logUser() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: emailController.text, password: passwordController.text);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 90,
         centerTitle: true,
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image(
-              image: AssetImage("assets/Components/LOGOBG.png"),
-              width: 89,
-              height: 89,
-            )
-          ],
+        title: Image(
+          image: AssetImage("assets/Components/LOGOBG.png"),
+          height: 91.0,
+          width: 90.0,
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -54,7 +43,7 @@ class _LoginState extends State<Login> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const SizedBox(height: 50.0),
+                    const SizedBox(height: 20.0),
                     Image.asset(
                       "assets/Components/LOGOBG.png",
                       height: 90.0,
@@ -137,15 +126,13 @@ class _LoginState extends State<Login> {
                               fontWeight: FontWeight.bold),
                         )),
                     Container(
-                      margin: const EdgeInsets.all(30.0),
+                      margin: const EdgeInsets.all(20.0),
                       width: double.infinity,
                       decoration: BoxDecoration(
                           color: const Color.fromARGB(255, 247, 102, 62),
                           borderRadius: BorderRadius.circular(30.0)),
                       child: ElevatedButton(
-                          onPressed: () {
-                            logUser();
-                          },
+                          onPressed: () {},
                           style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all<Color>(
                             const Color.fromARGB(255, 247, 102, 62),
@@ -158,7 +145,7 @@ class _LoginState extends State<Login> {
                                   fontWeight: FontWeight.bold))),
                     ),
                     Container(
-                        margin: const EdgeInsets.all(40.0),
+                        margin: const EdgeInsets.all(20.0),
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -168,27 +155,23 @@ class _LoginState extends State<Login> {
                                       color: Color.fromRGBO(50, 50, 50, 1),
                                       fontSize: 15.0,
                                       fontWeight: FontWeight.bold)),
-                              const SizedBox(width: 10),
-                              ElevatedButton(
-                                  onPressed: () {
-                                    Navigator.pushReplacement(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                const Cadastro()));
-                                  },
-                                  style: ButtonStyle(
-                                      backgroundColor:
-                                          MaterialStateProperty.all<Color>(
-                                              const Color.fromARGB(
-                                                  255, 247, 102, 62))),
-                                  child: const Text('Cadastro',
-                                      style: TextStyle(
-                                          fontFamily: "SemiBold",
-                                          color: Colors.white,
-                                          fontSize: 15.0,
-                                          fontWeight: FontWeight.bold))),
-                            ]))
+                            ])),
+                    ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Cadastro()));
+                        },
+                        style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                const Color.fromARGB(255, 247, 102, 62))),
+                        child: const Text('Cadastro',
+                            style: TextStyle(
+                                fontFamily: "SemiBold",
+                                color: Colors.white,
+                                fontSize: 15.0,
+                                fontWeight: FontWeight.bold))),
                   ],
                 ),
               ),
