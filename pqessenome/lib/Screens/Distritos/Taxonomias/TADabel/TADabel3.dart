@@ -16,17 +16,21 @@ class _TADabel3State extends State<TADabel3> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          toolbarHeight: 90,
           centerTitle: true,
-          title: const Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          title: const Image(
+            image: AssetImage("assets/Components/LOGOBG.png"),
+            height: 91.0,
+            width: 90.0,
           ),
-          backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
           leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: const Icon(Icons.arrow_back_outlined),
           ),
+          backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+          automaticallyImplyLeading: false,
         ),
         body: SingleChildScrollView(
             scrollDirection: Axis.vertical,
@@ -34,7 +38,8 @@ class _TADabel3State extends State<TADabel3> {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                  const SizedBox(height: 100.0),
+                  Image.asset('assets/Images/dabelC.jpeg',
+                      fit: BoxFit.cover, width: double.infinity),
                   Container(
                     height: 50,
                     width: double.infinity,
@@ -45,13 +50,15 @@ class _TADabel3State extends State<TADabel3> {
                         style: TextStyle(
                             fontFamily: "PoppinsBold",
                             color: Color.fromRGBO(50, 50, 50, 1),
-                            fontSize: 15.0),
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
                       ),
                     ),
                   ),
-                  const SizedBox(height: 30.0),
+                  const SizedBox(height: 15.0),
                   SizedBox(
-                    width: 200,
+                    width: 280,
                     child: TextButton.icon(
                         onPressed: () {},
                         icon: const Icon(Icons.notes,
@@ -63,17 +70,17 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Numerotopônimo",
+                          "Litotopônimos",
                           style: TextStyle(
-                              fontFamily: "Montserrat",
+                              fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 15.0,
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold),
                         )),
                   ),
-                  const SizedBox(height: 30.0),
+                  const SizedBox(height: 15.0),
                   SizedBox(
-                    width: 200,
+                    width: 280,
                     child: TextButton.icon(
                         onPressed: () {},
                         icon: const Icon(Icons.notes,
@@ -85,17 +92,17 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Poliotopônimo",
+                          "Meteorotopônimos",
                           style: TextStyle(
-                              fontFamily: "Montserrat",
+                              fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 15.0,
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold),
                         )),
                   ),
-                  const SizedBox(height: 30.0),
+                  const SizedBox(height: 15.0),
                   SizedBox(
-                    width: 200,
+                    width: 280,
                     child: TextButton.icon(
                         onPressed: () {},
                         icon: const Icon(Icons.notes,
@@ -107,17 +114,17 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Sociotopônimo",
+                          "Morfotopônimos",
                           style: TextStyle(
-                              fontFamily: "Montserrat",
+                              fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 15.0,
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold),
                         )),
                   ),
-                  const SizedBox(height: 30.0),
+                  const SizedBox(height: 15.0),
                   SizedBox(
-                    width: 200,
+                    width: 280,
                     child: TextButton.icon(
                         onPressed: () {},
                         icon: const Icon(Icons.notes,
@@ -129,11 +136,11 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Somatopônimo",
+                          "Zootopônimos",
                           style: TextStyle(
-                              fontFamily: "Montserrat",
+                              fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 15.0,
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold),
                         )),
                   ),
@@ -144,7 +151,7 @@ class _TADabel3State extends State<TADabel3> {
                       children: [
                         FloatingActionButton(
                           onPressed: () {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => const TADabel2()));
@@ -152,16 +159,17 @@ class _TADabel3State extends State<TADabel3> {
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child: const Icon(Icons.keyboard_arrow_left_outlined),
                         ),
-                        const SizedBox(width: 20),
+                        const SizedBox(width: 15),
                         const Image(
-                          image: AssetImage("assets/Component 3.png"),
+                          image:
+                              AssetImage("assets/Components/Component 22.png"),
                           height: 91.0,
                           width: 90.0,
                         ),
-                        const SizedBox(width: 20),
+                        const SizedBox(width: 15),
                         FloatingActionButton(
                           onPressed: () {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => const TADabel4()));

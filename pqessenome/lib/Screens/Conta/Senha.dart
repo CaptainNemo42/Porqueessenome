@@ -16,15 +16,10 @@ class _SenhaState extends State<Senha> {
       appBar: AppBar(
         toolbarHeight: 90,
         centerTitle: true,
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image(
-              image: AssetImage("assets/LOGOBG.png"),
-              width: 89,
-              height: 89,
-            )
-          ],
+        title: Image(
+          image: AssetImage("assets/Components/LOGOBG.png"),
+          height: 91.0,
+          width: 90.0,
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -41,11 +36,21 @@ class _SenhaState extends State<Senha> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 50.0),
+                const SizedBox(height: 20.0),
                 Image.asset(
-                  "assets/LOGOBG.png",
+                  "assets/Components/LOGOBG.png",
                   height: 90.0,
                   width: 90.0,
+                ),
+                const SizedBox(height: 10.0),
+                const Text(
+                  'Crie uma conta',
+                  style: TextStyle(
+                    fontFamily: 'Montserrat',
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 247, 102, 62),
+                    fontSize: 35.0,
+                  ),
                 ),
                 const SizedBox(height: 10.0),
                 Container(

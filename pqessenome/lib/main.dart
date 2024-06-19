@@ -3,12 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/Add_quizz.dart';
 import 'Screens/Landing.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+void main() {
   runApp(const MyApp());
 }
 

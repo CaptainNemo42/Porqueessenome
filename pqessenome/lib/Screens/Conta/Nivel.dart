@@ -14,14 +14,21 @@ class _ModosState extends State<Modos> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 90,
         centerTitle: true,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/logo_tomo.png',
-                fit: BoxFit.contain, height: 90),
-          ],
+        title: Image(
+          image: AssetImage("assets/Components/LOGOBG.png"),
+          height: 91.0,
+          width: 90.0,
         ),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        backgroundColor: const Color.fromARGB(255, 247, 102, 62),
+        automaticallyImplyLeading: false,
       ),
       body: Column(children: [
         Center(
