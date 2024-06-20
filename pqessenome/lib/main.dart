@@ -11,12 +11,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  final int score = 0;
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Por que Esse Nome',
-      home: Landing(),
+      home: Landing(
+        score: score,
+      ),
     );
   }
 }

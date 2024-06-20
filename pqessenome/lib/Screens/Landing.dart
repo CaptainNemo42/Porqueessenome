@@ -6,13 +6,14 @@ import 'package:pqessenome/Screens/Landing/Tutorial.dart';
 import 'package:pqessenome/Screens/Quizz/Medalhas.dart';
 
 class Landing extends StatefulWidget {
-  const Landing({super.key});
-
+  const Landing({super.key, required this.score});
+  final int score;
   @override
   State<Landing> createState() => _LandingState();
 }
 
 class _LandingState extends State<Landing> {
+  final int score = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,7 +83,9 @@ class _LandingState extends State<Landing> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Medalhas()));
+                                  builder: (context) => Medalhas(
+                                        score: score,
+                                      )));
                         },
                         icon: const Icon(Icons.workspace_premium,
                             color: Color.fromRGBO(50, 50, 50, 1)),

@@ -85,19 +85,112 @@ class ResultScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1) StarRating(size: 40.0, rating: 1),
-                if (score == 2) StarRating(size: 40.0, rating: 1.5),
-                if (score == 3) StarRating(size: 40.0, rating: 2),
-                if (score == 4) StarRating(size: 40.0, rating: 2.5),
-                if (score == 5) StarRating(size: 40.0, rating: 3),
-                if (score == 6) StarRating(size: 40.0, rating: 3.5),
-                if (score == 7) StarRating(size: 40.0, rating: 4),
-                if (score == 8) StarRating(size: 40.0, rating: 4.5),
+                if (score <= 1)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 1),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
+                if (score == 2)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 1.5),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
+                if (score == 3)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 2),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
+                if (score == 4)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 2.5),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
+                if (score == 5)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 3),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
+                if (score == 6)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 3.5),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
+                if (score == 7)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 4),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
+                if (score == 8)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      StarRating(size: 40.0, rating: 4.5),
+                      Image.asset(
+                        "assets/Components/MedalhaSilver.png",
+                        height: 50,
+                        width: 50,
+                      )
+                    ],
+                  ),
                 if (score == 9)
-                  Column(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 5),
-                      Image.asset("assets/Components/MedalhaSilver.png")
+                      Image.asset(
+                        'assets/Components/MedalhaDabel.png',
+                        height: 50,
+                        width: 50,
+                      )
                     ],
                   ),
                 const SizedBox(height: 10.0),

@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDABEL.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDABEN.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAENT.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAGUA.dart';
@@ -10,13 +11,14 @@ import 'package:pqessenome/Screens/Quizz/EstrelasDAOUT.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDASAC.dart';
 
 class Medalhas extends StatefulWidget {
-  const Medalhas({super.key});
-
+  const Medalhas({super.key, required this.score});
+  final int score;
   @override
   State<Medalhas> createState() => _MedalhasState();
 }
 
 class _MedalhasState extends State<Medalhas> {
+  final int score = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +45,12 @@ class _MedalhasState extends State<Medalhas> {
             children: [
               const Padding(padding: EdgeInsets.only(top: 10.0)),
               InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => EstrelasDABEL(score: score)));
+                  },
                   child: Container(
                       decoration: BoxDecoration(
                           color: Colors.transparent,
@@ -78,7 +85,7 @@ class _MedalhasState extends State<Medalhas> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const EstrelasDAENT()));
+                            builder: (context) => EstrelasDAENT(score: score)));
                   },
                   child: Container(
                       decoration: BoxDecoration(
@@ -119,7 +126,8 @@ class _MedalhasState extends State<Medalhas> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const EstrelasDABEN()));
+                              builder: (context) =>
+                                  EstrelasDABEN(score: score)));
                     },
                     child: Container(
                         decoration: BoxDecoration(
@@ -155,7 +163,8 @@ class _MedalhasState extends State<Medalhas> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const EstrelasDAGUA()));
+                              builder: (context) =>
+                                  EstrelasDAGUA(score: score)));
                     },
                     child: Container(
                         decoration: BoxDecoration(
@@ -197,7 +206,8 @@ class _MedalhasState extends State<Medalhas> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const EstrelasDAICO()));
+                              builder: (context) =>
+                                  EstrelasDAICO(score: score)));
                     },
                     child: Container(
                         decoration: BoxDecoration(
@@ -233,7 +243,8 @@ class _MedalhasState extends State<Medalhas> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const EstrelasDAMOS()));
+                              builder: (context) =>
+                                  EstrelasDAMOS(score: score)));
                     },
                     child: Container(
                         decoration: BoxDecoration(
@@ -275,7 +286,8 @@ class _MedalhasState extends State<Medalhas> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const EstrelasDAOUT()));
+                              builder: (context) =>
+                                  EstrelasDAOUT(score: score)));
                     },
                     child: Container(
                         decoration: BoxDecoration(
@@ -311,7 +323,8 @@ class _MedalhasState extends State<Medalhas> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const EstrelasDASAC()));
+                              builder: (context) =>
+                                  EstrelasDASAC(score: score)));
                     },
                     child: Container(
                         decoration: BoxDecoration(
