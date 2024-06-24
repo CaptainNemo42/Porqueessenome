@@ -1,6 +1,6 @@
 import 'dart:async';
-import "progress.dart";
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Componentes/Restart.dart';
 
 class MyProgressIndicator extends StatefulWidget {
   const MyProgressIndicator({
@@ -35,10 +35,9 @@ class _MyProgressIndicatorState extends State<MyProgressIndicator> {
   }
 
   void navigateToNewScreen() {
-    Navigator.pushReplacement(
-      context,
+    Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (context) => const Progress(),
+        builder: (context) => Restart(),
       ),
     );
   }
@@ -51,15 +50,15 @@ class _MyProgressIndicatorState extends State<MyProgressIndicator> {
 
   @override
   Widget build(BuildContext context) {
-    const Color bgColor = Color(0xFF4993FA);
+    const Color bgColor = Color.fromARGB(255, 247, 102, 62);
     return Expanded(
       child: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: LinearProgressIndicator(
           minHeight: 20,
           value: 1 - (timerSeconds / 45),
-          backgroundColor: Colors.blue.shade100,
-          color: Colors.blueGrey,
+          backgroundColor: Color.fromARGB(255, 252, 160, 135),
+          color: Color.fromARGB(255, 169, 87, 64),
           valueColor: const AlwaysStoppedAnimation(bgColor),
         ),
       ),
