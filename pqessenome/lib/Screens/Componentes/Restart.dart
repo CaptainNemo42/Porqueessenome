@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/screens/quiz_screenLex.dart';
+import 'package:pqessenome/Screens/Quizz/QuizzTipoDabel.dart';
+import 'package:pqessenome/Screens/Landing/Menu.dart';
 
 class Restart extends StatelessWidget {
   const Restart({super.key});
@@ -50,27 +51,50 @@ class Restart extends StatelessWidget {
             ),
             const SizedBox(height: 20.0),
             SizedBox(
-              width: 200,
+              width: 280,
               child: TextButton.icon(
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const QuizLexScreen()));
+                            builder: (context) => const QuizzTipoDabel()));
                   },
-                  icon: const Icon(Icons.workspace_premium,
+                  icon: const Icon(Icons.assignment_outlined,
                       color: Color.fromRGBO(50, 50, 50, 1)),
                   style: TextButton.styleFrom(
                     elevation: 5,
                     shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                    backgroundColor: const Color.fromARGB(
-                        255, 247, 102, 62), // Background Color
+                    backgroundColor: const Color.fromARGB(255, 247, 102, 62),
                   ),
                   label: const Text(
-                    "MEDALHAS",
+                    "Reiniciar o quiz",
                     style: TextStyle(
                         fontFamily: "SemiBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold),
+                  )),
+            ),
+            const SizedBox(height: 20.0),
+            SizedBox(
+              width: 280,
+              child: TextButton.icon(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Menu()));
+                  },
+                  icon: const Icon(Icons.assignment_outlined,
+                      color: Color.fromRGBO(50, 50, 50, 1)),
+                  style: TextButton.styleFrom(
+                    elevation: 5,
+                    shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                    backgroundColor: const Color.fromRGBO(240, 240, 240, 1),
+                  ),
+                  label: const Text(
+                    "Sair",
+                    style: TextStyle(
+                        fontFamily: "SemiBold",
+                        color: Color.fromRGBO(2, 1, 1, 1),
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold),
                   )),

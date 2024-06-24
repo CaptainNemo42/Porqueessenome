@@ -91,4 +91,14 @@ const List<Question> questions = [
       'd) Antropocultural, relativo ao santo padroeiro',
     ],
   ),
+  Question(
+    question: '10. Qual a natureza do topônimo São Brás:',
+    correctAnswerIndex: 3,
+    options: [
+      'a) Físico',
+      'b) Literário, homenageando o personagem Brás Cubas',
+      'c) Histórico, definido pela fundação da igreja de são Brás',
+      'd) Antropocultural, relativo ao santo padroeiro',
+    ],
+  ),
 ];

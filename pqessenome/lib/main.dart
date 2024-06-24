@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/Add_quizz.dart';
 import 'Screens/Landing.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  var box = await Hive.openBox('Score');
   runApp(const MyApp());
 }
 

@@ -21,11 +21,15 @@ dependencies:
   flutter_native_splash: ^2.3.11
   flip_card: ^0.7.0
   appinio_swiper: ^2.1.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  build_runner: ^2.4.9
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true

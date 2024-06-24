@@ -9,6 +9,8 @@ import 'package:pqessenome/Screens/Quizz/EstrelasDAICO.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAMOS.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAOUT.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDASAC.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hive/hive.dart';
 
 class Medalhas extends StatefulWidget {
   const Medalhas({super.key, required this.score});
@@ -19,6 +21,11 @@ class Medalhas extends StatefulWidget {
 
 class _MedalhasState extends State<Medalhas> {
   final int score = 0;
+  final _box = Hive.box('Score');
+  void writeData() {
+    _box.put('1', score);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
