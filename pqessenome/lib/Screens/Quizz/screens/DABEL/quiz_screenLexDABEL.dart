@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/models/questionslex.dart';
-import 'package:pqessenome/Screens/Quizz/screens/result_screen.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screenDABEL.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
 
-class QuizLexScreen extends StatefulWidget {
-  const QuizLexScreen({super.key});
+class QuizLexScreenDABEL extends StatefulWidget {
+  const QuizLexScreenDABEL({super.key});
 
   @override
-  State<QuizLexScreen> createState() => _QuizLexScreenState();
+  State<QuizLexScreenDABEL> createState() => _QuizLexScreenDABELState();
 }
 
-class _QuizLexScreenState extends State<QuizLexScreen> {
+class _QuizLexScreenDABELState extends State<QuizLexScreenDABEL> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
   int score = 0;
@@ -141,7 +141,7 @@ class _QuizLexScreenState extends State<QuizLexScreen> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreen(
+                          builder: (_) => ResultScreenDABEL(
                             score: score,
                           ),
                         ),

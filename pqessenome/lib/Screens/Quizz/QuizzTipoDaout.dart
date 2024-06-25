@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/screens/quiz_screenLex.dart';
-import 'package:pqessenome/Screens/Quizz/screens/quiz_screenTax.dart';
-import 'package:pqessenome/Screens/Quizz/screens/quiz_screenTop.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAOUT/quiz_screenLex.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAOUT/quiz_screenTax.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAOUT/quiz_screenTop.dart';
 
 class QuizzTipoDaout extends StatefulWidget {
   const QuizzTipoDaout({super.key});
@@ -59,7 +59,8 @@ class _QuizzTipoDaoutState extends State<QuizzTipoDaout> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const QuizLexScreen()));
+                                  builder: (context) =>
+                                      const QuizLexScreenDAOUT()));
                         },
                         child: Container(
                             decoration: BoxDecoration(
@@ -105,7 +106,7 @@ class _QuizzTipoDaoutState extends State<QuizzTipoDaout> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          const QuizTaxScreen()));
+                                          const QuizTaxScreenDAOUT()));
                             },
                             child: Container(
                                 decoration: BoxDecoration(
@@ -151,7 +152,7 @@ class _QuizzTipoDaoutState extends State<QuizzTipoDaout> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          const QuizTopScreen()));
+                                          const QuizTopScreenDAOUT()));
                             },
                             child: Container(
                                 decoration: BoxDecoration(

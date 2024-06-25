@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/models/questionstax.dart';
-import 'package:pqessenome/Screens/Quizz/screens/result_screen.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAMOS/result_screenDAMOS.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
-class QuizTaxScreen extends StatefulWidget {
-  const QuizTaxScreen({super.key});
+class QuizTaxScreenDAMOS extends StatefulWidget {
+  const QuizTaxScreenDAMOS({super.key});
 
   @override
-  State<QuizTaxScreen> createState() => _QuizTaxScreenState();
+  State<QuizTaxScreenDAMOS> createState() => _QuizTaxScreenDAMOSState();
 }
 
-class _QuizTaxScreenState extends State<QuizTaxScreen> {
+class _QuizTaxScreenDAMOSState extends State<QuizTaxScreenDAMOS> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
   int score = 0;
@@ -101,7 +101,7 @@ class _QuizTaxScreenState extends State<QuizTaxScreen> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreen(
+                          builder: (_) => ResultScreenDAMOS(
                             score: score,
                           ),
                         ),

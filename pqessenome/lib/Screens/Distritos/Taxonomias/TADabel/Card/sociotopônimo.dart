@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/screens/quiz_screenTop.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/quiz_screenTopDABEL.dart';
 
 class sociotoponimo extends StatefulWidget {
   const sociotoponimo({super.key});
@@ -88,12 +88,7 @@ class _sociotoponimoState extends State<sociotoponimo> {
               SizedBox(
                 width: 200,
                 child: TextButton.icon(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const QuizTopScreen()));
-                    },
+                    onPressed: () {},
                     icon: const Icon(Icons.assignment_outlined,
                         color: Color.fromRGBO(50, 50, 50, 1)),
                     style: TextButton.styleFrom(

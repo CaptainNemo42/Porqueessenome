@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionstop.dart';
-import 'package:pqessenome/Screens/Quizz/screens/result_screen.dart';
+import 'package:flutter_rating/flutter_rating.dart';
+import 'package:pqessenome/Screens/Quizz/models/questionslex.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAICO/result_screenDAICO.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
 
-class QuizTopScreen extends StatefulWidget {
-  const QuizTopScreen({super.key});
+class QuizLexScreenDAICO extends StatefulWidget {
+  const QuizLexScreenDAICO({super.key});
 
   @override
-  State<QuizTopScreen> createState() => _QuizTopScreenState();
+  State<QuizLexScreenDAICO> createState() => _QuizLexScreenDAICOState();
 }
 
-class _QuizTopScreenState extends State<QuizTopScreen> {
+class _QuizLexScreenDAICOState extends State<QuizLexScreenDAICO> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
   int score = 0;
@@ -31,6 +33,26 @@ class _QuizTopScreenState extends State<QuizTopScreen> {
       selectedAnswerIndex = null;
     }
     setState(() {});
+  }
+
+  void showStarRating() {
+    if (score == 1) {
+      StarRating(size: 40.0, rating: 1);
+    }
+    if (score == 2) {
+      StarRating(size: 40.0, rating: 2);
+    }
+    if (score == 3) {
+      StarRating(size: 40.0, rating: 3);
+    }
+    if (score == 4) {
+      StarRating(size: 40.0, rating: 4);
+    }
+    if (score == 5) {
+      StarRating(size: 40.0, rating: 5);
+    } else {
+      StarRating(size: 40.0, rating: 0);
+    }
   }
 
   @override
@@ -59,6 +81,24 @@ class _QuizTopScreenState extends State<QuizTopScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            Container(
+              padding: const EdgeInsets.only(right: 18.0),
+              alignment: Alignment.topCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.close,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                  ),
+                  const MyProgressIndicator(),
+                ],
+              ),
+            ),
             Padding(
                 padding: const EdgeInsets.only(left: 5, right: 5, top: 5),
                 child: ClipRRect(
@@ -66,7 +106,7 @@ class _QuizTopScreenState extends State<QuizTopScreen> {
                     child: const Image(
                       image: AssetImage("assets/Images/dabelC.jpeg"),
                       fit: BoxFit.fill,
-                      height: 150,
+                      height: 140,
                       width: double.infinity,
                     ))),
             Text(
@@ -101,7 +141,7 @@ class _QuizTopScreenState extends State<QuizTopScreen> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreen(
+                          builder: (_) => ResultScreenDAICO(
                             score: score,
                           ),
                         ),
