@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDAENT.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionsLex.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDABEN.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEN/models/questionslexDABEN.dart';
 
-class ResultScreenDAENT extends StatelessWidget {
-  const ResultScreenDAENT({
+class ResultScreenDABEN extends StatelessWidget {
+  const ResultScreenDABEN({
     super.key,
     required this.score,
   });
@@ -225,7 +225,7 @@ class ResultScreenDAENT extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDAENT(
+                                builder: (context) => EstrelasDABEN(
                                       score: score,
                                     )));
                       },

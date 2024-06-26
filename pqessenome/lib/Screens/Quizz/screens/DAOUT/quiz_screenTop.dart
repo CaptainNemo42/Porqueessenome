@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionstop.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAOUT/result_screenDAOUT.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAOUT/models/questionstopDAOUT.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAOUT/result_screentopDAOUT.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 

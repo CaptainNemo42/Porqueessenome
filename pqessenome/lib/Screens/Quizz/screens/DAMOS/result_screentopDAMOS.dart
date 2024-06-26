@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDASAC.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionsLex.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDAMOS.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAMOS/models/questionstopDAMOS.dart';
 
-class ResultScreenDASAC extends StatelessWidget {
-  const ResultScreenDASAC({
+class ResultScreenDAMOS extends StatelessWidget {
+  const ResultScreenDAMOS({
     super.key,
     required this.score,
   });
@@ -225,7 +225,7 @@ class ResultScreenDASAC extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDASAC(
+                                builder: (context) => EstrelasDAMOS(
                                       score: score,
                                     )));
                       },

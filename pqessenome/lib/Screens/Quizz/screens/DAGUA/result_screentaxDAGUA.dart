@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDABEL.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionsLex.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDAGUA.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstaxDAGUA.dart';
 
-class ResultScreenDABEL extends StatelessWidget {
-  const ResultScreenDABEL({
+class ResultScreenDAGUA extends StatelessWidget {
+  const ResultScreenDAGUA({
     super.key,
     required this.score,
   });
@@ -225,7 +225,7 @@ class ResultScreenDABEL extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDABEL(
+                                builder: (context) => EstrelasDAGUA(
                                       score: score,
                                     )));
                       },

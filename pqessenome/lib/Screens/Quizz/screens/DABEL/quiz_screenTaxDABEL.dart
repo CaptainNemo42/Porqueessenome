@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionstax.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screenDABEL.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionstaxDABEL.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screenlexDABEL.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 

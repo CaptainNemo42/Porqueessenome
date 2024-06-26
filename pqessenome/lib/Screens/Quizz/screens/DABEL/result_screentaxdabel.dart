@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDAMOS.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionsLex.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDABEL.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionstaxDABEL.dart';
 
-class ResultScreenDAMOS extends StatelessWidget {
-  const ResultScreenDAMOS({
+class ResultScreenDABEL extends StatelessWidget {
+  const ResultScreenDABEL({
     super.key,
     required this.score,
   });
@@ -225,7 +225,7 @@ class ResultScreenDAMOS extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDAMOS(
+                                builder: (context) => EstrelasDABEL(
                                       score: score,
                                     )));
                       },

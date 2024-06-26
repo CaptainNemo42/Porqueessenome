@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionstax.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screenDAGUA.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstaxDAGUA.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screentaxDAGUA.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 

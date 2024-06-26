@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDAGUA.dart';
-import 'package:pqessenome/Screens/Quizz/models/questionsLex.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDAICO.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionslexDAICO.dart';
 
-class ResultScreenDAGUA extends StatelessWidget {
-  const ResultScreenDAGUA({
+class ResultScreenDAICO extends StatelessWidget {
+  const ResultScreenDAICO({
     super.key,
     required this.score,
   });
@@ -225,7 +225,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDAGUA(
+                                builder: (context) => EstrelasDAICO(
                                       score: score,
                                     )));
                       },
