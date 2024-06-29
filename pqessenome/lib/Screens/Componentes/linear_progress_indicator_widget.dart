@@ -12,7 +12,7 @@ class MyProgressIndicator extends StatefulWidget {
 }
 
 class _MyProgressIndicatorState extends State<MyProgressIndicator> {
-  int timerSeconds = 45;
+  int timerSeconds = 50;
   Timer? _timer;
 
   @override

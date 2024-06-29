@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Landing/test.dart';
+import 'package:pqessenome/Screens/Landing/flashcard.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEL/quiz_screenTopDABEL.dart';
 
 class Astrotoponimo extends StatefulWidget {

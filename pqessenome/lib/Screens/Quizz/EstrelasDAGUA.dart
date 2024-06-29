@@ -155,7 +155,19 @@ class EstrelasDAGUA extends StatelessWidget {
                       children: [
                         StarRating(size: 40.0, rating: 5),
                         Image.asset(
-                          "assets/Components/MedalhaDabel.png",
+                          "assets/Components/MedalhaSilver.png",
+                          height: 50,
+                          width: 50,
+                        )
+                      ],
+                    ),
+                  if (score == 10)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        StarRating(size: 40.0, rating: 5),
+                        Image.asset(
+                          "assets/Components/MedalhaDagua.png",
                           height: 50,
                           width: 50,
                         )
@@ -286,7 +298,19 @@ class EstrelasDAGUA extends StatelessWidget {
                       children: [
                         StarRating(size: 40.0, rating: 5),
                         Image.asset(
-                          "assets/Components/MedalhaDabel.png",
+                          "assets/Components/MedalhaSilver.png",
+                          height: 50,
+                          width: 50,
+                        )
+                      ],
+                    ),
+                  if (score == 10)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        StarRating(size: 40.0, rating: 5),
+                        Image.asset(
+                          "assets/Components/MedalhaDagua.png",
                           height: 50,
                           width: 50,
                         )
@@ -417,7 +441,19 @@ class EstrelasDAGUA extends StatelessWidget {
                       children: [
                         StarRating(size: 40.0, rating: 5),
                         Image.asset(
-                          "assets/Components/MedalhaDabel.png",
+                          "assets/Components/MedalhaSilver.png",
+                          height: 50,
+                          width: 50,
+                        )
+                      ],
+                    ),
+                  if (score == 10)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        StarRating(size: 40.0, rating: 5),
+                        Image.asset(
+                          "assets/Components/MedalhaDagua.png",
                           height: 50,
                           width: 50,
                         )

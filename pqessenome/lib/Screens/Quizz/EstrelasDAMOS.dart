@@ -155,7 +155,19 @@ class EstrelasDAMOS extends StatelessWidget {
                       children: [
                         StarRating(size: 40.0, rating: 5),
                         Image.asset(
-                          "assets/Components/MedalhaDabel.png",
+                          "assets/Components/MedalhaSilver.png",
+                          height: 50,
+                          width: 50,
+                        )
+                      ],
+                    ),
+                  if (score == 10)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        StarRating(size: 40.0, rating: 5),
+                        Image.asset(
+                          "assets/Components/MedalhaDamos.png",
                           height: 50,
                           width: 50,
                         )
@@ -412,6 +424,18 @@ class EstrelasDAMOS extends StatelessWidget {
                       ],
                     ),
                   if (score == 9)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        StarRating(size: 40.0, rating: 5),
+                        Image.asset(
+                          "assets/Components/MedalhaDamos.png",
+                          height: 50,
+                          width: 50,
+                        )
+                      ],
+                    ),
+                  if (score == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
