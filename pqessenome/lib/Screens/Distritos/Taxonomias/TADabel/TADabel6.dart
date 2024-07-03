@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Morfotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/poliotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/sociotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/somatoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel5.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel7.dart';
 
 class TADabel6 extends StatefulWidget {
   const TADabel6({super.key});
@@ -148,7 +148,7 @@ class _TADabel6State extends State<TADabel6> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Somatoponimo()));
+                                  builder: (context) => const Sociotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -159,7 +159,7 @@ class _TADabel6State extends State<TADabel6> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Somatopônimos",
+                          "Sociotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -185,7 +185,7 @@ class _TADabel6State extends State<TADabel6> {
                         const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 25.png"),
+                              AssetImage("assets/Components/Component 31.png"),
                           height: 91.0,
                           width: 90.0,
                         ),
@@ -195,7 +195,7 @@ class _TADabel6State extends State<TADabel6> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const TADabel6()));
+                                    builder: (context) => const TADabel7()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child:

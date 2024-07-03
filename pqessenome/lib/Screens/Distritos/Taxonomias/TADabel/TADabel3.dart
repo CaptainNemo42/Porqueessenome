@@ -186,7 +186,7 @@ class _TADabel3State extends State<TADabel3> {
                         const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 22.png"),
+                              AssetImage("assets/Components/Component 28.png"),
                           height: 91.0,
                           width: 90.0,
                         ),

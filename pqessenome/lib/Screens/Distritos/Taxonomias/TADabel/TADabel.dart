@@ -6,7 +6,7 @@ import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Astrotoponi
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Axiotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Cardinotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel2.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel6.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel7.dart';
 
 class TADabel extends StatefulWidget {
   const TADabel({super.key});
@@ -179,7 +179,7 @@ class _TADabelState extends State<TADabel> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const TADabel6()));
+                                    builder: (context) => const TADabel7()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -187,7 +187,7 @@ class _TADabelState extends State<TADabel> {
                         const SizedBox(width: 10),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 20.png"),
+                              AssetImage("assets/Components/Component 26.png"),
                           height: 91.0,
                           width: 90.0,
                         ),
