@@ -1,6 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Historiotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Hodotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Litotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Meteorotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel4.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel6.dart';
 
@@ -60,7 +64,13 @@ class _TADabel5State extends State<TADabel5> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Historiotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -70,7 +80,7 @@ class _TADabel5State extends State<TADabel5> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Cronotopônimos",
+                          "Historiotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -82,7 +92,12 @@ class _TADabel5State extends State<TADabel5> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Hodotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -92,7 +107,7 @@ class _TADabel5State extends State<TADabel5> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Ecotopônimos",
+                          "Hodotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -104,7 +119,12 @@ class _TADabel5State extends State<TADabel5> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Litotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -114,7 +134,7 @@ class _TADabel5State extends State<TADabel5> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Ergotopônimos",
+                          "Litotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -126,7 +146,13 @@ class _TADabel5State extends State<TADabel5> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Meteorotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -136,7 +162,7 @@ class _TADabel5State extends State<TADabel5> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Etnotopônimos",
+                          "Meteorotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),

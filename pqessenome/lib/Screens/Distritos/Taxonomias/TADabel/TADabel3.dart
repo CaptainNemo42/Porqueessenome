@@ -1,6 +1,9 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Dirrematoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Ecotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Ergotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel2.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel4.dart';
 
@@ -60,7 +63,13 @@ class _TADabel3State extends State<TADabel3> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Dirrematoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -70,7 +79,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Litotopônimos",
+                          "Dirrematopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -82,7 +91,12 @@ class _TADabel3State extends State<TADabel3> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Ecotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -92,7 +106,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Meteorotopônimos",
+                          "Ecotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -104,7 +118,12 @@ class _TADabel3State extends State<TADabel3> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Ergotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -114,7 +133,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Morfotopônimos",
+                          "Ergotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -126,7 +145,12 @@ class _TADabel3State extends State<TADabel3> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Ergotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -136,7 +160,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Zootopônimos",
+                          "Ergotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
