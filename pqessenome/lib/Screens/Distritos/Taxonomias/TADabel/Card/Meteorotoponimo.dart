@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Landing/flashcard.dart';
 
-class Animotoponimo extends StatefulWidget {
-  const Animotoponimo({super.key});
+class Meteorotoponimo extends StatefulWidget {
+  const Meteorotoponimo({super.key});
 
   @override
-  State<Animotoponimo> createState() => _AnimotoponimoState();
+  State<Meteorotoponimo> createState() => _MeteorotoponimoState();
 }
 
-class _AnimotoponimoState extends State<Animotoponimo> {
+class _MeteorotoponimoState extends State<Meteorotoponimo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,6 +33,7 @@ class _AnimotoponimoState extends State<Animotoponimo> {
             scrollDirection: Axis.vertical,
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              const SizedBox(height: 30),
               const Stack(children: [
                 Center(
                     child: Image(
@@ -62,6 +63,7 @@ class _AnimotoponimoState extends State<Animotoponimo> {
                   ),
                 ),
               ]),
+              const SizedBox(height: 30),
               Container(
                 height: 50,
                 width: double.infinity,

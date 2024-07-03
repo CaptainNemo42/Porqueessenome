@@ -33,6 +33,7 @@ class _AstrotoponimoState extends State<Astrotoponimo> {
             scrollDirection: Axis.vertical,
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              const SizedBox(height: 30),
               const Stack(children: [
                 Center(
                     child: Image(
@@ -62,6 +63,7 @@ class _AstrotoponimoState extends State<Astrotoponimo> {
                   ),
                 ),
               ]),
+              const SizedBox(height: 30),
               Container(
                 height: 50,
                 width: double.infinity,

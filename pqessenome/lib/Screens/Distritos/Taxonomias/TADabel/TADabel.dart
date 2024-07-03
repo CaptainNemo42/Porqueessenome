@@ -121,7 +121,7 @@ class _TADabelState extends State<TADabel> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const sociotoponimo()));
+                                  builder: (context) => const Sociotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),

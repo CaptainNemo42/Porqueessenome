@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Landing/flashcard.dart';
 
-class sociotoponimo extends StatefulWidget {
-  const sociotoponimo({super.key});
+class Sociotoponimo extends StatefulWidget {
+  const Sociotoponimo({super.key});
 
   @override
-  State<sociotoponimo> createState() => _sociotoponimoState();
+  State<Sociotoponimo> createState() => _SociotoponimoState();
 }
 
-class _sociotoponimoState extends State<sociotoponimo> {
+class _SociotoponimoState extends State<Sociotoponimo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,12 +33,37 @@ class _sociotoponimoState extends State<sociotoponimo> {
             scrollDirection: Axis.vertical,
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Image.asset(
-                'assets/Images/Campinas.png',
-                fit: BoxFit.fill,
-                width: double.infinity,
-                height: 250,
-              ),
+              const SizedBox(height: 30),
+              const Stack(children: [
+                Center(
+                    child: Image(
+                        image: AssetImage('assets/Components/LOGOFADE.png'))),
+                Center(
+                  child: Column(
+                    children: [
+                      Text(
+                        'Por que',
+                        style: TextStyle(
+                            fontFamily: "Bold",
+                            color: Color.fromRGBO(255, 165, 0, 1),
+                            fontSize: 50.0,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        'esse nome?',
+                        style: TextStyle(
+                            fontFamily: "Bold",
+                            color: Color.fromRGBO(255, 165, 0, 1),
+                            fontSize: 50.0,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
+              ]),
+              const SizedBox(height: 30),
               Container(
                 height: 50,
                 width: double.infinity,
@@ -83,7 +109,7 @@ class _sociotoponimoState extends State<sociotoponimo> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 17.0,
                   )),
-              const SizedBox(height: 50.0),
+              const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,
                 child: TextButton.icon(
@@ -98,6 +124,33 @@ class _sociotoponimoState extends State<sociotoponimo> {
                     ),
                     label: const Text(
                       "Quiz",
+                      style: TextStyle(
+                          fontFamily: "SemiBold",
+                          color: Color.fromRGBO(50, 50, 50, 1),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold),
+                    )),
+              ),
+              const SizedBox(height: 15.0),
+              SizedBox(
+                width: 200,
+                child: TextButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomePage()));
+                    },
+                    icon: const Icon(Icons.file_copy,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                    style: TextButton.styleFrom(
+                      elevation: 5,
+                      shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                      backgroundColor: const Color.fromARGB(
+                          255, 247, 102, 62), // Background Color
+                    ),
+                    label: const Text(
+                      "Flashcards",
                       style: TextStyle(
                           fontFamily: "SemiBold",
                           color: Color.fromRGBO(50, 50, 50, 1),

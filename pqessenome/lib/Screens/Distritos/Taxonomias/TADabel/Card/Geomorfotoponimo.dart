@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Landing/flashcard.dart';
 
-class Antrotoponimo extends StatefulWidget {
-  const Antrotoponimo({super.key});
+class Geomorfotoponimo extends StatefulWidget {
+  const Geomorfotoponimo({super.key});
 
   @override
-  State<Antrotoponimo> createState() => _AntrotoponimoState();
+  State<Geomorfotoponimo> createState() => _GeomorfotoponimoState();
 }
 
-class _AntrotoponimoState extends State<Antrotoponimo> {
+class _GeomorfotoponimoState extends State<Geomorfotoponimo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
