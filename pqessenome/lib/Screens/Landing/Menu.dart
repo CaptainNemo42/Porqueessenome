@@ -45,24 +45,36 @@ class _MenuState extends State<Menu> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                   const SizedBox(height: 30.0),
-                  const Text(
-                    'Por que',
-                    style: TextStyle(
-                        fontFamily: "Bold",
-                        color: Color.fromRGBO(255, 165, 0, 1),
-                        fontSize: 50.0,
-                        fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                  const Text(
-                    'esse nome?',
-                    style: TextStyle(
-                        fontFamily: "Bold",
-                        color: Color.fromRGBO(255, 165, 0, 1),
-                        fontSize: 50.0,
-                        fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
+                  const Stack(children: [
+                    Center(
+                        child: Image(
+                            image:
+                                AssetImage('assets/Components/LOGOFADE.png'))),
+                    Center(
+                      child: Column(
+                        children: [
+                          Text(
+                            'Por que',
+                            style: TextStyle(
+                                fontFamily: "Bold",
+                                color: Color.fromRGBO(255, 165, 0, 1),
+                                fontSize: 50.0,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                          Text(
+                            'esse nome?',
+                            style: TextStyle(
+                                fontFamily: "Bold",
+                                color: Color.fromRGBO(255, 165, 0, 1),
+                                fontSize: 50.0,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ]),
                   const SizedBox(height: 30.0),
                   Container(
                     height: 52,

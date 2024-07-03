@@ -46,7 +46,7 @@ class _LDaoutState extends State<LDaout> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAOUT",
+                    "LEXICOGRAFIA",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),

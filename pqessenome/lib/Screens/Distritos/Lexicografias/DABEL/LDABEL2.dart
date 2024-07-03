@@ -49,7 +49,7 @@ class _LDabel2State extends State<LDabel2> {
                     color: const Color.fromRGBO(255, 165, 0, 1),
                     child: const Center(
                       child: Text(
-                        "Lexicografias - DABEL",
+                        "LEXICOGRAFIA",
                         style: TextStyle(
                             fontFamily: "PoppinsBold",
                             color: Color.fromRGBO(50, 50, 50, 1),

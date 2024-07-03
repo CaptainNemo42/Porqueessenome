@@ -233,6 +233,7 @@ flutter:
     - assets\Images\dasacC.png
     - assets\Images\daout.png
     - assets\Components\LOGOBG.png
+    - assets/Components/LOGOFADE.png
     - assets\Components\Component 1.png
     - assets\Components\Component 2.png
     - assets\Components\Component 3.png

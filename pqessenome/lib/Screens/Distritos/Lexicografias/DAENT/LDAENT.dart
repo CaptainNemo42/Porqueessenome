@@ -47,7 +47,7 @@ class _LDaentState extends State<LDaent> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAENT",
+                    "LEXICOGRAFIA",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
