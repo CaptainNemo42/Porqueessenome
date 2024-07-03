@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/quiz_screenTopDABEL.dart';
+import 'package:pqessenome/Screens/Landing/flashcard.dart';
 
-class Poliotoponimo extends StatefulWidget {
-  const Poliotoponimo({super.key});
+class Animotoponimo extends StatefulWidget {
+  const Animotoponimo({super.key});
 
   @override
-  State<Poliotoponimo> createState() => _PoliotoponimoState();
+  State<Animotoponimo> createState() => _AnimotoponimoState();
 }
 
-class _PoliotoponimoState extends State<Poliotoponimo> {
+class _AnimotoponimoState extends State<Animotoponimo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,12 +33,35 @@ class _PoliotoponimoState extends State<Poliotoponimo> {
             scrollDirection: Axis.vertical,
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Image.asset(
-                'assets/Images/Campinas.png',
-                fit: BoxFit.fill,
-                width: double.infinity,
-                height: 250,
-              ),
+              const Stack(children: [
+                Center(
+                    child: Image(
+                        image: AssetImage('assets/Components/LOGOFADE.png'))),
+                Center(
+                  child: Column(
+                    children: [
+                      Text(
+                        'Por que',
+                        style: TextStyle(
+                            fontFamily: "Bold",
+                            color: Color.fromRGBO(255, 165, 0, 1),
+                            fontSize: 50.0,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                      Text(
+                        'esse nome?',
+                        style: TextStyle(
+                            fontFamily: "Bold",
+                            color: Color.fromRGBO(255, 165, 0, 1),
+                            fontSize: 50.0,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      ),
+                    ],
+                  ),
+                ),
+              ]),
               Container(
                 height: 50,
                 width: double.infinity,
@@ -84,7 +107,7 @@ class _PoliotoponimoState extends State<Poliotoponimo> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 17.0,
                   )),
-              const SizedBox(height: 50.0),
+              const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,
                 child: TextButton.icon(
@@ -99,6 +122,33 @@ class _PoliotoponimoState extends State<Poliotoponimo> {
                     ),
                     label: const Text(
                       "Quiz",
+                      style: TextStyle(
+                          fontFamily: "SemiBold",
+                          color: Color.fromRGBO(50, 50, 50, 1),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold),
+                    )),
+              ),
+              const SizedBox(height: 15.0),
+              SizedBox(
+                width: 200,
+                child: TextButton.icon(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomePage()));
+                    },
+                    icon: const Icon(Icons.file_copy,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                    style: TextButton.styleFrom(
+                      elevation: 5,
+                      shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                      backgroundColor: const Color.fromARGB(
+                          255, 247, 102, 62), // Background Color
+                    ),
+                    label: const Text(
+                      "Flashcards",
                       style: TextStyle(
                           fontFamily: "SemiBold",
                           color: Color.fromRGBO(50, 50, 50, 1),

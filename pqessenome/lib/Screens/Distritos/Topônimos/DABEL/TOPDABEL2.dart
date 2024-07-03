@@ -58,7 +58,7 @@ class _TOPDabel2State extends State<TOPDabel2> {
                   ),
                   const SizedBox(height: 15.0),
                   SizedBox(
-                    width: 280,
+                    width: 250,
                     child: TextButton.icon(
                         onPressed: () {
                           Navigator.pushReplacement(

@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Astrotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel2.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/poliotop%C3%B4nimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/sociotop%C3%B4nimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/poliotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/sociotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel6.dart';
 
 class TADabel extends StatefulWidget {

@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/quiz_screenTopDABEL.dart';
 
-class sociotoponimo extends StatefulWidget {
-  const sociotoponimo({super.key});
+class Poliotoponimo extends StatefulWidget {
+  const Poliotoponimo({super.key});
 
   @override
-  State<sociotoponimo> createState() => _sociotoponimoState();
+  State<Poliotoponimo> createState() => _PoliotoponimoState();
 }
 
-class _sociotoponimoState extends State<sociotoponimo> {
+class _PoliotoponimoState extends State<Poliotoponimo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

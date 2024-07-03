@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/quiz_screenTopDABEL.dart';
 
-class Somatoponimo extends StatefulWidget {
-  const Somatoponimo({super.key});
+class sociotoponimo extends StatefulWidget {
+  const sociotoponimo({super.key});
 
   @override
-  State<Somatoponimo> createState() => _SomatoponimoState();
+  State<sociotoponimo> createState() => _sociotoponimoState();
 }
 
-class _SomatoponimoState extends State<Somatoponimo> {
+class _sociotoponimoState extends State<sociotoponimo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +44,7 @@ class _SomatoponimoState extends State<Somatoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Cardinotopônimos",
+                    "Astrotopônimos",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),

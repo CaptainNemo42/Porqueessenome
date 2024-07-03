@@ -8,6 +8,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   await Hive.initFlutter();
+  // ignore: unused_local_variable
   var box = await Hive.openBox('Score');
   runApp(const MyApp());
 }
