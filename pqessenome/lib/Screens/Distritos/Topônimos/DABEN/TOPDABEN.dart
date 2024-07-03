@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEN/Card/Tapana.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEN/LDABEN2.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEN/Card/bengui.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEN/Card/pratinha.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEN/Card/saoclemente.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEN/TOPDABEN2.dart';
 
 class TOPDaben extends StatefulWidget {
   const TOPDaben({super.key});
@@ -47,7 +47,7 @@ class _TOPDabenState extends State<TOPDaben> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DABEN",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -175,7 +175,7 @@ class _TOPDabenState extends State<TOPDaben> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaben2()));
+                                builder: (context) => const TOPDaben2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -192,7 +192,7 @@ class _TOPDabenState extends State<TOPDaben> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaben2()));
+                                builder: (context) => const TOPDaben2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

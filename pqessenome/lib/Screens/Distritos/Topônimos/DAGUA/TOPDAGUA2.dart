@@ -1,9 +1,9 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAGUA/LDAGUA.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/Card/canudos.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/Card/terrafirme.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/TOPDAGUA.dart';
 
 class TOPDagua2 extends StatefulWidget {
   const TOPDagua2({super.key});
@@ -45,7 +45,7 @@ class _TOPDagua2State extends State<TOPDagua2> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAGUA",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -118,7 +118,7 @@ class _TOPDagua2State extends State<TOPDagua2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDagua()));
+                                builder: (context) => const TOPDagua()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -135,7 +135,7 @@ class _TOPDagua2State extends State<TOPDagua2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDagua()));
+                                builder: (context) => const TOPDagua()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

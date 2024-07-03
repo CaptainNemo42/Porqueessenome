@@ -1,9 +1,9 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAICO/LDAICO.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAICO/LDAICO2.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/Card/tenone.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/TOPDAICO.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/TOPDAICO2.dart';
 
 class TOPDaico3 extends StatefulWidget {
   const TOPDaico3({super.key});
@@ -45,7 +45,7 @@ class _TOPDaico3State extends State<TOPDaico3> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAICO",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -91,7 +91,7 @@ class _TOPDaico3State extends State<TOPDaico3> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaico2()));
+                                builder: (context) => const TOPDaico2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -108,7 +108,7 @@ class _TOPDaico3State extends State<TOPDaico3> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaico()));
+                                builder: (context) => const TOPDaico()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

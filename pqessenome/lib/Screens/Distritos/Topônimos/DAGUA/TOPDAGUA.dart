@@ -1,11 +1,11 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAGUA/LDAGUA2.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/Card/condor.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/Card/cremacao.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/Card/guama.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/Card/jurunas.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAGUA/TOPDAGUA2.dart';
 
 class TOPDagua extends StatefulWidget {
   const TOPDagua({super.key});
@@ -47,7 +47,7 @@ class _TOPDaguaState extends State<TOPDagua> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAGUA",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -175,7 +175,7 @@ class _TOPDaguaState extends State<TOPDagua> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDagua2()));
+                                builder: (context) => const TOPDagua2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -192,7 +192,7 @@ class _TOPDaguaState extends State<TOPDagua> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDagua2()));
+                                builder: (context) => const TOPDagua2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

@@ -1,12 +1,12 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAICO/LDAICO.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAICO/LDAICO3.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/Card/aguasnegras.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/Card/campinadeicoaraci.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/Card/maracacuera.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/Card/parqueguajara.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/TOPDAICO.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAICO/TOPDAICO3.dart';
 
 class TOPDaico2 extends StatefulWidget {
   const TOPDaico2({super.key});
@@ -48,7 +48,7 @@ class _TOPDaico2State extends State<TOPDaico2> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAICO",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -177,7 +177,7 @@ class _TOPDaico2State extends State<TOPDaico2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaico()));
+                                builder: (context) => const TOPDaico()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -194,7 +194,7 @@ class _TOPDaico2State extends State<TOPDaico2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaico3()));
+                                builder: (context) => const TOPDaico3()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

@@ -1,11 +1,9 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/LDABEL.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEL/Card/cidadevelha.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEL/Card/reduto.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEL/Card/saobras.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEL/Card/umarizal.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DABEL/TOPDABEL.dart';
 
 class TOPDabel2 extends StatefulWidget {
   const TOPDabel2({super.key});
@@ -49,7 +47,7 @@ class _TOPDabel2State extends State<TOPDabel2> {
                     color: const Color.fromRGBO(255, 165, 0, 1),
                     child: const Center(
                       child: Text(
-                        "Lexicografias - DABEL",
+                        "TOPÔNIMOS",
                         style: TextStyle(
                             fontFamily: "PoppinsBold",
                             color: Color.fromRGBO(50, 50, 50, 1),
@@ -176,7 +174,7 @@ class _TOPDabel2State extends State<TOPDabel2> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const LDabel()));
+                                    builder: (context) => const TOPDabel()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -194,7 +192,7 @@ class _TOPDabel2State extends State<TOPDabel2> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const LDabel()));
+                                    builder: (context) => const TOPDabel()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child:

@@ -1,11 +1,11 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAENT/LDAENT2.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/mangueirao.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/marambaia.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/souza.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/valdecans.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/TOPDAENT2.dart';
 
 class TOPDaent extends StatefulWidget {
   const TOPDaent({super.key});
@@ -47,7 +47,7 @@ class _TOPDaentState extends State<TOPDaent> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAENT",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -175,7 +175,7 @@ class _TOPDaentState extends State<TOPDaent> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaent2()));
+                                builder: (context) => const TOPDaent2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -192,7 +192,7 @@ class _TOPDaentState extends State<TOPDaent> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaent2()));
+                                builder: (context) => const TOPDaent2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

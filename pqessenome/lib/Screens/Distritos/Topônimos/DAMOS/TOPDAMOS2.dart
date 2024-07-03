@@ -1,12 +1,12 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/LDAMOS.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/LDAMOS3.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/aribamba.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/chapeuvirado.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/murubira.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/portoarthur.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/TOPDAMOS.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/TOPDAMOS3.dart';
 
 class TOPDamos2 extends StatefulWidget {
   const TOPDamos2({super.key});
@@ -48,7 +48,7 @@ class _TOPDamos2State extends State<TOPDamos2> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DAMOS",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -176,7 +176,7 @@ class _TOPDamos2State extends State<TOPDamos2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDamos()));
+                                builder: (context) => const TOPDamos()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -193,7 +193,7 @@ class _TOPDamos2State extends State<TOPDamos2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDamos3()));
+                                builder: (context) => const TOPDamos3()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

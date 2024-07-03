@@ -5,7 +5,7 @@ import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/barreiro.d
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/maracangalha.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/miramar.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/sacramenta.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/LDASAC2.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/TOPDASAC2.dart';
 
 class TOPDasac extends StatefulWidget {
   const TOPDasac({super.key});
@@ -47,7 +47,7 @@ class _TOPDasacState extends State<TOPDasac> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Lexicografias - DABEL",
+                    "TOPÔNIMOS",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -175,7 +175,7 @@ class _TOPDasacState extends State<TOPDasac> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDasac2()));
+                                builder: (context) => const TOPDasac2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -192,7 +192,7 @@ class _TOPDasacState extends State<TOPDasac> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDasac2()));
+                                builder: (context) => const TOPDasac2()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),
