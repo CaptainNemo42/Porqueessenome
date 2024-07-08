@@ -182,7 +182,7 @@ class _TOPDabel2State extends State<TOPDabel2> {
                         const SizedBox(width: 10),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 6.png"),
+                              AssetImage("assets/Components/Component 7.png"),
                           height: 91.0,
                           width: 90.0,
                         ),

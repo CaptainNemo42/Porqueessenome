@@ -70,7 +70,7 @@ class _AntrotoponimoState extends State<Antrotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Astrotopônimos",
+                    "Antrotopônimos",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,7 +89,7 @@ class _AntrotoponimoState extends State<Antrotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "Relativo a natureza antropocultural.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
