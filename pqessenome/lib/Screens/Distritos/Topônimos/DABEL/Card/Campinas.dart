@@ -96,12 +96,15 @@ class _TCampinasState extends State<TCampinas> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Relativos à índole vegetal.",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
+              const Text(
+                "Relativos à índole vegetal.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",

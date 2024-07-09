@@ -37,6 +37,17 @@ class _MDABELState extends State<MDABEL> {
               Navigator.pop(context);
             },
           ),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: const Icon(
+                  Icons.question_mark_rounded,
+                  size: 25.0,
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                ))
+          ],
           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
           automaticallyImplyLeading: false,
         ),
@@ -180,7 +191,7 @@ class _MDABELState extends State<MDABEL> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Reduto\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Reduto\nTaxonomia: Historiotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),

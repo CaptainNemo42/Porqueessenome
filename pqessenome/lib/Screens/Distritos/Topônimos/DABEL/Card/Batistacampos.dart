@@ -97,12 +97,14 @@ class _TBatistaCamposState extends State<TBatistaCampos> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                  "Relativo aos nomes próprios individuais: prenomes, hipocorísticos, prenome + alcunha, apelidos de família e prenome + apelido de família).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
+                "Relativo aos nomes próprios individuais: prenomes, hipocorísticos, prenome + alcunha, apelidos de família e prenome + apelido de família).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",

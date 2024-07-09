@@ -90,19 +90,22 @@ class _TRedutoState extends State<TReduto> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text(
+                "Relativo aos movimentos de cunho histórico e social.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +113,7 @@ class _TRedutoState extends State<TReduto> {
                   )),
               const Center(
                 child: Text(
-                  "Do Latim reductus:\nPart. Pass. De reduco\nAdj. I- Sentido Próprio: reconduzido, conduzido para trás, e daí: retirado, afastado. II- Sent. Figurado: afastado, distante\nSubs. Masc. – refúgio, abrigo, recinto",
+                  "Independência (AH- AC); rua Vinte e Um de Abril (SP).",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

@@ -97,12 +97,14 @@ class _TCidadevelhaState extends State<TCidadevelha> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                  "Encerram indicadores cronológicos através de adjetivos. ",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
+                "Encerram indicadores cronológicos através de adjetivos. ",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",

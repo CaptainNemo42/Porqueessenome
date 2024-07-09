@@ -90,19 +90,20 @@ class _TSaobrasState extends State<TSaobras> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
+              const Text(
+                  "Relativo aos nomes sagrados de diferentes crenças, efemérides religiosas; associações religiosas; locais de culto.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Informações Enciclopédicas",
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +111,7 @@ class _TSaobrasState extends State<TSaobras> {
                   )),
               const Center(
                 child: Text(
-                  "Deriva do Latim blaesius (prenome) > blaesus (gago). Evolução: blaesius > blaesus > Brás.\nSão Brás – Santo padroeiro das doenças da garganta.",
+                  "Cristo Rei (AH-PR); Alá (lago- AM); Natal (AH- AC); Cruz de Malta (AH-SC); Santa Tereza (AH-GO);",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

@@ -35,6 +35,17 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
               Navigator.pop(context);
             },
           ),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: const Icon(
+                  Icons.question_mark_rounded,
+                  size: 25.0,
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                ))
+          ],
           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
           automaticallyImplyLeading: false,
         ),

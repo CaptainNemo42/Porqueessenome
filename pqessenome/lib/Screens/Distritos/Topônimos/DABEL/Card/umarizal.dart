@@ -90,19 +90,20 @@ class _TUmarizalState extends State<TUmarizal> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Física",
+              const Text(
+                  "Relativo aos nomes sagrados de diferentes crenças, efemérides religiosas; associações religiosas; locais de culto.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Informações Enciclopédicas",
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +111,7 @@ class _TUmarizalState extends State<TUmarizal> {
                   )),
               const Center(
                 child: Text(
-                  "Umari ou Mari têm origem em Y- mori, palavra indígena, cujo significado é árvore que verte água, em referência à característica da planta em verter água pelos brotos, no início da estação chuvosa, ao ponto de molhar a terra; Umarizal – grande quantidade de Umaris, próximos uns dos outros.",
+                  "Cristo Rei (AH-PR); Alá (lago- AM); Natal (AH- AC); Cruz de Malta (AH-SC); Santa Tereza (AH-GO);",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

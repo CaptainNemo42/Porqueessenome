@@ -97,12 +97,14 @@ class _TNazareState extends State<TNazare> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                  "Relativo aos nomes sagrados de diferentes crenças, efemérides religiosas; associações religiosas; locais de culto.",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
+                "Relativo aos nomes sagrados de diferentes crenças, efemérides religiosas; associações religiosas; locais de culto.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
