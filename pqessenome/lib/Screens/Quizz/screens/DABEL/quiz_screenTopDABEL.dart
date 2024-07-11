@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionstopDABEL.dart';
+import 'package:flutter_rating/flutter_rating.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionslexDABEL.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screenlexDABEL.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
 
 class QuizTopScreenDABEL extends StatefulWidget {
   const QuizTopScreenDABEL({super.key});
@@ -33,6 +35,26 @@ class _QuizTopScreenDABELState extends State<QuizTopScreenDABEL> {
     setState(() {});
   }
 
+  void showStarRating() {
+    if (score == 1) {
+      StarRating(size: 40.0, rating: 1);
+    }
+    if (score == 2) {
+      StarRating(size: 40.0, rating: 2);
+    }
+    if (score == 3) {
+      StarRating(size: 40.0, rating: 3);
+    }
+    if (score == 4) {
+      StarRating(size: 40.0, rating: 4);
+    }
+    if (score == 5) {
+      StarRating(size: 40.0, rating: 5);
+    } else {
+      StarRating(size: 40.0, rating: 0);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final question = questions[questionIndex];
@@ -59,6 +81,24 @@ class _QuizTopScreenDABELState extends State<QuizTopScreenDABEL> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            Container(
+              padding: const EdgeInsets.only(right: 18.0),
+              alignment: Alignment.topCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.close,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                  ),
+                  const MyProgressIndicator(),
+                ],
+              ),
+            ),
             Padding(
                 padding: const EdgeInsets.only(left: 5, right: 5, top: 5),
                 child: ClipRRect(
@@ -66,7 +106,7 @@ class _QuizTopScreenDABELState extends State<QuizTopScreenDABEL> {
                     child: const Image(
                       image: AssetImage("assets/Images/dabelC.jpeg"),
                       fit: BoxFit.fill,
-                      height: 150,
+                      height: 140,
                       width: double.infinity,
                     ))),
             Text(
