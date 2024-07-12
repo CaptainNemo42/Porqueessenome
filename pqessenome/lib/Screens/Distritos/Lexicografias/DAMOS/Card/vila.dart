@@ -33,7 +33,7 @@ class _VilaState extends State<Vila> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/vila.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,

@@ -1,6 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAOUT/Card/aguaboa.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAOUT/Card/brasilia.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAOUT/Card/itaiteua.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAOUT/Card/saojoaodoouteiro.dart';
 
 class MapaDAOUT extends StatefulWidget {
   const MapaDAOUT({super.key});
@@ -15,7 +19,7 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "DAOUT",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
@@ -56,12 +60,12 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/brasilia.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Brasília",
                                         style: TextStyle(
@@ -124,7 +128,7 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -134,8 +138,14 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Brasilia()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -161,12 +171,12 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/saojoaodoouteiro.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "São João do Outeiro",
                                         style: TextStyle(
@@ -229,7 +239,7 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -239,8 +249,14 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Saojoaodoouteiro()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -266,12 +282,12 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/aguaboa.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Água Boa",
                                         style: TextStyle(
@@ -334,7 +350,7 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -344,8 +360,14 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Aguaboa()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -371,12 +393,12 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
-                                        "assets/Images/brasilia.png"),
+                                        "assets/Images/itaiteua.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Itaiteua",
                                         style: TextStyle(
@@ -439,7 +461,7 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -449,8 +471,14 @@ class _MapaDAOUTState extends State<MapaDAOUT> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const itaiteua()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",

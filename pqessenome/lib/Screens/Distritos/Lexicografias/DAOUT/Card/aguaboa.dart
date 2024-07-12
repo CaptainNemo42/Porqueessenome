@@ -33,7 +33,7 @@ class _AguaboaState extends State<Aguaboa> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/aguasLindas.png',
+                'assets/Images/aguaboa.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,

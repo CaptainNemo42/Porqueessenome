@@ -110,7 +110,7 @@ class _MangueiraoState extends State<Mangueirao> {
                   )),
               const Center(
                 child: Text(
-                  "*Batista Adj. mas. sing. do gr. baptizo que significa mergulhar\n*Campos S. mas.pl. do lat. campi",
+                  "Subst. masc., que faz referência ao Estádio Estadual que homenageia o jornalista Edgar Proença, conhecido como Estádio Olímpico do Pará, popularmente chamado de Mangueirão, o qual acabou emprestando o nome ao bairro.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

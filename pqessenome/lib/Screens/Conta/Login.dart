@@ -21,7 +21,7 @@ class _LoginState extends State<Login> {
       appBar: AppBar(
         toolbarHeight: 90,
         centerTitle: true,
-        title: Image(
+        title: const Image(
           image: AssetImage("assets/Components/LOGOBG.png"),
           height: 91.0,
           width: 90.0,
@@ -146,10 +146,10 @@ class _LoginState extends State<Login> {
                     ),
                     Container(
                         margin: const EdgeInsets.all(20.0),
-                        child: Row(
+                        child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text('Não possui conta? Cadastre-se!',
+                              Text('Não possui conta? Cadastre-se!',
                                   style: TextStyle(
                                       fontFamily: "SemiBold",
                                       color: Color.fromRGBO(50, 50, 50, 1),

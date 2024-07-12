@@ -2,13 +2,13 @@ import 'package:pqessenome/Screens/Quizz/screens/DABEN/models/questionDABEN.dart
 
 const List<Question> questions = [
   Question(
-    question: '1.Qual a natureza do topônimo "Batista Campos":',
+    question: '1. Com relação ao topônimo Una, é correto afirmar:',
     correctAnswerIndex: 0,
     options: [
-      'a) Antropocultural',
-      'b) Física',
-      'c) Histórica',
-      'd) Antr. e Física',
+      'a) ',
+      'b) ',
+      'c) ',
+      'd) ',
     ],
   ),
   Question(
@@ -32,7 +32,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '4. Com relação a natureza antropocultural, é correto dizer:',
+    question: '4.:',
     correctAnswerIndex: 1,
     options: [
       'a) Se caracteriza pela história do local',
@@ -52,7 +52,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '6. Com relação ao topônimo Cidade Velha, é correto afirmar:',
+    question: '6. Qual a natureza do topônimo "Coqueiro"?',
     correctAnswerIndex: 3,
     options: [
       'a) Caracterizado pela população agrícola',
@@ -62,7 +62,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '7. Qual a natureza do topônimo Nazaré:',
+    question: '7. Com relação ao topônimo Marco, é correto afirmar:',
     correctAnswerIndex: 1,
     options: [
       'a) Geográfico, definido pela presença do mineral Nitzraréth',
@@ -72,7 +72,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Com relação ao topônimo Marco, é correto afirmar:',
+    question: '8. Qual a natureza do topônimo Nazaré:',
     correctAnswerIndex: 0,
     options: [
       'a) Relativo a Germânico Marka, Sinal',
@@ -92,7 +92,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '10. Qual a natureza do topônimo São Brás:',
+    question: '10.  Com relação a natureza antropocultural, é correto dizer:',
     correctAnswerIndex: 3,
     options: [
       'a) Físico',

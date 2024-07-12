@@ -1,6 +1,13 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/barreiro.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/fatima.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/maracangalha.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/miramar.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/pedreira.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/sacramenta.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/telegrafo.dart';
 
 class MapaDASAC extends StatefulWidget {
   const MapaDASAC({super.key});
@@ -15,7 +22,7 @@ class _MapaDASACState extends State<MapaDASAC> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "DASAC",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
@@ -56,12 +63,12 @@ class _MapaDASACState extends State<MapaDASAC> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/telegrafo.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Telégrafo",
                                         style: TextStyle(
@@ -72,7 +79,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Umarizal\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Telégrafo\nTaxonomia: Historiotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -92,10 +99,10 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Grego – têle = longe. Ao longe, longe de + grego “grafos”, escrita = pelo Francês “telégraphe”",
                                         style: TextStyle(
                                           fontFamily: "Light",
-                                          color: Color.fromRGBO(50, 50, 50, 1),
+                                          color: Color.fromRGBO(36, 29, 29, 1),
                                           fontSize: 17.0,
                                         ),
                                         textAlign: TextAlign.center,
@@ -124,7 +131,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -134,8 +141,14 @@ class _MapaDASACState extends State<MapaDASAC> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Telegrafo()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -161,12 +174,12 @@ class _MapaDASACState extends State<MapaDASAC> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/barreiro.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Barreiro",
                                         style: TextStyle(
@@ -177,7 +190,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Umarizal\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Barreiro\nTaxonomia: Litotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -197,7 +210,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Pré-Romana",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -216,7 +229,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. masc. [S. sing. + Sufixo]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -229,7 +242,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -239,8 +252,14 @@ class _MapaDASACState extends State<MapaDASAC> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Barreiro()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -266,12 +285,12 @@ class _MapaDASACState extends State<MapaDASAC> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/miramar.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Miramar",
                                         style: TextStyle(
@@ -282,7 +301,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Umarizal\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Miramar\nTaxonomia: Hidrotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -302,7 +321,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Latim: mira + mar – mirare (verbo mirar) + mare (subst. mar)",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -321,7 +340,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.C. masc. {verbo + S. sing]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -334,7 +353,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -344,8 +363,14 @@ class _MapaDASACState extends State<MapaDASAC> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Miramar()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -371,12 +396,12 @@ class _MapaDASACState extends State<MapaDASAC> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/maracangalha.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Maracangalha",
                                         style: TextStyle(
@@ -387,7 +412,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Umarizal\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Maracangalha\nTaxonomia: Zooetnotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -407,7 +432,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Tupi – Mara (mancha) + acanga (cabeça) + ayra (pequenino)",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -426,7 +451,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.C. masc. [S. sing. + S. sing. + Adj. sing.]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -439,7 +464,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -449,8 +474,14 @@ class _MapaDASACState extends State<MapaDASAC> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Maracangalha()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -476,12 +507,12 @@ class _MapaDASACState extends State<MapaDASAC> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/sacramenta.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Sacramenta",
                                         style: TextStyle(
@@ -492,7 +523,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Umarizal\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Sacramenta\nTaxonomia: Animotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -512,7 +543,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Latim: “Sacramentum, i”",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -531,7 +562,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. fem. [S. sing. + sufixo]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -544,7 +575,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -554,8 +585,14 @@ class _MapaDASACState extends State<MapaDASAC> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Sacramenta()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -581,12 +618,12 @@ class _MapaDASACState extends State<MapaDASAC> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/pedreira.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Pedreira",
                                         style: TextStyle(
@@ -597,7 +634,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Umarizal\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Pedreira\nTaxonomia: Litotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -617,7 +654,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Latim: pedra, -ae + eira",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -636,7 +673,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. fem. [S. sing. + sufixo]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -649,7 +686,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -659,8 +696,14 @@ class _MapaDASACState extends State<MapaDASAC> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Pedreira()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -686,12 +729,12 @@ class _MapaDASACState extends State<MapaDASAC> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/fatima.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Fátima",
                                         style: TextStyle(
@@ -702,7 +745,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Umarizal\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Fátima\nTaxonomia: Hagiotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -722,7 +765,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Árabe – a partir das palavras “Faatima” e “fats”",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -741,7 +784,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. fem. [S. sing.]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -754,7 +797,7 @@ class _MapaDASACState extends State<MapaDASAC> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -764,8 +807,14 @@ class _MapaDASACState extends State<MapaDASAC> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Fatima()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",

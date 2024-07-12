@@ -33,7 +33,7 @@ class _GuanabaraState extends State<Guanabara> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/guanabara.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -44,7 +44,7 @@ class _GuanabaraState extends State<Guanabara> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Batista Campos",
+                    "Guanabara",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -56,7 +56,7 @@ class _GuanabaraState extends State<Guanabara> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antrotopônimo",
+              const Text("Hidrotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -77,13 +77,13 @@ class _GuanabaraState extends State<Guanabara> {
                   fontSize: 20.0,
                 ),
               ),
-              const Text("Topônimo: Batista Campos",
+              const Text("Topônimo: Guanabara",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antrotopônimo",
+              const Text("Taxonomia: Hidrotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -96,7 +96,7 @@ class _GuanabaraState extends State<Guanabara> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
+              const Text("Física",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +110,7 @@ class _GuanabaraState extends State<Guanabara> {
                   )),
               const Center(
                 child: Text(
-                  "*Batista Adj. mas. sing. do gr. baptizo que significa mergulhar\n*Campos S. mas.pl. do lat. campi",
+                  "N.T.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

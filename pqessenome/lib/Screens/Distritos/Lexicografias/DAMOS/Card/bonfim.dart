@@ -33,7 +33,7 @@ class _BonfimState extends State<Bonfim> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/bonfim.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -44,7 +44,7 @@ class _BonfimState extends State<Bonfim> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Batista Campos",
+                    "Bonfim",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -56,7 +56,7 @@ class _BonfimState extends State<Bonfim> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antrotopônimo",
+              const Text("Ecotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -77,13 +77,13 @@ class _BonfimState extends State<Bonfim> {
                   fontSize: 20.0,
                 ),
               ),
-              const Text("Topônimo: Batista Campos",
+              const Text("Topônimo: Bonfim",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antrotopônimo",
+              const Text("Taxonomia: Ecotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +110,7 @@ class _BonfimState extends State<Bonfim> {
                   )),
               const Center(
                 child: Text(
-                  "*Batista Adj. mas. sing. do gr. baptizo que significa mergulhar\n*Campos S. mas.pl. do lat. campi",
+                  "S. masc fim: termo, remate, acabamento",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

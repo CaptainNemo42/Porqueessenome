@@ -25,7 +25,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "DAENT",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
@@ -66,12 +66,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/valDeCans.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Val-de-Cans",
                                         style: TextStyle(
@@ -134,7 +134,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -149,9 +149,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Valdecans()));
+                                                      const Valdecans()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -177,12 +177,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/Mangueirao.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Mangueirão",
                                         style: TextStyle(
@@ -245,7 +245,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -260,9 +260,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Mangueirao()));
+                                                      const Mangueirao()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -288,12 +288,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/Marambaia.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Marambaia",
                                         style: TextStyle(
@@ -356,7 +356,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -371,9 +371,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Marambaia()));
+                                                      const Marambaia()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -399,12 +399,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/Souza.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Souza",
                                         style: TextStyle(
@@ -467,7 +467,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -482,9 +482,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Souza()));
+                                                      const Souza()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -510,12 +510,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/Castanheira.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Castanheira",
                                         style: TextStyle(
@@ -578,7 +578,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -593,9 +593,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Castanheira()));
+                                                      const Castanheira()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -621,12 +621,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/universitario.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Universitário",
                                         style: TextStyle(
@@ -689,7 +689,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -704,9 +704,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Universitario()));
+                                                      const Universitario()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -732,12 +732,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/curioUtinga.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Curió-Utinga",
                                         style: TextStyle(
@@ -800,7 +800,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -815,9 +815,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Curioutinga()));
+                                                      const Curioutinga()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -843,12 +843,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/guanabara.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Guanabara",
                                         style: TextStyle(
@@ -911,7 +911,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -926,9 +926,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Guanabara()));
+                                                      const Guanabara()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -954,12 +954,12 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/aguasLindas.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Águas Lindas",
                                         style: TextStyle(
@@ -1022,7 +1022,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1037,9 +1037,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Aguaslindas()));
+                                                      const Aguaslindas()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1065,11 +1065,11 @@ class _MapaDAENTState extends State<MapaDAENT> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage("assets/Images/Aura.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Aurá",
                                         style: TextStyle(
@@ -1132,7 +1132,7 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1147,9 +1147,9 @@ class _MapaDAENTState extends State<MapaDAENT> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Aura()));
+                                                      const Aura()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",

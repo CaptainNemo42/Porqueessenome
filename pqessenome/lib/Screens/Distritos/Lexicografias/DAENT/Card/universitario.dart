@@ -14,8 +14,8 @@ class _UniversitarioState extends State<Universitario> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
-            image: AssetImage("assets/Components/LOGOBG.png"),
+          title: const Image(
+            image: const AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
           ),
@@ -33,7 +33,7 @@ class _UniversitarioState extends State<Universitario> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/universitario.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,

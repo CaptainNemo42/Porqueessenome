@@ -56,7 +56,7 @@ class _CremacaoState extends State<Cremacao> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antrotopônimo",
+              const Text("Historiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _CremacaoState extends State<Cremacao> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antrotopônimo",
+              const Text("Taxonomia: Historiotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +110,7 @@ class _CremacaoState extends State<Cremacao> {
                   )),
               const Center(
                 child: Text(
-                  "*Batista Adj. mas. sing. do gr. baptizo que significa mergulhar\n*Campos S. mas.pl. do lat. campi",
+                  "S. fem. Incinerar, queimar (cadáveres)",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

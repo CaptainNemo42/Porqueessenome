@@ -104,7 +104,7 @@ class _QuizLexScreenDABENState extends State<QuizLexScreenDABEN> {
                 child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
                     child: const Image(
-                      image: AssetImage("assets/Images/dabelC.jpeg"),
+                      image: AssetImage("assets/Images/dabenC.png"),
                       fit: BoxFit.fill,
                       height: 140,
                       width: double.infinity,

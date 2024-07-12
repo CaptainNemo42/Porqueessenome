@@ -8,7 +8,7 @@ import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEN/Card/coqueiro.d
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEN/Card/pratinha.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEN/Card/saoclemente.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEN/Card/una.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DAICO/Card/paracuri.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEN/Card/parqueverde.dart';
 
 class MapaDABEN extends StatefulWidget {
   const MapaDABEN({super.key});
@@ -23,7 +23,7 @@ class _MapaDABENState extends State<MapaDABEN> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "DABEN",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
@@ -64,12 +64,12 @@ class _MapaDABENState extends State<MapaDABEN> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/tapana.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Tapanâ",
                                         style: TextStyle(
@@ -132,7 +132,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -147,9 +147,9 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Tapana()));
+                                                      const Tapana()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -175,12 +175,12 @@ class _MapaDABENState extends State<MapaDABEN> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/pratinha.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Pratinha",
                                         style: TextStyle(
@@ -243,7 +243,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -258,9 +258,9 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Pratinha()));
+                                                      const Pratinha()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -286,11 +286,11 @@ class _MapaDABENState extends State<MapaDABEN> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage("assets/Images/sao.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "São Clemente",
                                         style: TextStyle(
@@ -353,7 +353,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -368,9 +368,9 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Saoclemente()));
+                                                      const Saoclemente()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -396,12 +396,12 @@ class _MapaDABENState extends State<MapaDABEN> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/bengui.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Bengui",
                                         style: TextStyle(
@@ -464,7 +464,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -479,9 +479,9 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Bengui()));
+                                                      const Bengui()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -507,12 +507,12 @@ class _MapaDABENState extends State<MapaDABEN> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/parqueverde.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Parque Verde",
                                         style: TextStyle(
@@ -575,7 +575,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -590,9 +590,9 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Paracuri()));
+                                                      Parqueverde()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -618,12 +618,12 @@ class _MapaDABENState extends State<MapaDABEN> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/coqueiro.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Coqueiro",
                                         style: TextStyle(
@@ -686,7 +686,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -701,9 +701,9 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Coqueiro()));
+                                                      const Coqueiro()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -729,12 +729,12 @@ class _MapaDABENState extends State<MapaDABEN> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/cabanagem.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Cabanagem",
                                         style: TextStyle(
@@ -797,7 +797,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -812,9 +812,9 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Cabanagem()));
+                                                      const Cabanagem()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -907,7 +907,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -921,9 +921,10 @@ class _MapaDABENState extends State<MapaDABEN> {
                                           Navigator.push(
                                               context,
                                               MaterialPageRoute(
-                                                  builder: (context) => Una()));
+                                                  builder: (context) =>
+                                                      const Una()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",

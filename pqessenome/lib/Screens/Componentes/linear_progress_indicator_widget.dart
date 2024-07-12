@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Componentes/Restart.dart';
+import 'package:pqessenome/Screens/Componentes/restart.dart';
 
 class MyProgressIndicator extends StatefulWidget {
   const MyProgressIndicator({
@@ -12,7 +12,7 @@ class MyProgressIndicator extends StatefulWidget {
 }
 
 class _MyProgressIndicatorState extends State<MyProgressIndicator> {
-  int timerSeconds = 50;
+  int timerSeconds = 45;
   Timer? _timer;
 
   @override
@@ -37,7 +37,7 @@ class _MyProgressIndicatorState extends State<MyProgressIndicator> {
   void navigateToNewScreen() {
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (context) => Restart(),
+        builder: (context) => const Restart(),
       ),
     );
   }
@@ -57,8 +57,8 @@ class _MyProgressIndicatorState extends State<MyProgressIndicator> {
         child: LinearProgressIndicator(
           minHeight: 20,
           value: 1 - (timerSeconds / 45),
-          backgroundColor: Color.fromARGB(255, 252, 160, 135),
-          color: Color.fromARGB(255, 169, 87, 64),
+          backgroundColor: const Color.fromARGB(255, 252, 160, 135),
+          color: const Color.fromARGB(255, 169, 87, 64),
           valueColor: const AlwaysStoppedAnimation(bgColor),
         ),
       ),

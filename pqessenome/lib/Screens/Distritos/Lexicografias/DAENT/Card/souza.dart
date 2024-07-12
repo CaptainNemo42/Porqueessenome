@@ -14,7 +14,7 @@ class _SouzaState extends State<Souza> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -33,7 +33,7 @@ class _SouzaState extends State<Souza> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/Souza.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -44,7 +44,7 @@ class _SouzaState extends State<Souza> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Batista Campos",
+                    "Souza",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -56,7 +56,7 @@ class _SouzaState extends State<Souza> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antrotopônimo",
+              const Text("Antropohistoriotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -77,13 +77,13 @@ class _SouzaState extends State<Souza> {
                   fontSize: 20.0,
                 ),
               ),
-              const Text("Topônimo: Batista Campos",
+              const Text("Topônimo: Souza",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antrotopônimo",
+              const Text("Taxonomia: Antropohistoriotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +110,7 @@ class _SouzaState extends State<Souza> {
                   )),
               const Center(
                 child: Text(
-                  "*Batista Adj. mas. sing. do gr. baptizo que significa mergulhar\n*Campos S. mas.pl. do lat. campi",
+                  "Subs. masc. Sobrenome toponímico de origem Portuguesa, referência às terras de Sousa, junto ao rio homônimo em Foz de Sousa, próximo à cidade do Porto em Portugal. ( Saza ou Saxa = seixos, pedras, rochas ) figurado: duro (como pedra ), insensível",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

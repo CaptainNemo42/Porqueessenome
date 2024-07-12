@@ -24,7 +24,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "DAICO",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
@@ -65,12 +65,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/cruzeiro.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Cruzeiro",
                                         style: TextStyle(
@@ -133,7 +133,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -148,9 +148,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Cruzeiro()));
+                                                      const Cruzeiro()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -176,12 +176,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/pontagrossa.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Ponta Grossa",
                                         style: TextStyle(
@@ -244,7 +244,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -259,9 +259,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Pontagrossa()));
+                                                      const Pontagrossa()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -287,12 +287,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/paracuri.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Paracuri",
                                         style: TextStyle(
@@ -323,7 +323,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena",
+                                        "Tupinambá ou Tupi de Belém + Tupi Antigo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -355,7 +355,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -370,9 +370,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Paracuri()));
+                                                      const Paracuri()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -398,12 +398,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/agulha.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Agulha",
                                         style: TextStyle(
@@ -466,7 +466,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -481,9 +481,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Agulha()));
+                                                      const Agulha()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -509,12 +509,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/campinaicoaraci.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Campina de Icoaraci",
                                         style: TextStyle(
@@ -577,7 +577,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -592,9 +592,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Campinadeicoaraci()));
+                                                      const Campinadeicoaraci()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -620,12 +620,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/parqueguajara.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Parque Guajará",
                                         style: TextStyle(
@@ -688,7 +688,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -703,9 +703,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Parqueguajara()));
+                                                      const Parqueguajara()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -731,12 +731,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/aguasnegras.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Águas Negras",
                                         style: TextStyle(
@@ -799,7 +799,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -814,9 +814,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Aguasnegras()));
+                                                      const Aguasnegras()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -842,12 +842,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/maracacuera.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Maracacuera",
                                         style: TextStyle(
@@ -910,7 +910,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -925,9 +925,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Maracacuera()));
+                                                      const Maracacuera()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -953,12 +953,12 @@ class _MapaDAICOState extends State<MapaDAICO> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/tenone.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Tenoné",
                                         style: TextStyle(
@@ -1021,7 +1021,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1036,9 +1036,9 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Tenone()));
+                                                      const Tenone()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",

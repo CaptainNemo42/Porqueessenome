@@ -56,7 +56,7 @@ class _SacramentaState extends State<Sacramenta> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Animotopônimo",
+              const Text("Litotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _SacramentaState extends State<Sacramenta> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Animotopônimo",
+              const Text("Taxonomia: Litotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -96,7 +96,7 @@ class _SacramentaState extends State<Sacramenta> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
+              const Text("Física",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +110,7 @@ class _SacramentaState extends State<Sacramenta> {
                   )),
               const Center(
                 child: Text(
-                  "S. masc. corruptela de sacramento o que é sacro, sagrado.",
+                  "S, masc. que vem de barro – tipo de argila “substância usada no assentamento da alvenaria de tijolo em obras provisórias; barreiro – local onde há barro.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

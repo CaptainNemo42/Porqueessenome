@@ -21,7 +21,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "DAGUA",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
@@ -62,12 +62,12 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/jurunas.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Jurunas",
                                         style: TextStyle(
@@ -78,7 +78,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Jurunas\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Jurunas\nTaxonomia: Etnotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -98,7 +98,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Juruna do troco Tupi – “ yudijá”",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -117,7 +117,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.C. masc. [S. pl. + Adj. pl]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -130,7 +130,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -145,9 +145,9 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Jurunas()));
+                                                      const Jurunas()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -173,12 +173,12 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/condor.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Condor",
                                         style: TextStyle(
@@ -189,7 +189,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Condor\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Condor\nTaxonomia: Zootopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -209,7 +209,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Do Casteliano – “Cóndur”, derivado do quíchua “kúntur”",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -228,7 +228,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. masc. [S. sing.]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -241,7 +241,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -256,9 +256,9 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Condor()));
+                                                      const Condor()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -284,12 +284,12 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/cremacao.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Cremação",
                                         style: TextStyle(
@@ -300,7 +300,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Cremação\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Cremação\nTaxonomia: Historiotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -320,7 +320,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Do Latim – “ cremãtiõõnis”",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -339,7 +339,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. fem. [S. sing. + sufixo]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -352,7 +352,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -367,9 +367,9 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Cremacao()));
+                                                      const Cremacao()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -395,12 +395,12 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/guama.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Guamá",
                                         style: TextStyle(
@@ -411,7 +411,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Guamá\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Guamá\nTaxonomia: Hidrotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -431,7 +431,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Tupi – rio que chove",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -450,7 +450,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. masc. [S. sing.]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -463,7 +463,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -478,9 +478,9 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Guama()));
+                                                      const Guama()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -506,12 +506,12 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/terrafirme.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Terra Firme",
                                         style: TextStyle(
@@ -522,7 +522,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Terra Firme\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Terra Firme\nTaxonomia: Litotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -542,7 +542,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Do Latim – terra, ae\nLatim vulgar – firmis (seguro, fixo, estável)",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -561,7 +561,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.C. fem. [S. sing. + Adj. sing.]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -574,7 +574,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -589,9 +589,9 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Terrafirme()));
+                                                      const Terrafirme()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -617,12 +617,12 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/canudos.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Canudos",
                                         style: TextStyle(
@@ -633,7 +633,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Canudos\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Canudos\nTaxonomia: Historiotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -653,7 +653,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Do Moçárabe “gannút” derivado de uma forma hispânica “cannutus”, semelhante à cana (do Latim canna, ae",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -672,7 +672,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.S. masc. [ S. pl. ]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -685,7 +685,7 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -700,9 +700,9 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Canudos()));
+                                                      const Canudos()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",

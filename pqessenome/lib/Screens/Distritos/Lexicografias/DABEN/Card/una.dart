@@ -14,8 +14,8 @@ class _UnaState extends State<Una> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
-            image: AssetImage("assets/Components/LOGOBG.png"),
+          title: const Image(
+            image: const AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
           ),
@@ -33,7 +33,7 @@ class _UnaState extends State<Una> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/Una.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -44,7 +44,7 @@ class _UnaState extends State<Una> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Batista Campos",
+                    "Una",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -56,7 +56,7 @@ class _UnaState extends State<Una> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antrotopônimo",
+              const Text("Cromocardiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -77,13 +77,13 @@ class _UnaState extends State<Una> {
                   fontSize: 20.0,
                 ),
               ),
-              const Text("Topônimo: Batista Campos",
+              const Text("Topônimo: Una",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antrotopônimo",
+              const Text("Taxonomia: Cromocardiotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -96,7 +96,7 @@ class _UnaState extends State<Una> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
+              const Text("Física",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +110,7 @@ class _UnaState extends State<Una> {
                   )),
               const Center(
                 child: Text(
-                  "*Batista Adj. mas. sing. do gr. baptizo que significa mergulhar\n*Campos S. mas.pl. do lat. campi",
+                  "Bairro limítrofe da cidade de Belém com o município de Ananindeua, sendo parte da Bacia do Igarapé Una, que leva esse nome pela cor de suas águas.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

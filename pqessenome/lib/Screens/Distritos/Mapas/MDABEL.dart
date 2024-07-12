@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, file_names, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Batistacampos.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Campinas.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Marco.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/Nazare.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/batistacampos.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/campinas.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/marco.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/nazare.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/cidadevelha.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/reduto.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/saobras.dart';
@@ -302,7 +302,7 @@ class _MDABELState extends State<MDABEL> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Campina\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Campinas\nTaxonomia: Fitotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -341,7 +341,7 @@ class _MDABELState extends State<MDABEL> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. Sing.",
+                                        "T.S. pl.",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -857,7 +857,7 @@ class _MDABELState extends State<MDABEL> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Batista Campos\nTaxonomia: Antrotopônimo",
+                                        "Município: Belém\nTopônimo: Marco\nTaxonomia: Historiocardinotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -877,7 +877,7 @@ class _MDABELState extends State<MDABEL> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Híbrido (Grego + Latim)",
+                                        "Germânica (Marka)",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -896,7 +896,7 @@ class _MDABELState extends State<MDABEL> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.C. Masc [Adj. Sing + S. Sing.]",
+                                        "T.S. masc. [S. Sing.]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),

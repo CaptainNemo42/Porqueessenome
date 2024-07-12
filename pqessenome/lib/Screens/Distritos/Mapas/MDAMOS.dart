@@ -3,15 +3,24 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/aeroporto.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/aribamba.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/baiadosol.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/bonfim.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/carananduba.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/caruara.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/chapeuvirado.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/farol.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/mangueiras.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/maracaja.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/marau.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/murubira.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/nataldomurubira.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/paraiso.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/portoarthur.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/praiagrande.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/saofrancisco.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/sucurijuquara.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/vila.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/zonarural.dart';
 
 class MapaDAMOS extends StatefulWidget {
   const MapaDAMOS({super.key});
@@ -26,7 +35,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
+          title: const Text(
             "DAMOS",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
@@ -67,11 +76,11 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage("assets/Images/vila.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Vila",
                                         style: TextStyle(
@@ -134,7 +143,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -149,9 +158,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Vila()));
+                                                      const Vila()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -177,12 +186,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/praiagrande.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Praia Grande",
                                         style: TextStyle(
@@ -193,7 +202,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Praia Grande\nTaxonomia: Fitotopônimo",
+                                        "Município: Belém\nTopônimo: Praia Grande\nTaxonomia: Dimensiotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -213,7 +222,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "Indígena – Y-mori",
+                                        "Do Latim tardio: “plagia” derivado do Grego plágia + Latim “ grandis”",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -232,7 +241,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                         textAlign: TextAlign.center,
                                       ),
                                       Text(
-                                        "T.S. masc. [S. sing. + cons. de ligação + sufixo]",
+                                        "T.C. fem. [S. sing. + Adj. sing.]",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -245,7 +254,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -260,9 +269,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      praiagrande()));
+                                                      const praiagrande()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -288,12 +297,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/maracaja.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Maracajá",
                                         style: TextStyle(
@@ -356,7 +365,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -371,9 +380,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Maracaja()));
+                                                      const Maracaja()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -399,12 +408,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/mangueiras.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Mangueiras",
                                         style: TextStyle(
@@ -467,7 +476,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -482,9 +491,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Mangueiras()));
+                                                      const Mangueiras()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -510,12 +519,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/farol.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Farol",
                                         style: TextStyle(
@@ -578,7 +587,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -593,9 +602,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Farol()));
+                                                      const Farol()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -621,12 +630,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/aeroporto.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Aeroporto",
                                         style: TextStyle(
@@ -689,7 +698,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -704,9 +713,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Aeroporto()));
+                                                      const Aeroporto()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -732,12 +741,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/chapeuvirado.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Chapéu Virado",
                                         style: TextStyle(
@@ -800,7 +809,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -815,9 +824,120 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Chapeuvirado()));
+                                                      const Chapeuvirado()));
                                         },
-                                        child: Text(
+                                        child: const Text(
+                                          "Ver Mais",
+                                          style: TextStyle(
+                                              fontFamily: "PoppinsBold",
+                                              color: Color.fromRGBO(
+                                                  255, 165, 0, 1),
+                                              fontSize: 25.0,
+                                              fontWeight: FontWeight.bold),
+                                        )),
+                                  ],
+                                ));
+                      },
+                      child: Image.asset(
+                        "assets/Components/Logo.png",
+                        height: 70,
+                        width: 70,
+                      ),
+                    )),
+                Positioned(
+                    top: 975,
+                    left: 730,
+                    child: GestureDetector(
+                      onTap: () {
+                        showDialog(
+                            context: context,
+                            builder: (context) => AlertDialog(
+                                  title: const Image(
+                                    image: AssetImage(
+                                        "assets/Images/nataldomurubira.png"),
+                                  ),
+                                  content: const Column(
+                                    children: [
+                                      Text(
+                                        "Natal do Murubira",
+                                        style: TextStyle(
+                                            fontFamily: "PoppinsBold",
+                                            color:
+                                                Color.fromRGBO(50, 50, 50, 1),
+                                            fontSize: 25.0,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      Text(
+                                        "Município: Belém\nTopônimo: Natal do Murubira\nTaxonomia: Historiotopônimo",
+                                        style: TextStyle(
+                                          fontFamily: "Light",
+                                          color: Color.fromRGBO(50, 50, 50, 1),
+                                          fontSize: 17.0,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      Divider(),
+                                      Text(
+                                        "Origem:",
+                                        style: TextStyle(
+                                            fontFamily: "Light",
+                                            color:
+                                                Color.fromRGBO(50, 50, 50, 1),
+                                            fontSize: 17.0,
+                                            fontWeight: FontWeight.bold),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      Text(
+                                        "Hibrido – Natal – do Latim: natalis = nascer\nMurubira - Tupi",
+                                        style: TextStyle(
+                                          fontFamily: "Light",
+                                          color: Color.fromRGBO(50, 50, 50, 1),
+                                          fontSize: 17.0,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      Text(
+                                        "Estrutura Morfológica:",
+                                        style: TextStyle(
+                                            fontFamily: "Light",
+                                            color:
+                                                Color.fromRGBO(50, 50, 50, 1),
+                                            fontSize: 17.0,
+                                            fontWeight: FontWeight.bold),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      Text(
+                                        "T.C. masc. [S. sing. + prep. + S. sing.]",
+                                        style: TextStyle(
+                                          fontFamily: "Light",
+                                          color: Color.fromRGBO(50, 50, 50, 1),
+                                          fontSize: 17.0,
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ],
+                                  ),
+                                  actions: [
+                                    TextButton(
+                                        onPressed: () => Navigator.pop(context),
+                                        child: const Text(
+                                          "Fechar",
+                                          style: TextStyle(
+                                              fontFamily: "PoppinsBold",
+                                              color: Color.fromRGBO(
+                                                  255, 165, 0, 1),
+                                              fontSize: 25.0,
+                                              fontWeight: FontWeight.bold),
+                                        )),
+                                    TextButton(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Nataldomurubira()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -843,12 +963,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/portoarthur.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Porto Arthur",
                                         style: TextStyle(
@@ -911,7 +1031,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -926,9 +1046,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Portoarthur()));
+                                                      const Portoarthur()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -954,12 +1074,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/murubira.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Murubira",
                                         style: TextStyle(
@@ -1022,7 +1142,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1037,9 +1157,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Murubira()));
+                                                      const Murubira()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1065,12 +1185,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/aribamba.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Aribamba",
                                         style: TextStyle(
@@ -1133,7 +1253,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1148,9 +1268,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Aribamba()));
+                                                      const Aribamba()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1176,12 +1296,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/saofrancisco.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "São Francisco",
                                         style: TextStyle(
@@ -1244,7 +1364,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1259,9 +1379,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Aribamba()));
+                                                      const Saofrancisco()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1287,12 +1407,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/carananduba.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Carananduba",
                                         style: TextStyle(
@@ -1355,7 +1475,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1370,9 +1490,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Carananduba()));
+                                                      const Carananduba()));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1398,12 +1518,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/marau.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Maraú",
                                         style: TextStyle(
@@ -1466,7 +1586,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1476,113 +1596,14 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
-                                          "Ver Mais",
-                                          style: TextStyle(
-                                              fontFamily: "PoppinsBold",
-                                              color: Color.fromRGBO(
-                                                  255, 165, 0, 1),
-                                              fontSize: 25.0,
-                                              fontWeight: FontWeight.bold),
-                                        )),
-                                  ],
-                                ));
-                      },
-                      child: Image.asset(
-                        "assets/Components/Logo.png",
-                        height: 70,
-                        width: 70,
-                      ),
-                    )),
-                Positioned(
-                    top: 400,
-                    left: 1350,
-                    child: GestureDetector(
-                      onTap: () {
-                        showDialog(
-                            context: context,
-                            builder: (context) => AlertDialog(
-                                  title: Image(
-                                    image: AssetImage(
-                                        "assets/Images/sucurijuquara.png"),
-                                  ),
-                                  content: Column(
-                                    children: const [
-                                      Text(
-                                        "Sucurijuquara",
-                                        style: TextStyle(
-                                            fontFamily: "PoppinsBold",
-                                            color:
-                                                Color.fromRGBO(50, 50, 50, 1),
-                                            fontSize: 25.0,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                      Text(
-                                        "Município: Belém\nTopônimo: Sucurijuquara\nTaxonomia: Etnotopônimo",
-                                        style: TextStyle(
-                                          fontFamily: "Light",
-                                          color: Color.fromRGBO(50, 50, 50, 1),
-                                          fontSize: 17.0,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      Divider(),
-                                      Text(
-                                        "Origem:",
-                                        style: TextStyle(
-                                            fontFamily: "Light",
-                                            color:
-                                                Color.fromRGBO(50, 50, 50, 1),
-                                            fontSize: 17.0,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      Text(
-                                        "Tupi – Guajará : “sukuri ' jura”",
-                                        style: TextStyle(
-                                          fontFamily: "Light",
-                                          color: Color.fromRGBO(50, 50, 50, 1),
-                                          fontSize: 17.0,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      Text(
-                                        "Estrutura Morfológica:",
-                                        style: TextStyle(
-                                            fontFamily: "Light",
-                                            color:
-                                                Color.fromRGBO(50, 50, 50, 1),
-                                            fontSize: 17.0,
-                                            fontWeight: FontWeight.bold),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                      Text(
-                                        "T.C. masc. [S. sing. + S. sing.]",
-                                        style: TextStyle(
-                                          fontFamily: "Light",
-                                          color: Color.fromRGBO(50, 50, 50, 1),
-                                          fontSize: 17.0,
-                                        ),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ],
-                                  ),
-                                  actions: [
-                                    TextButton(
-                                        onPressed: () => Navigator.pop(context),
-                                        child: Text(
-                                          "Fechar",
-                                          style: TextStyle(
-                                              fontFamily: "PoppinsBold",
-                                              color: Color.fromRGBO(
-                                                  255, 165, 0, 1),
-                                              fontSize: 25.0,
-                                              fontWeight: FontWeight.bold),
-                                        )),
-                                    TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Marau()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1608,12 +1629,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/bonfim.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Bonfim",
                                         style: TextStyle(
@@ -1676,7 +1697,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1686,8 +1707,14 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Bonfim()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1713,12 +1740,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/caruara.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Caruara",
                                         style: TextStyle(
@@ -1781,7 +1808,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1791,8 +1818,14 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Caruara()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1818,12 +1851,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image:
                                         AssetImage("assets/Images/paraiso.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Paraíso",
                                         style: TextStyle(
@@ -1886,7 +1919,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1896,8 +1929,14 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Paraiso()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -1923,12 +1962,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/sucurijuquara.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Sucurijuquara",
                                         style: TextStyle(
@@ -1991,7 +2030,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -2001,8 +2040,14 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Sucurijuquara()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -2028,12 +2073,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/baiadosol.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Baía do Sol",
                                         style: TextStyle(
@@ -2096,7 +2141,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -2106,8 +2151,14 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Baiadosol()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -2133,12 +2184,12 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                                  title: Image(
+                                  title: const Image(
                                     image: AssetImage(
                                         "assets/Images/zonarural.png"),
                                   ),
-                                  content: Column(
-                                    children: const [
+                                  content: const Column(
+                                    children: [
                                       Text(
                                         "Zona Rural",
                                         style: TextStyle(
@@ -2149,7 +2200,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: São Brás\nTaxonomia: Hagiotopônimo",
+                                        "Município: Belém\nTopônimo: Zona Rural\nTaxonomia: Hagiotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),
@@ -2201,7 +2252,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                   actions: [
                                     TextButton(
                                         onPressed: () => Navigator.pop(context),
-                                        child: Text(
+                                        child: const Text(
                                           "Fechar",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
@@ -2211,8 +2262,14 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                               fontWeight: FontWeight.bold),
                                         )),
                                     TextButton(
-                                        onPressed: () {},
-                                        child: Text(
+                                        onPressed: () {
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      const Zonarural()));
+                                        },
+                                        child: const Text(
                                           "Ver Mais",
                                           style: TextStyle(
                                               fontFamily: "PoppinsBold",
