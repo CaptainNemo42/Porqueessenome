@@ -1,16 +1,9 @@
-// ignore_for_file: file_names, unused_import
-
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/marco.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/batistacampos.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/campinas.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/Card/nazare.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/LDABEL2.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel2.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel3.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel4.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel5.dart';
 
 class LDabel extends StatefulWidget {
   const LDabel({super.key});
@@ -26,7 +19,7 @@ class _LDabelState extends State<LDabel> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,

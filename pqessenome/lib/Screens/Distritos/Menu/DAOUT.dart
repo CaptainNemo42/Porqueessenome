@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAOUT/LDAOUT.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADaout/TADaout.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAOUT/TOPDAOUT.dart';
 import 'package:pqessenome/Screens/Quizz/QuizzTipoDaout.dart';
 import '../Mapas/MDAOUT.dart';
@@ -133,33 +132,6 @@ class _DAOUTState extends State<DAOUT> {
                         ),
                         label: const Text(
                           "Lexicografias",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 200,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const TADaout()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Taxonomias",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),

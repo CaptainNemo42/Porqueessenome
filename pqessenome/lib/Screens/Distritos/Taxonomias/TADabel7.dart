@@ -1,20 +1,20 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Dirrematoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Ecotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/Card/Ergotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel2.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel4.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Numerotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Zootoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/somatoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel6.dart';
 
-class TADabel3 extends StatefulWidget {
-  const TADabel3({super.key});
+class TADabel7 extends StatefulWidget {
+  const TADabel7({super.key});
 
   @override
-  State<TADabel3> createState() => _TADabel3State();
+  State<TADabel7> createState() => _TADabel7State();
 }
 
-class _TADabel3State extends State<TADabel3> {
+class _TADabel7State extends State<TADabel7> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,8 +41,38 @@ class _TADabel3State extends State<TADabel3> {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                  Image.asset('assets/Images/dabelC.jpeg',
-                      fit: BoxFit.cover, width: double.infinity),
+                  const SizedBox(height: 30),
+                  const Stack(children: [
+                    Center(
+                        child: Image(
+                            image:
+                                AssetImage('assets/Components/LOGOFADE.png'))),
+                    Center(
+                      child: Column(
+                        children: [
+                          Text(
+                            'Por que',
+                            style: TextStyle(
+                                fontFamily: "Bold",
+                                color: Color.fromRGBO(255, 165, 0, 1),
+                                fontSize: 50.0,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                          Text(
+                            'esse nome?',
+                            style: TextStyle(
+                                fontFamily: "Bold",
+                                color: Color.fromRGBO(255, 165, 0, 1),
+                                fontSize: 50.0,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ]),
+                  const SizedBox(height: 30),
                   Container(
                     height: 50,
                     width: double.infinity,
@@ -68,7 +98,7 @@ class _TADabel3State extends State<TADabel3> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      const Dirrematoponimo()));
+                                      const Numerotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -79,7 +109,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Dirrematopônimos",
+                          "Numerotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -95,7 +125,7 @@ class _TADabel3State extends State<TADabel3> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Ecotoponimo()));
+                                  builder: (context) => const Somatoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -106,7 +136,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Ecotopônimos",
+                          "Somatopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -122,7 +152,7 @@ class _TADabel3State extends State<TADabel3> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Ergotoponimo()));
+                                  builder: (context) => const Zootoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -133,34 +163,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Ergotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Ergotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Ergotopônimos",
+                          "Zootopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -178,7 +181,7 @@ class _TADabel3State extends State<TADabel3> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const TADabel2()));
+                                    builder: (context) => const TADabel6()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -186,7 +189,7 @@ class _TADabel3State extends State<TADabel3> {
                         const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 28.png"),
+                              AssetImage("assets/Components/Component 32.png"),
                           height: 91.0,
                           width: 90.0,
                         ),
@@ -196,7 +199,7 @@ class _TADabel3State extends State<TADabel3> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const TADabel4()));
+                                    builder: (context) => const TADabel()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child:

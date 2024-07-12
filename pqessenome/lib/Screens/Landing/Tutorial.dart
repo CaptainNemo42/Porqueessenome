@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DABEL/LDABEL.dart';
 import 'package:pqessenome/Screens/Distritos/Mapas/MDABEL.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel/TADabel.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel.dart';
 import 'package:pqessenome/Screens/Quizz/QuizzTipoDabel.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 import '../Componentes/coach_mark.dart';

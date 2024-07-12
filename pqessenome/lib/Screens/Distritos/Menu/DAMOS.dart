@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/LDAMOS.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADamos/TADamos.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/TOPDAMOS.dart';
 import 'package:pqessenome/Screens/Quizz/QuizzTIpoDaico.dart';
 import '../Mapas/MDAMOS.dart';
@@ -133,33 +132,6 @@ class _DAMOSState extends State<DAMOS> {
                         ),
                         label: const Text(
                           "Lexicografias",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 200,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const TADamos()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Taxonomias",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),

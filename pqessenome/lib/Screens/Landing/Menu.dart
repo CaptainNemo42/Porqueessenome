@@ -9,6 +9,7 @@ import 'package:pqessenome/Screens/Distritos/Menu/DAICO.dart';
 import 'package:pqessenome/Screens/Distritos/Menu/DAMOS.dart';
 import 'package:pqessenome/Screens/Distritos/Menu/DAOUT.dart';
 import 'package:pqessenome/Screens/Distritos/Menu/DASAC.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel.dart';
 
 class Menu extends StatefulWidget {
   const Menu({super.key});
@@ -325,6 +326,33 @@ class _MenuState extends State<Menu> {
                                     fontWeight: FontWeight.bold),
                               )),
                         ],
+                      ),
+                      const SizedBox(height: 20.0),
+                      SizedBox(
+                        width: 350,
+                        child: TextButton.icon(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const TADabel()));
+                            },
+                            icon: const Icon(Icons.notes,
+                                color: Color.fromRGBO(50, 50, 50, 1)),
+                            style: TextButton.styleFrom(
+                              elevation: 5,
+                              shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                              backgroundColor: const Color.fromRGBO(
+                                  240, 240, 240, 1), // Background Color
+                            ),
+                            label: const Text(
+                              "TAXONOMIAS",
+                              style: TextStyle(
+                                  fontFamily: "SemiBold",
+                                  color: Color.fromRGBO(50, 50, 50, 1),
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold),
+                            )),
                       ),
                     ],
                   ),

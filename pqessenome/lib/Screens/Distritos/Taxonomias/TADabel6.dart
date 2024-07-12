@@ -1,15 +1,20 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Morfotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/poliotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/sociotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel5.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel7.dart';
 
-class TADaico extends StatefulWidget {
-  const TADaico({super.key});
+class TADabel6 extends StatefulWidget {
+  const TADabel6({super.key});
 
   @override
-  State<TADaico> createState() => _TADaicoState();
+  State<TADabel6> createState() => _TADabel6State();
 }
 
-class _TADaicoState extends State<TADaico> {
+class _TADabel6State extends State<TADabel6> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,8 +41,38 @@ class _TADaicoState extends State<TADaico> {
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                  Image.asset('assets/Images/daicoC.png',
-                      fit: BoxFit.cover, width: double.infinity),
+                  const SizedBox(height: 30),
+                  const Stack(children: [
+                    Center(
+                        child: Image(
+                            image:
+                                AssetImage('assets/Components/LOGOFADE.png'))),
+                    Center(
+                      child: Column(
+                        children: [
+                          Text(
+                            'Por que',
+                            style: TextStyle(
+                                fontFamily: "Bold",
+                                color: Color.fromRGBO(255, 165, 0, 1),
+                                fontSize: 50.0,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                          Text(
+                            'esse nome?',
+                            style: TextStyle(
+                                fontFamily: "Bold",
+                                color: Color.fromRGBO(255, 165, 0, 1),
+                                fontSize: 50.0,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ]),
+                  const SizedBox(height: 30),
                   Container(
                     height: 50,
                     width: double.infinity,
@@ -58,7 +93,12 @@ class _TADaicoState extends State<TADaico> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Morfotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -68,7 +108,7 @@ class _TADaicoState extends State<TADaico> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Astrotopônimos",
+                          "Morfotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -80,7 +120,12 @@ class _TADaicoState extends State<TADaico> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Poliotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -90,7 +135,7 @@ class _TADaicoState extends State<TADaico> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Cardinotopônimos",
+                          "Poliotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -102,7 +147,12 @@ class _TADaicoState extends State<TADaico> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Sociotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -112,7 +162,7 @@ class _TADaicoState extends State<TADaico> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Cromotopônimos",
+                          "Historiotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -124,7 +174,12 @@ class _TADaicoState extends State<TADaico> {
                   SizedBox(
                     width: 280,
                     child: TextButton.icon(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Sociotoponimo()));
+                        },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
                         style: TextButton.styleFrom(
@@ -134,7 +189,7 @@ class _TADaicoState extends State<TADaico> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Dimensiotopônimos",
+                          "Sociotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -148,20 +203,30 @@ class _TADaicoState extends State<TADaico> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         FloatingActionButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const TADabel5()));
+                          },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child: const Icon(Icons.keyboard_arrow_left_outlined),
                         ),
-                        const SizedBox(width: 10),
+                        const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 1.png"),
+                              AssetImage("assets/Components/Component 31.png"),
                           height: 91.0,
                           width: 90.0,
                         ),
-                        const SizedBox(width: 10),
+                        const SizedBox(width: 15),
                         FloatingActionButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const TADabel7()));
+                          },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child:
                               const Icon(Icons.keyboard_arrow_right_outlined),
