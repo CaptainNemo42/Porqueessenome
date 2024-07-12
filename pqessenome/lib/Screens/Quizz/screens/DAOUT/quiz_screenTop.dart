@@ -59,16 +59,6 @@ class _QuizTopScreenDAOUTState extends State<QuizTopScreenDAOUT> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Padding(
-                padding: const EdgeInsets.only(left: 5, right: 5, top: 5),
-                child: ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: const Image(
-                      image: AssetImage("assets/Images/dabelC.jpeg"),
-                      fit: BoxFit.fill,
-                      height: 150,
-                      width: double.infinity,
-                    ))),
             Text(
               question.question,
               style: const TextStyle(
