@@ -70,7 +70,7 @@ class _HidrotoponimoState extends State<Hidrotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Astrotopônimos",
+                    "Hidrotoponimos",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),

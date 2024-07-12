@@ -70,7 +70,7 @@ class _ZootoponimoState extends State<Zootoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Astrotopônimos",
+                    "Zootoponimos",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),

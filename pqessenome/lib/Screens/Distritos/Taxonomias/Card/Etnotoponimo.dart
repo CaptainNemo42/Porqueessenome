@@ -70,7 +70,7 @@ class _EtnotoponimoState extends State<Etnotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Astrotopônimos",
+                    "Etnotoponimos",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),

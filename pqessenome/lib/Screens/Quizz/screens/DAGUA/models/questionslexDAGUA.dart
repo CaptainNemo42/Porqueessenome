@@ -33,7 +33,7 @@ const List<Question> questions = [
   ),
   Question(
     question: '4. Com relação a natureza de "Condor", é incorreto dizer:',
-    correctAnswerIndex: 1,
+    correctAnswerIndex: 0,
     options: [
       'a) Relativo a ave condor',
       'b) Possui natureza física',

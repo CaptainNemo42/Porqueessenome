@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Landing/flashcard.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/quiz_screenTaxDABEL.dart';
 
 class Axiotoponimo extends StatefulWidget {
   const Axiotoponimo({super.key});
@@ -70,7 +71,7 @@ class _AxiotoponimoState extends State<Axiotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Astrotopônimos",
+                    "Axiotopônimos",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,7 +90,7 @@ class _AxiotoponimoState extends State<Axiotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "formado de antropotopônimo acrescido de título.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
@@ -103,7 +104,7 @@ class _AxiotoponimoState extends State<Axiotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
+              const Text("bairro São Paulo (SP); Rua Duque de Caxias (PA).",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -113,7 +114,13 @@ class _AxiotoponimoState extends State<Axiotoponimo> {
               SizedBox(
                 width: 200,
                 child: TextButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const QuizTaxScreenDABEL()));
+                    },
                     icon: const Icon(Icons.assignment_outlined,
                         color: Color.fromRGBO(50, 50, 50, 1)),
                     style: TextButton.styleFrom(
