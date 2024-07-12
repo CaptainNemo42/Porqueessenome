@@ -89,7 +89,7 @@ class _CardinotoponimoState extends State<Cardinotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "Relativo a posição geográfica.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
@@ -103,7 +103,7 @@ class _CardinotoponimoState extends State<Cardinotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
+              const Text("São João do Oriente (MG); Colorado do Oeste (RO).",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

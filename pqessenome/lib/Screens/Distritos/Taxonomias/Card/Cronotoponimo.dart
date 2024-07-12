@@ -103,7 +103,8 @@ class _CronotoponimoState extends State<Cronotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
+              const Text(
+                  "distrito de Vermelho Velho (Raul Soares-MG); rua Primeiro de Março",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

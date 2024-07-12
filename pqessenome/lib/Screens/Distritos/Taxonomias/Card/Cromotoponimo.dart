@@ -89,7 +89,7 @@ class _CromotoponimoState extends State<Cromotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "Relativo a coloração.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
@@ -103,7 +103,7 @@ class _CromotoponimoState extends State<Cromotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
+              const Text("rio Negro, rio Pardo.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

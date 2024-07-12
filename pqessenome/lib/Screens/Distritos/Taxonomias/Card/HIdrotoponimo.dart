@@ -89,7 +89,7 @@ class _HidrotoponimoState extends State<Hidrotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "Relativo a acidentes hi-drográficos em geral, como água, rio, córrego, ribeirão, lagoa, nas-cente, cachoeira e foz etc.:",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

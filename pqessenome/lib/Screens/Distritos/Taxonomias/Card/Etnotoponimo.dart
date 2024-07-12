@@ -89,7 +89,7 @@ class _EtnotoponimoState extends State<Etnotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "Relativo a grupos étnicos, individuais ou não, como povos, tribos, castas, famílias etc.:",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

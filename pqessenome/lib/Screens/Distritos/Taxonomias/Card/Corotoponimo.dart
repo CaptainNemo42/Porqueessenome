@@ -89,7 +89,7 @@ class _CorotoponimoState extends State<Corotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "Relativo a espaços territoriais.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
@@ -103,7 +103,7 @@ class _CorotoponimoState extends State<Corotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
+              const Text("rua Uruguai (Rio de Janeiro-RJ).",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

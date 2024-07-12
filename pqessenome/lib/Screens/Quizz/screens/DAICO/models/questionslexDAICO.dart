@@ -12,27 +12,27 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Complete: Batista, baptizo que significa _________',
+    question: '2. Complete: Cruzeiro, Do Latim Crux, _________',
     correctAnswerIndex: 2,
     options: [
-      'a) Da planta Brocchinia reducta',
-      'b) Da expressão Reductio Ad Absurdum',
-      'c) Do Latim reductus',
-      'd) do grego reductorum',
+      'a) Cruxes + eiro',
+      'b) Crux + eiro',
+      'c) Cruris + eiro',
+      'd) Cruriso + eiro',
     ],
   ),
   Question(
-    question: '3.  Qual a origem do nome Reduto:',
+    question: '3.  Qual a origem do nome Ponta Grossa:',
     correctAnswerIndex: 3,
     options: [
-      'a) Batizar',
+      'a) Do Latim',
       'b) Abençoar',
       'c) Batismo',
       'd) Mergulhar',
     ],
   ),
   Question(
-    question: '4. Qual a natureza do topônimo Umarizal:',
+    question: '4. Qual a natureza do topônimo Agulha:',
     correctAnswerIndex: 1,
     options: [
       'a) Se caracteriza pela história do local',
@@ -42,7 +42,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Com relação a natureza antropocultural, é correto dizer:',
+    question: '5. Com relação a natureza d, é correto dizer:',
     correctAnswerIndex: 2,
     options: [
       'a) Geográfica e religiosa',

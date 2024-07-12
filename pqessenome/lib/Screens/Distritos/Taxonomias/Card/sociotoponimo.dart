@@ -89,7 +89,7 @@ class _SociotoponimoState extends State<Sociotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos corpos celestes em geral.",
+                "Relativo atividades profissionais, locais de trabalho e pontos de reunião.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

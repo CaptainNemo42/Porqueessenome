@@ -329,7 +329,7 @@ class _MenuState extends State<Menu> {
                       ),
                       const SizedBox(height: 20.0),
                       SizedBox(
-                        width: 350,
+                        width: 325,
                         child: TextButton.icon(
                             onPressed: () {
                               Navigator.push(
