@@ -220,6 +220,7 @@ flutter:
         - asset: assets\Fonts\Regular.ttf
 
   assets:
+    #Componentes de UI
     - assets\Components\Logo.png
     - assets\Images\dabelC.jpeg
     - assets\Images\dabenC.png
@@ -273,6 +274,7 @@ flutter:
     - assets\Components\MedalhaDaout.png
     - assets\Components\MedalhaDasac.png
     - assets/Components/MedalhaSilver.png
+    #Imagens dos bairros
     - assets\Images\BatistaCampos.jpg
     - assets\Images\SãoBrás.jpg
     - assets\Images\Campinas.png
@@ -347,7 +349,22 @@ flutter:
     - assets\Images\saofrancisco.png
     - assets\Images\aribamba.png
     - assets\Images\murubira.png
+    #Componentes de Som
     - assets\Sound\Discovery.mp3
+    - assets\Sound\click-error-1110.wav
+    - assets\Sound\cool-interface-click-tone-2568.wav
+    - assets\Sound\interface-device-click-2577.wav
+    - assets\Sound\interface-option-select-2573.wav
+    - assets\Sound\negative-tone-interface-tap-2569.wav
+    - assets\Sound\opening-software-interface-2578.wav
+    - assets\Sound\page-back-chime-1108.wav
+    - assets\Sound\page-forward-single-chime-1107.wav
+    - assets\Sound\page-turn-chime-1106.wav
+    - assets\Sound\select-click-1109.wav
+    - assets\Sound\software-interface-back-2575.wav
+    - assets\Sound\software-interface-remove-2576.wav
+    - assets\Sound\software-interface-start-2574.wav
+    # Componentes de UI
     - assets\Components\sinister.png
     - assets\Components\Material icon.png
     - assets\Components\library_books.png
