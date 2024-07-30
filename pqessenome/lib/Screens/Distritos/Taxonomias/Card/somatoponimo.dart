@@ -70,7 +70,7 @@ class _SomatoponimoState extends State<Somatoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Somatoponimos",
+                    "Somatopônimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,12 +89,13 @@ class _SomatoponimoState extends State<Somatoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo a expressões metafóricas relativas a partes do corpo humano ou de animal.",
+                "Usados em relações metafóricas a partes do corpo humano ou do animal.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 17.0,
                 ),
+                textAlign: TextAlign.center,
               ),
               const Divider(),
               const Text("Exemplos:",
@@ -103,12 +104,15 @@ class _SomatoponimoState extends State<Somatoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 17.0,
-                  )),
+              const Text(
+                "Mão Esquerda (rio da. AL); Dedo Grosso (AH – SC).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 17.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

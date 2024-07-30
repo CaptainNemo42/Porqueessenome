@@ -70,7 +70,7 @@ class _HistoriotoponimoState extends State<Historiotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Historiotoponimos",
+                    "Historiotoponimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,12 +89,13 @@ class _HistoriotoponimoState extends State<Historiotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo a fatos ou personalidades históricas.",
+                "Relativo aos movimentos de cunho histórico e social.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 17.0,
                 ),
+                textAlign: TextAlign.center,
               ),
               const Divider(),
               const Text("Exemplos:",
@@ -103,12 +104,15 @@ class _HistoriotoponimoState extends State<Historiotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 17.0,
-                  )),
+              const Text(
+                "Independência (AH-AC); rua Vinte e Um de Abril (SP).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 17.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

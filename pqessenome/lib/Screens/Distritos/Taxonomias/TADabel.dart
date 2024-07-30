@@ -1,7 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Antrotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Antropotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Astrotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Axiotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Cardinotoponimo.dart';

@@ -70,7 +70,7 @@ class _HidrotoponimoState extends State<Hidrotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Hidrotoponimos",
+                    "Hidrotoponimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,12 +89,13 @@ class _HidrotoponimoState extends State<Hidrotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo a acidentes hi-drográficos em geral, como água, rio, córrego, ribeirão, lagoa, nas-cente, cachoeira e foz etc.:",
+                "Resultante de acidentes hidrográficos em geral.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 17.0,
                 ),
+                textAlign: TextAlign.center,
               ),
               const Divider(),
               const Text("Exemplos:",
@@ -103,12 +104,15 @@ class _HidrotoponimoState extends State<Hidrotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 17.0,
-                  )),
+              const Text(
+                "Água Boa (AH – MG); Córrego Novo (AH – MG).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 17.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

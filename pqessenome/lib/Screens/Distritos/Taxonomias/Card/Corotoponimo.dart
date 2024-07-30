@@ -70,7 +70,7 @@ class _CorotoponimoState extends State<Corotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Corotopônimos",
+                    "Corotopônimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,12 +89,13 @@ class _CorotoponimoState extends State<Corotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo a espaços territoriais.",
+                "Relativo aos nomes de cidades, países, estados, regiões e continentes.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 17.0,
                 ),
+                textAlign: TextAlign.center,
               ),
               const Divider(),
               const Text("Exemplos:",
@@ -103,12 +104,15 @@ class _CorotoponimoState extends State<Corotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("rua Uruguai (Rio de Janeiro-RJ).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 17.0,
-                  )),
+              const Text(
+                "Brasil (AH – AM); Uruguai (AH – MG); Amazonas (AH – BA).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 17.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

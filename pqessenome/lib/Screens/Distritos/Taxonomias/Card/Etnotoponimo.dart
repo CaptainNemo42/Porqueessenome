@@ -70,7 +70,7 @@ class _EtnotoponimoState extends State<Etnotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Etnotoponimos",
+                    "Etnotoponimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,12 +89,13 @@ class _EtnotoponimoState extends State<Etnotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo a grupos étnicos, individuais ou não, como povos, tribos, castas, famílias etc.:",
+                "Referente aos elementos étnicos.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 17.0,
                 ),
+                textAlign: TextAlign.center,
               ),
               const Divider(),
               const Text("Exemplos:",
@@ -103,12 +104,15 @@ class _EtnotoponimoState extends State<Etnotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 17.0,
-                  )),
+              const Text(
+                "Guarani (AH – PE); Ilha do Francês (RJ).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 17.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

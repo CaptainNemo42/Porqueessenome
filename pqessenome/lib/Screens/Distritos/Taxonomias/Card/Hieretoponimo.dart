@@ -70,7 +70,7 @@ class _HieretoponimoState extends State<Hieretoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Hieretoponimos",
+                    "Hieretoponimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -89,12 +89,13 @@ class _HieretoponimoState extends State<Hieretoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo a nome de lugar de origem religiosa.",
+                "Relativo aos nomes sagrados de diferentes crenças, efemérides religiosas; associações religiosas; locais de culto.\n Os hieretopônimos subdividem-se em:\nHagiotopônimos: relativos aos santos e santas do hagiológio romano;\n Mitotopônimos: relativos ás entidades mitológicas",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 17.0,
                 ),
+                textAlign: TextAlign.center,
               ),
               const Divider(),
               const Text("Exemplos:",
@@ -103,12 +104,15 @@ class _HieretoponimoState extends State<Hieretoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Estrela (AH- BA); Saturno (AH- ES).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 17.0,
-                  )),
+              const Text(
+                "Cristo Rei (AH – PR); Ala (lago – AM); Natal (AH – AC); Cruz de Malta (AH – SC); Santa Tereza (AH – GO); Santana da Boa Vista (AH – RS); Lago Curupira (AM); Ribeirão Saci (ES).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 17.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

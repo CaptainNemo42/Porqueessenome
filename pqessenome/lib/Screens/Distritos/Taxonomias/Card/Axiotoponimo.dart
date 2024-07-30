@@ -71,12 +71,13 @@ class _AxiotoponimoState extends State<Axiotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Axiotopônimos",
+                    "Axiotopônimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
                         fontSize: 25.0,
                         fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ),
@@ -90,7 +91,7 @@ class _AxiotoponimoState extends State<Axiotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "formado de antropotopônimo acrescido de título.",
+                "Relativo a títulos e dignidade de que se fazem acompanhar os nomes próprios individuais.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
@@ -104,12 +105,15 @@ class _AxiotoponimoState extends State<Axiotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("bairro São Paulo (SP); Rua Duque de Caxias (PA).",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 17.0,
-                  )),
+              const Text(
+                "Presindente Prudente (AH – SP); Doutor Pedrinho (AH – SC).",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 17.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,
