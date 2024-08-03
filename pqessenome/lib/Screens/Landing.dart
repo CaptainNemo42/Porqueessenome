@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Landing/Menu.dart';
 import 'package:pqessenome/Screens/Landing/Tutorial.dart';
 import 'package:pqessenome/Screens/Quizz/Medalhas.dart';
-import 'package:pqessenome/Screens/sound.dart';
 
 class Landing extends StatefulWidget {
   const Landing({
@@ -132,7 +131,7 @@ class _LandingState extends State<Landing> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Sound()));
+                                  builder: (context) => const Menu()));
                         },
                         icon: const Icon(Icons.place,
                             color: Color.fromRGBO(50, 50, 50, 1)),

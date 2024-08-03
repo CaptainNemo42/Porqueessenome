@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionstopDAICO.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAICO/result_screentaxDAICO.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAICO/result_screentopDAICO.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -93,7 +93,7 @@ class _QuizTopScreenDAICOState extends State<QuizTopScreenDAICO> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAICO(
+                          builder: (_) => ResultScreenTopDAICO(
                             scoreLexDAICO: scoreLexDAICO,
                             scoreTaxDAICO: scoreTaxDAICO,
                             scoreTopDAICO: scoreTopDAICO,

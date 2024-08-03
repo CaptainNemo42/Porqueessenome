@@ -3,8 +3,8 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAENT.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAENT/models/questionstaxDAENT.dart';
 
-class ResultScreenDAENT extends StatelessWidget {
-  const ResultScreenDAENT({
+class ResultScreenTaxDAENT extends StatelessWidget {
+  const ResultScreenTaxDAENT({
     super.key,
     required this.scoreLexDAENT,
     required this.scoreTaxDAENT,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAOUT/models/questionstaxDAOUT.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAOUT/result_screentopDAOUT.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAOUT/result_screentaxDAOUT.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -93,7 +93,7 @@ class _QuizTaxScreenDAOUTState extends State<QuizTaxScreenDAOUT> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAOUT(
+                          builder: (_) => ResultScreenTaxDAOUT(
                             scoreLexDAOUT: scoreLexDAOUT,
                             scoreTaxDAOUT: scoreTaxDAOUT,
                             scoreTopDAOUT: scoreTopDAOUT,

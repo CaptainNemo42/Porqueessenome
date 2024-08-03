@@ -3,8 +3,8 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAOUT.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAOUT/models/questionstaxDAOUT.dart';
 
-class ResultScreenDAOUT extends StatelessWidget {
-  const ResultScreenDAOUT({
+class ResultScreenTaxDAOUT extends StatelessWidget {
+  const ResultScreenTaxDAOUT({
     super.key,
     required this.scoreLexDAOUT,
     required this.scoreTaxDAOUT,

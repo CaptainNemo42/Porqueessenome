@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionslexDAGUA.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screentaxDAGUA.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screenlexDAGUA.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
@@ -133,7 +133,7 @@ class _QuizLexScreenDAGUAState extends State<QuizLexScreenDAGUA> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAGUA(
+                          builder: (_) => ResultScreenLexDAGUA(
                             scoreLexDAGUA: scoreLexDAGUA,
                             scoreTaxDAGUA: scoreTaxDAGUA,
                             scoreTopDAGUA: scoreTopDAGUA,

@@ -93,7 +93,7 @@ class _QuizTaxScreenDAENTState extends State<QuizTaxScreenDAENT> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAENT(
+                          builder: (_) => ResultScreenTaxDAENT(
                             scoreLexDAENT: scoreLexDAENT,
                             scoreTaxDAENT: scoreTaxDAENT,
                             scoreTopDAENT: scoreTopDAENT,

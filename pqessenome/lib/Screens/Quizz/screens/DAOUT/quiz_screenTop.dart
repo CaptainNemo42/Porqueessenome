@@ -93,7 +93,7 @@ class _QuizTopScreenDAOUTState extends State<QuizTopScreenDAOUT> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAOUT(
+                          builder: (_) => ResultScreenTopDAOUT(
                             scoreLexDAOUT: scoreLexDAOUT,
                             scoreTaxDAOUT: scoreTaxDAOUT,
                             scoreTopDAOUT: scoreTopDAOUT,

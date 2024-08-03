@@ -3,8 +3,8 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAMOS.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAMOS/models/questionstopDAMOS.dart';
 
-class ResultScreenDAMOS extends StatelessWidget {
-  const ResultScreenDAMOS({
+class ResultScreenTopDAMOS extends StatelessWidget {
+  const ResultScreenTopDAMOS({
     super.key,
     required this.scoreLexDAMOS,
     required this.scoreTaxDAMOS,

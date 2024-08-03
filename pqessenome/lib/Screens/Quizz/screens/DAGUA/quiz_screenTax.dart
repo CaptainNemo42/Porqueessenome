@@ -93,7 +93,7 @@ class _QuizTaxScreenDAGUAState extends State<QuizTaxScreenDAGUA> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAGUA(
+                          builder: (_) => ResultScreenTaxDAGUA(
                             scoreLexDAGUA: scoreLexDAGUA,
                             scoreTaxDAGUA: scoreTaxDAGUA,
                             scoreTopDAGUA: scoreTopDAGUA,

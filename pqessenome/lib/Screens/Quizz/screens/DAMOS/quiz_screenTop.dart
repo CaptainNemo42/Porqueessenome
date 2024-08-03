@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAMOS/models/questionstopDAMOS.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAMOS/result_screenlexDAMOS.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAMOS/result_screentopDAMOS.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -93,7 +93,7 @@ class _QuizTopScreenDAMOSState extends State<QuizTopScreenDAMOS> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAMOS(
+                          builder: (_) => ResultScreenTopDAMOS(
                             scoreLexDAMOS: scoreLexDAMOS,
                             scoreTaxDAMOS: scoreTaxDAMOS,
                             scoreTopDAMOS: scoreTopDAMOS,

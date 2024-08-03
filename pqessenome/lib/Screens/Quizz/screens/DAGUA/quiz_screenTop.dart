@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstopDAGUA.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screentaxDAGUA.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screentopDAGUA.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -93,7 +93,7 @@ class _QuizTopScreenDAGUAState extends State<QuizTopScreenDAGUA> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAGUA(
+                          builder: (_) => ResultScreenTopDAGUA(
                             scoreLexDAGUA: scoreLexDAGUA,
                             scoreTaxDAGUA: scoreTaxDAGUA,
                             scoreTopDAGUA: scoreTopDAGUA,

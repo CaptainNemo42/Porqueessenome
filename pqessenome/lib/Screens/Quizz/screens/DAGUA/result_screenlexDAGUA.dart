@@ -3,8 +3,8 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAGUA.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionslexDAGUA.dart';
 
-class ResultScreenDAGUA extends StatelessWidget {
-  const ResultScreenDAGUA({
+class ResultScreenLexDAGUA extends StatelessWidget {
+  const ResultScreenLexDAGUA({
     super.key,
     required this.scoreLexDAGUA,
     required this.scoreTaxDAGUA,

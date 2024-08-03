@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAMOS/models/questionstaxDAMOS.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAMOS/result_screenlexDAMOS.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAMOS/result_screentaxDAMOS.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -93,7 +93,7 @@ class _QuizTaxScreenDAMOSState extends State<QuizTaxScreenDAMOS> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAMOS(
+                          builder: (_) => ResultScreenTaxDAMOS(
                             scoreLexDAMOS: scoreLexDAMOS,
                             scoreTaxDAMOS: scoreTaxDAMOS,
                             scoreTopDAMOS: scoreTopDAMOS,

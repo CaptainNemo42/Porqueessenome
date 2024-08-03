@@ -133,7 +133,7 @@ class _QuizLexScreenDAMOSState extends State<QuizLexScreenDAMOS> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAMOS(
+                          builder: (_) => ResultScreenLexDAMOS(
                             scoreLexDAMOS: scoreLexDAMOS,
                             scoreTaxDAMOS: scoreTaxDAMOS,
                             scoreTopDAMOS: scoreTopDAMOS,

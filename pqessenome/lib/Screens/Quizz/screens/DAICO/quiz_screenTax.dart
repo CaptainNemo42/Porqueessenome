@@ -93,7 +93,7 @@ class _QuizTaxScreenDAICOState extends State<QuizTaxScreenDAICO> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAICO(
+                          builder: (_) => ResultScreenTaxDAICO(
                             scoreLexDAICO: scoreLexDAICO,
                             scoreTaxDAICO: scoreTaxDAICO,
                             scoreTopDAICO: scoreTopDAICO,

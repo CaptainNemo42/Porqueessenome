@@ -66,7 +66,7 @@ class _SoundState extends State<Sound> {
   void _initTargets() {
     targets = [
       TargetFocus(
-          shape: ShapeLightFocus.RRect,
+          shape: ShapeLightFocus.Circle,
           identify: "key1",
           keyTarget: _mapa,
           contents: [
@@ -74,7 +74,7 @@ class _SoundState extends State<Sound> {
                 align: ContentAlign.top,
                 builder: (context, controller) {
                   return CoachMarkDesc(
-                    text: "Você ganhou uma medalha!.",
+                    text: "Você ganhou uma medalha!",
                     skip: 'Pular',
                     next: 'Próximo',
                     onSkip: () {

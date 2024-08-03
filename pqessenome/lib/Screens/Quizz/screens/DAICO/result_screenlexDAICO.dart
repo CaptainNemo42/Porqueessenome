@@ -3,8 +3,8 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAICO.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionslexDAICO.dart';
 
-class ResultScreenDAICO extends StatelessWidget {
-  const ResultScreenDAICO({
+class ResultScreenLexDAICO extends StatelessWidget {
+  const ResultScreenLexDAICO({
     super.key,
     required this.scoreLexDAICO,
     required this.scoreTaxDAICO,
