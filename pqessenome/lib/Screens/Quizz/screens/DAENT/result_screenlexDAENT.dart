@@ -3,13 +3,17 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAENT.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAENT/models/questionslexDAENT.dart';
 
-class ResultScreenDAENT extends StatelessWidget {
-  const ResultScreenDAENT({
+class ResultScreenLexDAENT extends StatelessWidget {
+  const ResultScreenLexDAENT({
     super.key,
-    required this.score,
+    required this.scoreLexDAENT,
+    required this.scoreTaxDAENT,
+    required this.scoreTopDAENT,
   });
 
-  final int score;
+  final int scoreLexDAENT;
+  final int scoreTaxDAENT;
+  final int scoreTopDAENT;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreLexDAENT / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDAENT extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreLexDAENT.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDAENT extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreLexDAENT / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDAENT extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreLexDAENT <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreLexDAENT == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreLexDAENT == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreLexDAENT == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreLexDAENT == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreLexDAENT == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreLexDAENT == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreLexDAENT == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreLexDAENT == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreLexDAENT == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreLexDAENT == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -226,7 +230,9 @@ class ResultScreenDAENT extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDAENT(
-                                      score: score,
+                                      scoreLexDAENT: scoreLexDAENT,
+                                      scoreTaxDAENT: scoreTaxDAENT,
+                                      scoreTopDAENT: scoreTopDAENT,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

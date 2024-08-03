@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 
 class EstrelasDAENT extends StatelessWidget {
-  const EstrelasDAENT({super.key, required this.score});
-  final int score;
+  const EstrelasDAENT({
+    super.key,
+    required this.scoreLexDAENT,
+    required this.scoreTaxDAENT,
+    required this.scoreTopDAENT,
+  });
+  final int scoreLexDAENT;
+  final int scoreTaxDAENT;
+  final int scoreTopDAENT;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +60,7 @@ class EstrelasDAENT extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreLexDAENT == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -65,7 +72,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreLexDAENT == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -77,7 +84,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreLexDAENT == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -89,7 +96,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreLexDAENT == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -101,7 +108,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreLexDAENT == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -113,7 +120,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreLexDAENT == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -125,7 +132,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreLexDAENT == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -137,7 +144,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreLexDAENT == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -149,7 +156,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreLexDAENT == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -161,7 +168,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 10)
+                  if (scoreLexDAENT == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -173,7 +180,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreLexDAENT == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -196,7 +203,7 @@ class EstrelasDAENT extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTaxDAENT == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -208,7 +215,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTaxDAENT == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -220,7 +227,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTaxDAENT == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -232,7 +239,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTaxDAENT == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -244,7 +251,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTaxDAENT == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -256,7 +263,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTaxDAENT == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -268,7 +275,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTaxDAENT == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -280,7 +287,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTaxDAENT == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -292,7 +299,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTaxDAENT == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -304,7 +311,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTaxDAENT == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -316,7 +323,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 10)
+                  if (scoreTaxDAENT == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -339,7 +346,7 @@ class EstrelasDAENT extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTopDAENT == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -351,7 +358,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTopDAENT == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -363,7 +370,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTopDAENT == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -375,7 +382,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTopDAENT == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -387,7 +394,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTopDAENT == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -399,7 +406,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTopDAENT == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -411,7 +418,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTopDAENT == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -423,7 +430,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTopDAENT == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -435,7 +442,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTopDAENT == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -447,7 +454,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 10)
+                  if (scoreTopDAENT == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -459,7 +466,7 @@ class EstrelasDAENT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTopDAENT == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

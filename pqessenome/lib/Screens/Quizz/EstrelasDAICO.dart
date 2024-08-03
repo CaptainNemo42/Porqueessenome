@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 
 class EstrelasDAICO extends StatelessWidget {
-  const EstrelasDAICO({super.key, required this.score});
-  final int score;
+  const EstrelasDAICO({
+    super.key,
+    required this.scoreLexDAICO,
+    required this.scoreTaxDAICO,
+    required this.scoreTopDAICO,
+  });
+  final int scoreLexDAICO;
+  final int scoreTaxDAICO;
+  final int scoreTopDAICO;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +60,7 @@ class EstrelasDAICO extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreLexDAICO == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -65,7 +72,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreLexDAICO == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -77,7 +84,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreLexDAICO == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -89,7 +96,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreLexDAICO == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -101,7 +108,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreLexDAICO == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -113,7 +120,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreLexDAICO == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -125,7 +132,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreLexDAICO == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -137,7 +144,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreLexDAICO == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -149,7 +156,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreLexDAICO == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -161,7 +168,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreLexDAICO == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -184,7 +191,7 @@ class EstrelasDAICO extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTaxDAICO == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -196,7 +203,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTaxDAICO == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -208,7 +215,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTaxDAICO == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -220,7 +227,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTaxDAICO == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -232,7 +239,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTaxDAICO == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -244,7 +251,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTaxDAICO == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -256,7 +263,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTaxDAICO == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -268,7 +275,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTaxDAICO == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -280,7 +287,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTaxDAICO == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -292,7 +299,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 10)
+                  if (scoreTaxDAICO == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -304,7 +311,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTaxDAICO == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -327,7 +334,7 @@ class EstrelasDAICO extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTopDAICO == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -339,7 +346,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTopDAICO == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -351,7 +358,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTopDAICO == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -363,7 +370,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTopDAICO == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -375,7 +382,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTopDAICO == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -387,7 +394,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTopDAICO == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -399,7 +406,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTopDAICO == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -411,7 +418,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTopDAICO == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -423,7 +430,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTopDAICO == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -435,7 +442,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 10)
+                  if (scoreTopDAICO == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -447,7 +454,7 @@ class EstrelasDAICO extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTopDAICO == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

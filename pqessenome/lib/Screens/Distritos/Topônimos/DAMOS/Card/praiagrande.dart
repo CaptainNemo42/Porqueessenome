@@ -14,7 +14,7 @@ class _TpraiagrandeState extends State<Tpraiagrande> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -90,19 +90,22 @@ class _TpraiagrandeState extends State<Tpraiagrande> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Física",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text(
+                "Relativo às características dimensionais dos acidentes geográficos, como extensão, comprimento, largura etc.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +113,7 @@ class _TpraiagrandeState extends State<Tpraiagrande> {
                   )),
               const Center(
                 child: Text(
-                  "praia – S. fem. orla da terra, ordinariamente coberta de areia, confinando com o mar.\nGrande – adj.sing. – vasto, comprido, desmedido, numeroso.",
+                  "Parque Verde, Marambaia, Parque Guajará, Porto Arthur, Praia Grande.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

@@ -14,7 +14,7 @@ class _TSouzaState extends State<TSouza> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -33,7 +33,7 @@ class _TSouzaState extends State<TSouza> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/Souza.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -44,7 +44,7 @@ class _TSouzaState extends State<TSouza> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Batista Campos",
+                    "Souza",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -56,7 +56,7 @@ class _TSouzaState extends State<TSouza> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antrotopônimo",
+              const Text("Antropotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -77,32 +77,35 @@ class _TSouzaState extends State<TSouza> {
                   fontSize: 20.0,
                 ),
               ),
-              const Text("Topônimo: Batista Campos",
+              const Text("Topônimo: Souza",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antrotopônimo",
+              const Text("Taxonomia: Antropohistoriotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text(
+                "Antropotopônimo + Historiotopônimo.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +113,7 @@ class _TSouzaState extends State<TSouza> {
                   )),
               const Center(
                 child: Text(
-                  "*Batista Adj. mas. sing. do gr. baptizo que significa mergulhar\n*Campos S. mas.pl. do lat. campi",
+                  "Souza.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

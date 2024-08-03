@@ -14,13 +14,15 @@ class QuizTaxScreenDAICO extends StatefulWidget {
 class _QuizTaxScreenDAICOState extends State<QuizTaxScreenDAICO> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAICO = 0;
+  int scoreTaxDAICO = 0;
+  int scoreTopDAICO = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTaxDAICO++;
     }
     setState(() {});
   }
@@ -92,7 +94,9 @@ class _QuizTaxScreenDAICOState extends State<QuizTaxScreenDAICO> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAICO(
-                            score: score,
+                            scoreLexDAICO: scoreLexDAICO,
+                            scoreTaxDAICO: scoreTaxDAICO,
+                            scoreTopDAICO: scoreTopDAICO,
                           ),
                         ),
                       );

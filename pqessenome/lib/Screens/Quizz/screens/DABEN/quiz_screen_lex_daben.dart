@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionslexDABEL.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screenlexDABEL.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEN/result_screenlexDABEN.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
@@ -16,13 +16,15 @@ class QuizLexScreenDABEN extends StatefulWidget {
 class _QuizLexScreenDABENState extends State<QuizLexScreenDABEN> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDABEN = 0;
+  int scoreTaxDABEN = 0;
+  int scoreTopDABEN = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreLexDABEN++;
     }
     setState(() {});
   }
@@ -36,19 +38,19 @@ class _QuizLexScreenDABENState extends State<QuizLexScreenDABEN> {
   }
 
   void showStarRating() {
-    if (score == 1) {
+    if (scoreLexDABEN == 1) {
       StarRating(size: 40.0, rating: 1);
     }
-    if (score == 2) {
+    if (scoreLexDABEN == 2) {
       StarRating(size: 40.0, rating: 2);
     }
-    if (score == 3) {
+    if (scoreLexDABEN == 3) {
       StarRating(size: 40.0, rating: 3);
     }
-    if (score == 4) {
+    if (scoreLexDABEN == 4) {
       StarRating(size: 40.0, rating: 4);
     }
-    if (score == 5) {
+    if (scoreLexDABEN == 5) {
       StarRating(size: 40.0, rating: 5);
     } else {
       StarRating(size: 40.0, rating: 0);
@@ -131,8 +133,10 @@ class _QuizLexScreenDABENState extends State<QuizLexScreenDABEN> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDABEL(
-                            score: score,
+                          builder: (_) => ResultScreenLexDABEN(
+                            scoreLexDABEN: scoreLexDABEN,
+                            scoreTaxDABEN: scoreTaxDABEN,
+                            scoreTopDABEN: scoreTopDABEN,
                           ),
                         ),
                       );

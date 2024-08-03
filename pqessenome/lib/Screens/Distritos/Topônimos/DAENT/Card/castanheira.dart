@@ -14,7 +14,7 @@ class _TCastanheiraState extends State<TCastanheira> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -63,46 +63,22 @@ class _TCastanheiraState extends State<TCastanheira> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Divider(),
-              const Text("Informações:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Município: Belém",
+                "Relativo à índole vegetal.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 20.0,
                 ),
+                textAlign: TextAlign.center,
               ),
-              const Text("Topônimo: Castanheira",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Taxonomia: Fitotopônimo",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Divider(),
-              const Text("Natureza:",
-                  style: TextStyle(
-                      fontFamily: "SemiBold",
-                      color: Color.fromRGBO(50, 50, 50, 1),
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold)),
-              const Text("Física",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +86,7 @@ class _TCastanheiraState extends State<TCastanheira> {
                   )),
               const Center(
                 child: Text(
-                  "S. fem. Planta da família das fagáceas, cujo o fruto é a castanha.",
+                  "Campinas, Umarizal, Coqueiro, Castanheira, Mangueirão, Campina de Icoaraci, Mangueiras.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

@@ -6,10 +6,14 @@ import 'package:pqessenome/Screens/Quizz/screens/DAOUT/models/questionstaxDAOUT.
 class ResultScreenDAOUT extends StatelessWidget {
   const ResultScreenDAOUT({
     super.key,
-    required this.score,
+    required this.scoreLexDAOUT,
+    required this.scoreTaxDAOUT,
+    required this.scoreTopDAOUT,
   });
 
-  final int score;
+  final int scoreLexDAOUT;
+  final int scoreTaxDAOUT;
+  final int scoreTopDAOUT;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTaxDAOUT / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTaxDAOUT.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTaxDAOUT / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTaxDAOUT <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTaxDAOUT == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTaxDAOUT == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTaxDAOUT == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTaxDAOUT == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTaxDAOUT == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTaxDAOUT == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTaxDAOUT == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTaxDAOUT == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTaxDAOUT == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDAOUT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTaxDAOUT == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -226,7 +230,9 @@ class ResultScreenDAOUT extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDAOUT(
-                                      score: score,
+                                      scoreLexDAOUT: scoreLexDAOUT,
+                                      scoreTaxDAOUT: scoreTaxDAOUT,
+                                      scoreTopDAOUT: scoreTopDAOUT,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

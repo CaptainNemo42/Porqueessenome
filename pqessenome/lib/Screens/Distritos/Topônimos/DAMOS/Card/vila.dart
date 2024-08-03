@@ -33,7 +33,7 @@ class _TVilaState extends State<TVila> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/vila.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -90,19 +90,22 @@ class _TVilaState extends State<TVila> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text(
+                "Relativo aos movimentos de cunho histórico e social.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +113,7 @@ class _TVilaState extends State<TVila> {
                   )),
               const Center(
                 child: Text(
-                  "S. fem. povoação, cidade",
+                  "Reduto, Cabanagem, Val de Cans, Canudos, Cremação, Aeroporto, Natal do Murubira, Vila, Telégrafo.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

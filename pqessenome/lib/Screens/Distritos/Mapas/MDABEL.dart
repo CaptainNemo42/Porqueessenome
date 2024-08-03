@@ -513,7 +513,7 @@ class _MDABELState extends State<MDABEL> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Batista Campos\nTaxonomia: Antrotopônimo",
+                                        "Município: Belém\nTopônimo: Batista Campos\nTaxonomia: Antropotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),

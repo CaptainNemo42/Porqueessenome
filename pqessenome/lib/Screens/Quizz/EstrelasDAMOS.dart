@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 
 class EstrelasDAMOS extends StatelessWidget {
-  const EstrelasDAMOS({super.key, required this.score});
-  final int score;
+  const EstrelasDAMOS({
+    super.key,
+    required this.scoreLexDAMOS,
+    required this.scoreTaxDAMOS,
+    required this.scoreTopDAMOS,
+  });
+  final int scoreLexDAMOS;
+  final int scoreTaxDAMOS;
+  final int scoreTopDAMOS;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +60,7 @@ class EstrelasDAMOS extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreLexDAMOS == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -65,7 +72,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreLexDAMOS == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -77,7 +84,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreLexDAMOS == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -89,7 +96,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreLexDAMOS == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -101,7 +108,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreLexDAMOS == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -113,7 +120,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreLexDAMOS == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -125,7 +132,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreLexDAMOS == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -137,7 +144,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreLexDAMOS == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -149,7 +156,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreLexDAMOS == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -161,7 +168,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 10)
+                  if (scoreLexDAMOS == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -173,7 +180,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreLexDAMOS == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -196,7 +203,7 @@ class EstrelasDAMOS extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTaxDAMOS == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -208,7 +215,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTaxDAMOS == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -220,7 +227,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTaxDAMOS == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -232,7 +239,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTaxDAMOS == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -244,7 +251,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTaxDAMOS == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -256,7 +263,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTaxDAMOS == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -268,7 +275,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTaxDAMOS == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -280,7 +287,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTaxDAMOS == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -292,7 +299,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTaxDAMOS == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -304,7 +311,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTaxDAMOS == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -327,7 +334,7 @@ class EstrelasDAMOS extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTopDAMOS == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -339,7 +346,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTopDAMOS == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -351,7 +358,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTopDAMOS == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -363,7 +370,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTopDAMOS == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -375,7 +382,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTopDAMOS == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -387,7 +394,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTopDAMOS == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -399,7 +406,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTopDAMOS == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -411,7 +418,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTopDAMOS == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -423,7 +430,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTopDAMOS == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -435,7 +442,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 10)
+                  if (scoreTopDAMOS == 10)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -447,7 +454,7 @@ class EstrelasDAMOS extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTopDAMOS == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

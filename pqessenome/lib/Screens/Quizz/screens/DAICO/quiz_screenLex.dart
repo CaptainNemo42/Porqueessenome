@@ -16,13 +16,15 @@ class QuizLexScreenDAICO extends StatefulWidget {
 class _QuizLexScreenDAICOState extends State<QuizLexScreenDAICO> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAICO = 0;
+  int scoreTaxDAICO = 0;
+  int scoreTopDAICO = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreLexDAICO++;
     }
     setState(() {});
   }
@@ -36,19 +38,19 @@ class _QuizLexScreenDAICOState extends State<QuizLexScreenDAICO> {
   }
 
   void showStarRating() {
-    if (score == 1) {
+    if (scoreLexDAICO == 1) {
       StarRating(size: 40.0, rating: 1);
     }
-    if (score == 2) {
+    if (scoreLexDAICO == 2) {
       StarRating(size: 40.0, rating: 2);
     }
-    if (score == 3) {
+    if (scoreLexDAICO == 3) {
       StarRating(size: 40.0, rating: 3);
     }
-    if (score == 4) {
+    if (scoreLexDAICO == 4) {
       StarRating(size: 40.0, rating: 4);
     }
-    if (score == 5) {
+    if (scoreLexDAICO == 5) {
       StarRating(size: 40.0, rating: 5);
     } else {
       StarRating(size: 40.0, rating: 0);
@@ -132,7 +134,9 @@ class _QuizLexScreenDAICOState extends State<QuizLexScreenDAICO> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAICO(
-                            score: score,
+                            scoreLexDAICO: scoreLexDAICO,
+                            scoreTaxDAICO: scoreTaxDAICO,
+                            scoreTopDAICO: scoreTopDAICO,
                           ),
                         ),
                       );

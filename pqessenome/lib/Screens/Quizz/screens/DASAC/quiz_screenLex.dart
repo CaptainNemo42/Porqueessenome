@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionslexDASAC.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DASAC/result_screentaxDASAC.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DASAC/result_screenlexDASAC.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
@@ -16,13 +16,15 @@ class QuizLexScreenDASAC extends StatefulWidget {
 class _QuizLexScreenDASACState extends State<QuizLexScreenDASAC> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDASAC = 0;
+  int scoreTaxDASAC = 0;
+  int scoreTopDASAC = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreLexDASAC++;
     }
     setState(() {});
   }
@@ -36,19 +38,19 @@ class _QuizLexScreenDASACState extends State<QuizLexScreenDASAC> {
   }
 
   void showStarRating() {
-    if (score == 1) {
+    if (scoreLexDASAC == 1) {
       StarRating(size: 40.0, rating: 1);
     }
-    if (score == 2) {
+    if (scoreLexDASAC == 2) {
       StarRating(size: 40.0, rating: 2);
     }
-    if (score == 3) {
+    if (scoreLexDASAC == 3) {
       StarRating(size: 40.0, rating: 3);
     }
-    if (score == 4) {
+    if (scoreLexDASAC == 4) {
       StarRating(size: 40.0, rating: 4);
     }
-    if (score == 5) {
+    if (scoreLexDASAC == 5) {
       StarRating(size: 40.0, rating: 5);
     } else {
       StarRating(size: 40.0, rating: 0);
@@ -131,8 +133,10 @@ class _QuizLexScreenDASACState extends State<QuizLexScreenDASAC> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDASAC(
-                            score: score,
+                          builder: (_) => ResultScreenLexDASAC(
+                            scoreLexDASAC: scoreLexDASAC,
+                            scoreTaxDASAC: scoreTaxDASAC,
+                            scoreTopDASAC: scoreTopDASAC,
                           ),
                         ),
                       );

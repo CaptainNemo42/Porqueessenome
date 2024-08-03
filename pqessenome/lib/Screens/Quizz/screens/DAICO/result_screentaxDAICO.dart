@@ -6,10 +6,14 @@ import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionstaxDAICO.
 class ResultScreenDAICO extends StatelessWidget {
   const ResultScreenDAICO({
     super.key,
-    required this.score,
+    required this.scoreLexDAICO,
+    required this.scoreTaxDAICO,
+    required this.scoreTopDAICO,
   });
 
-  final int score;
+  final int scoreLexDAICO;
+  final int scoreTaxDAICO;
+  final int scoreTopDAICO;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTaxDAICO / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDAICO extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTaxDAICO.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDAICO extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTaxDAICO / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDAICO extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTaxDAICO <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTaxDAICO == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTaxDAICO == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTaxDAICO == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTaxDAICO == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTaxDAICO == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTaxDAICO == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTaxDAICO == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTaxDAICO == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTaxDAICO == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTaxDAICO == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -226,7 +230,9 @@ class ResultScreenDAICO extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDAICO(
-                                      score: score,
+                                      scoreLexDAICO: scoreLexDAICO,
+                                      scoreTaxDAICO: scoreTaxDAICO,
+                                      scoreTopDAICO: scoreTopDAICO,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

@@ -14,7 +14,7 @@ class _TPortoarthurState extends State<TPortoarthur> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -90,19 +90,22 @@ class _TPortoarthurState extends State<TPortoarthur> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Física",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text(
+                "Relativo às características dimensionais dos acidentes geográficos, como extensão, comprimento, largura etc.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +113,7 @@ class _TPortoarthurState extends State<TPortoarthur> {
                   )),
               const Center(
                 child: Text(
-                  "Porto – S. masc. lugar da costa ou em um rio, lagoa, etc, que, por oferecer às embarcações certo abrigo, lhes permite fundear e estabelecer contatos com a terra.\nArthur – nome de origem incerta, a partir do termo “artwa”, literalmente, pedra; outra possibilidade seria: art + ur = urso grande",
+                  "Parque Verde, Marambaia, Parque Guajará, Porto Arthur, Praia Grande.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

@@ -19,6 +19,7 @@ dependencies:
   flutter_native_splash: ^2.3.11
   flip_card: ^0.7.0
   appinio_swiper: ^2.1.1
+  audioplayers: ^1.1.1
 
 dev_dependencies:
   flutter_test:

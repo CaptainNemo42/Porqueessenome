@@ -16,7 +16,7 @@ class _TMarcoState extends State<TMarco> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -58,7 +58,7 @@ class _TMarcoState extends State<TMarco> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antrotopônimo",
+              const Text("Antropotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -79,13 +79,13 @@ class _TMarcoState extends State<TMarco> {
                   fontSize: 20.0,
                 ),
               ),
-              const Text("Topônimo: Batista Campos",
+              const Text("Topônimo: Marco",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antrotopônimo",
+              const Text("Taxonomia: Historiocardinotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -99,7 +99,7 @@ class _TMarcoState extends State<TMarco> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos movimentos de cunho histórico e social.",
+                "Historiotopônimo + Cardinotopônimo",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
@@ -115,7 +115,7 @@ class _TMarcoState extends State<TMarco> {
                   )),
               const Center(
                 child: Text(
-                  "Independência (AH- AC); rua Vinte e Um de Abril (SP).",
+                  "Marco, Cruzeiro, Farol, São João do Outeiro.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

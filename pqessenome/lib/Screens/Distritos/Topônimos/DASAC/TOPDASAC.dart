@@ -1,10 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/barreiro.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/maracangalha.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/miramar.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/sacramenta.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/Card/barreiro.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/Card/maracangalha.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/Card/miramar.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/Card/sacramenta.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/TOPDASAC2.dart';
 
 class TOPDasac extends StatefulWidget {
@@ -21,7 +21,7 @@ class _TOPDasacState extends State<TOPDasac> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -64,7 +64,7 @@ class _TOPDasacState extends State<TOPDasac> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Maracangalha()));
+                              builder: (context) => const TMaracangalha()));
                     },
                     icon: const Icon(Icons.library_books,
                         color: Color.fromRGBO(50, 50, 50, 1)),
@@ -91,7 +91,7 @@ class _TOPDasacState extends State<TOPDasac> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Miramar()));
+                              builder: (context) => const TMiramar()));
                     },
                     icon: const Icon(Icons.library_books,
                         color: Color.fromRGBO(50, 50, 50, 1)),
@@ -118,7 +118,7 @@ class _TOPDasacState extends State<TOPDasac> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Barreiro()));
+                              builder: (context) => const TBarreiro()));
                     },
                     icon: const Icon(Icons.library_books,
                         color: Color.fromRGBO(50, 50, 50, 1)),
@@ -145,7 +145,7 @@ class _TOPDasacState extends State<TOPDasac> {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const Sacramenta()));
+                            builder: (context) => const TSacramenta()));
                   },
                   icon: const Icon(Icons.library_books,
                       color: Color.fromRGBO(50, 50, 50, 1)),

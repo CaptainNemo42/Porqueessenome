@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionstopDASAC.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DASAC/result_screentaxDASAC.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DASAC/result_screentopDASAC.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -14,13 +14,15 @@ class QuizTopScreenDASAC extends StatefulWidget {
 class _QuizTopScreenDASACState extends State<QuizTopScreenDASAC> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDASAC = 0;
+  int scoreTaxDASAC = 0;
+  int scoreTopDASAC = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTopDASAC++;
     }
     setState(() {});
   }
@@ -91,8 +93,10 @@ class _QuizTopScreenDASACState extends State<QuizTopScreenDASAC> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDASAC(
-                            score: score,
+                          builder: (_) => ResultScreenTopDASAC(
+                            scoreLexDASAC: scoreLexDASAC,
+                            scoreTaxDASAC: scoreTaxDASAC,
+                            scoreTopDASAC: scoreTopDASAC,
                           ),
                         ),
                       );

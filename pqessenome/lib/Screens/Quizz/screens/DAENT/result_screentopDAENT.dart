@@ -6,10 +6,14 @@ import 'package:pqessenome/Screens/Quizz/screens/DAENT/models/questionstopDAENT.
 class ResultScreenDAENT extends StatelessWidget {
   const ResultScreenDAENT({
     super.key,
-    required this.score,
+    required this.scoreLexDAENT,
+    required this.scoreTaxDAENT,
+    required this.scoreTopDAENT,
   });
 
-  final int score;
+  final int scoreLexDAENT;
+  final int scoreTaxDAENT;
+  final int scoreTopDAENT;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTopDAENT / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDAENT extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTopDAENT.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDAENT extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTopDAENT / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDAENT extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTopDAENT <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTopDAENT == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTopDAENT == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTopDAENT == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTopDAENT == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTopDAENT == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTopDAENT == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTopDAENT == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTopDAENT == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTopDAENT == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDAENT extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTopDAENT == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -226,7 +230,9 @@ class ResultScreenDAENT extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDAENT(
-                                      score: score,
+                                      scoreLexDAENT: scoreLexDAENT,
+                                      scoreTaxDAENT: scoreTaxDAENT,
+                                      scoreTopDAENT: scoreTopDAENT,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

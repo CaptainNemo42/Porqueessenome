@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 
 class EstrelasDAOUT extends StatelessWidget {
-  const EstrelasDAOUT({super.key, required this.score});
-  final int score;
+  const EstrelasDAOUT({
+    super.key,
+    required this.scoreLexDAOUT,
+    required this.scoreTaxDAOUT,
+    required this.scoreTopDAOUT,
+  });
+  final int scoreLexDAOUT;
+  final int scoreTaxDAOUT;
+  final int scoreTopDAOUT;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +60,7 @@ class EstrelasDAOUT extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreLexDAOUT == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -65,7 +72,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreLexDAOUT == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -77,7 +84,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreLexDAOUT == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -89,7 +96,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreLexDAOUT == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -101,7 +108,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreLexDAOUT == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -113,7 +120,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreLexDAOUT == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -125,7 +132,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreLexDAOUT == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -137,7 +144,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreLexDAOUT == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -149,7 +156,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreLexDAOUT == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -161,7 +168,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreLexDAOUT == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -184,7 +191,7 @@ class EstrelasDAOUT extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTaxDAOUT == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -196,7 +203,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTaxDAOUT == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -208,7 +215,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTaxDAOUT == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -220,7 +227,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTaxDAOUT == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -232,7 +239,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTaxDAOUT == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -244,7 +251,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTaxDAOUT == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -256,7 +263,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTaxDAOUT == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -268,7 +275,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTaxDAOUT == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -280,7 +287,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTaxDAOUT == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -292,7 +299,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTaxDAOUT == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -315,7 +322,7 @@ class EstrelasDAOUT extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTopDAOUT == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -327,7 +334,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTopDAOUT == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -339,7 +346,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTopDAOUT == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -351,7 +358,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTopDAOUT == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -363,7 +370,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTopDAOUT == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -375,7 +382,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTopDAOUT == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -387,7 +394,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTopDAOUT == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -399,7 +406,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTopDAOUT == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -411,7 +418,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTopDAOUT == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -423,7 +430,7 @@ class EstrelasDAOUT extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTopDAOUT == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

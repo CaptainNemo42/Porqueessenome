@@ -16,13 +16,15 @@ class QuizLexScreenDAMOS extends StatefulWidget {
 class _QuizLexScreenDAMOSState extends State<QuizLexScreenDAMOS> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAMOS = 0;
+  int scoreTaxDAMOS = 0;
+  int scoreTopDAMOS = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreLexDAMOS++;
     }
     setState(() {});
   }
@@ -36,19 +38,19 @@ class _QuizLexScreenDAMOSState extends State<QuizLexScreenDAMOS> {
   }
 
   void showStarRating() {
-    if (score == 1) {
+    if (scoreLexDAMOS == 1) {
       StarRating(size: 40.0, rating: 1);
     }
-    if (score == 2) {
+    if (scoreLexDAMOS == 2) {
       StarRating(size: 40.0, rating: 2);
     }
-    if (score == 3) {
+    if (scoreLexDAMOS == 3) {
       StarRating(size: 40.0, rating: 3);
     }
-    if (score == 4) {
+    if (scoreLexDAMOS == 4) {
       StarRating(size: 40.0, rating: 4);
     }
-    if (score == 5) {
+    if (scoreLexDAMOS == 5) {
       StarRating(size: 40.0, rating: 5);
     } else {
       StarRating(size: 40.0, rating: 0);
@@ -132,7 +134,9 @@ class _QuizLexScreenDAMOSState extends State<QuizLexScreenDAMOS> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAMOS(
-                            score: score,
+                            scoreLexDAMOS: scoreLexDAMOS,
+                            scoreTaxDAMOS: scoreTaxDAMOS,
+                            scoreTopDAMOS: scoreTopDAMOS,
                           ),
                         ),
                       );

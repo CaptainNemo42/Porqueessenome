@@ -14,13 +14,15 @@ class QuizTaxScreenDAMOS extends StatefulWidget {
 class _QuizTaxScreenDAMOSState extends State<QuizTaxScreenDAMOS> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAMOS = 0;
+  int scoreTaxDAMOS = 0;
+  int scoreTopDAMOS = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTaxDAMOS++;
     }
     setState(() {});
   }
@@ -92,7 +94,9 @@ class _QuizTaxScreenDAMOSState extends State<QuizTaxScreenDAMOS> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAMOS(
-                            score: score,
+                            scoreLexDAMOS: scoreLexDAMOS,
+                            scoreTaxDAMOS: scoreTaxDAMOS,
+                            scoreTopDAMOS: scoreTopDAMOS,
                           ),
                         ),
                       );

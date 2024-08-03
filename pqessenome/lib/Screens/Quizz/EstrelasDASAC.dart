@@ -2,8 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 
 class EstrelasDASAC extends StatelessWidget {
-  const EstrelasDASAC({super.key, required this.score});
-  final int score;
+  const EstrelasDASAC({
+    super.key,
+    required this.scoreLexDASAC,
+    required this.scoreTaxDASAC,
+    required this.scoreTopDASAC,
+  });
+  final int scoreLexDASAC;
+  final int scoreTaxDASAC;
+  final int scoreTopDASAC;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +60,7 @@ class EstrelasDASAC extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreLexDASAC == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -65,7 +72,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreLexDASAC == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -77,7 +84,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreLexDASAC == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -89,7 +96,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreLexDASAC == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -101,7 +108,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreLexDASAC == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -113,7 +120,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreLexDASAC == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -125,7 +132,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreLexDASAC == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -137,7 +144,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreLexDASAC == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -149,7 +156,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreLexDASAC == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -161,7 +168,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreLexDASAC == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -184,7 +191,7 @@ class EstrelasDASAC extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTaxDASAC == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -196,7 +203,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTaxDASAC == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -208,7 +215,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTaxDASAC == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -220,7 +227,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTaxDASAC == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -232,7 +239,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTaxDASAC == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -244,7 +251,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTaxDASAC == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -256,7 +263,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTaxDASAC == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -268,7 +275,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTaxDASAC == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -280,7 +287,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTaxDASAC == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -292,7 +299,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTaxDASAC == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -315,7 +322,7 @@ class EstrelasDASAC extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10.0),
-                  if (score == 1)
+                  if (scoreTopDASAC == 1)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -327,7 +334,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 2)
+                  if (scoreTopDASAC == 2)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -339,7 +346,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 3)
+                  if (scoreTopDASAC == 3)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -351,7 +358,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 4)
+                  if (scoreTopDASAC == 4)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -363,7 +370,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 5)
+                  if (scoreTopDASAC == 5)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -375,7 +382,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 6)
+                  if (scoreTopDASAC == 6)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -387,7 +394,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 7)
+                  if (scoreTopDASAC == 7)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -399,7 +406,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 8)
+                  if (scoreTopDASAC == 8)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -411,7 +418,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 9)
+                  if (scoreTopDASAC == 9)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -423,7 +430,7 @@ class EstrelasDASAC extends StatelessWidget {
                         )
                       ],
                     ),
-                  if (score == 0)
+                  if (scoreTopDASAC == 0)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

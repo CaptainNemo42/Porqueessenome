@@ -14,7 +14,7 @@ class _TAgulhaState extends State<TAgulha> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -56,53 +56,29 @@ class _TAgulhaState extends State<TAgulha> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Ergotopônimo",
+              const Text("Antropohistoriotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Divider(),
-              const Text("Informações:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Município: Belém",
+                "Relativo a cultura material do homem.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 20.0,
                 ),
+                textAlign: TextAlign.center,
               ),
-              const Text("Topônimo: Agulha",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Taxonomia: Ergotopônimo",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Divider(),
-              const Text("Natureza:",
-                  style: TextStyle(
-                      fontFamily: "SemiBold",
-                      color: Color.fromRGBO(50, 50, 50, 1),
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +86,7 @@ class _TAgulhaState extends State<TAgulha> {
                   )),
               const Center(
                 child: Text(
-                  "Que tem ponta, instrumento para coser, bordar, tecer, etc.",
+                  "Agulha.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

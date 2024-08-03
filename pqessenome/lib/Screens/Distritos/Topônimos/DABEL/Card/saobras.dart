@@ -56,7 +56,7 @@ class _TSaobrasState extends State<TSaobras> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Hagiotopônimo",
+              const Text("Hieretopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _TSaobrasState extends State<TSaobras> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Hagiotopônimo",
+              const Text("Taxonomia: Hieretopônimo/Hagiotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -111,7 +111,7 @@ class _TSaobrasState extends State<TSaobras> {
                   )),
               const Center(
                 child: Text(
-                  "Cristo Rei (AH-PR); Alá (lago- AM); Natal (AH- AC); Cruz de Malta (AH-SC); Santa Tereza (AH-GO);",
+                  "Nazaré, São Brás, São Clemente, Caruará, São Francisco, Fátima.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -119,6 +119,51 @@ class _TSaobrasState extends State<TSaobras> {
                   ),
                   textAlign: TextAlign.center,
                 ),
+              ),
+              FloatingActionButton(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                            title: const Column(
+                              children: [
+                                Text(
+                                  "Hagiotopônimos",
+                                  style: TextStyle(
+                                    fontFamily: "SemiBold",
+                                    color: Color.fromRGBO(50, 50, 50, 1),
+                                    fontSize: 20.0,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Divider(),
+                              ],
+                            ),
+                            content: const Text(
+                              "Relativos aos santos e santas do hagiológio romano.",
+                              style: TextStyle(
+                                fontFamily: "Light",
+                                color: Color.fromRGBO(50, 50, 50, 1),
+                                fontSize: 17.0,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            actions: [
+                              TextButton(
+                                  onPressed: () => Navigator.pop(context),
+                                  child: const Text(
+                                    "Fechar",
+                                    style: TextStyle(
+                                        fontFamily: "PoppinsBold",
+                                        color: Color.fromRGBO(255, 165, 0, 1),
+                                        fontSize: 25.0,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                            ],
+                          ));
+                },
+                backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+                child: const Icon(Icons.add),
               ),
             ])));
   }

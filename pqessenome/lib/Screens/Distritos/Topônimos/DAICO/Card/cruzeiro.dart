@@ -14,7 +14,7 @@ class _TCruzeiroState extends State<TCruzeiro> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -63,46 +63,22 @@ class _TCruzeiroState extends State<TCruzeiro> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Divider(),
-              const Text("Informações:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Município: Belém",
+                "Historiotopônimo + Cardinotopônimo.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
                   fontSize: 20.0,
                 ),
+                textAlign: TextAlign.center,
               ),
-              const Text("Topônimo: Cruzeiro",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Taxonomia: Historiocardiotopônimo",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Divider(),
-              const Text("Natureza:",
-                  style: TextStyle(
-                      fontFamily: "SemiBold",
-                      color: Color.fromRGBO(50, 50, 50, 1),
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold)),
-              const Text("Física e Antropocultural",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +86,7 @@ class _TCruzeiroState extends State<TCruzeiro> {
                   )),
               const Center(
                 child: Text(
-                  "N.T.",
+                  "Marco, Cruzeiro, Farol, São João do Outeiro.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDAICO.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionstopDAICO.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDAGUA.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstopDAGUA.dart';
 
-class ResultScreenDAICO extends StatelessWidget {
-  const ResultScreenDAICO({
+class ResultScreenDAGUA extends StatelessWidget {
+  const ResultScreenDAGUA({
     super.key,
-    required this.score,
+    required this.scoreLexDAGUA,
+    required this.scoreTaxDAGUA,
+    required this.scoreTopDAGUA,
   });
 
-  final int score;
+  final int scoreLexDAGUA;
+  final int scoreTaxDAGUA;
+  final int scoreTopDAGUA;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTopDAGUA / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDAICO extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTopDAGUA.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDAICO extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTopDAGUA / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDAICO extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTopDAGUA <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTopDAGUA == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTopDAGUA == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTopDAGUA == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTopDAGUA == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTopDAGUA == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTopDAGUA == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTopDAGUA == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTopDAGUA == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTopDAGUA == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDAICO extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTopDAGUA == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -225,8 +229,10 @@ class ResultScreenDAICO extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDAICO(
-                                      score: score,
+                                builder: (context) => EstrelasDAGUA(
+                                      scoreLexDAGUA: scoreLexDAGUA,
+                                      scoreTaxDAGUA: scoreTaxDAGUA,
+                                      scoreTopDAGUA: scoreTopDAGUA,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

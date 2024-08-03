@@ -109,7 +109,7 @@ class _TADabelState extends State<TADabel> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Antrotopônimos",
+                          "Antropotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),

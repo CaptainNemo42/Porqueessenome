@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Quais são exemplos dos "Antrotopônimos"?',
+    question: '2. Quais são exemplos dos "Antropotopônimos"?',
     correctAnswerIndex: 0,
     options: [
       'a) Batista campos, Campina',
@@ -78,7 +78,7 @@ const List<Question> questions = [
     question: '8. Qual o Topônimo do bairro Nazaré?',
     correctAnswerIndex: 2,
     options: [
-      'a) Antrotopônimo',
+      'a) Antropotopônimo',
       'b) Historiotopônimo',
       'c) Hagiotopônimo',
       'd) N.D.A',
@@ -89,7 +89,7 @@ const List<Question> questions = [
     correctAnswerIndex: 0,
     options: [
       'a) Antropotopônimo, de natureza antropocultural',
-      'b) Antrotopônimo, de natureza antropocultural',
+      'b) Antropotopônimo, de natureza antropocultural',
       'c) Sociotopônimo, de natureza física',
       'd) Somatopônimo, de natureza física',
     ],
@@ -99,7 +99,7 @@ const List<Question> questions = [
         '10. Ao analisar os topônimos a seguir, qual a informação incorreta?',
     correctAnswerIndex: 0,
     options: [
-      'a) Antrotopônimo, relativo aos nomes próprios',
+      'a) Antropotopônimo, relativo aos nomes próprios',
       'b) Hagiotopônimo, referente a culinária',
       'c) Astrotopônimo, referente aos corpos celestes',
       'd) Somatopônimo, relativo as partes do corpo',

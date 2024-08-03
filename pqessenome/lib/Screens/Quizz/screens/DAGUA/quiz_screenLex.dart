@@ -16,13 +16,15 @@ class QuizLexScreenDAGUA extends StatefulWidget {
 class _QuizLexScreenDAGUAState extends State<QuizLexScreenDAGUA> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAGUA = 0;
+  int scoreTaxDAGUA = 0;
+  int scoreTopDAGUA = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreLexDAGUA++;
     }
     setState(() {});
   }
@@ -36,19 +38,19 @@ class _QuizLexScreenDAGUAState extends State<QuizLexScreenDAGUA> {
   }
 
   void showStarRating() {
-    if (score == 1) {
+    if (scoreLexDAGUA == 1) {
       StarRating(size: 40.0, rating: 1);
     }
-    if (score == 2) {
+    if (scoreLexDAGUA == 2) {
       StarRating(size: 40.0, rating: 2);
     }
-    if (score == 3) {
+    if (scoreLexDAGUA == 3) {
       StarRating(size: 40.0, rating: 3);
     }
-    if (score == 4) {
+    if (scoreLexDAGUA == 4) {
       StarRating(size: 40.0, rating: 4);
     }
-    if (score == 5) {
+    if (scoreLexDAGUA == 5) {
       StarRating(size: 40.0, rating: 5);
     } else {
       StarRating(size: 40.0, rating: 0);
@@ -132,7 +134,9 @@ class _QuizLexScreenDAGUAState extends State<QuizLexScreenDAGUA> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAGUA(
-                            score: score,
+                            scoreLexDAGUA: scoreLexDAGUA,
+                            scoreTaxDAGUA: scoreTaxDAGUA,
+                            scoreTopDAGUA: scoreTopDAGUA,
                           ),
                         ),
                       );

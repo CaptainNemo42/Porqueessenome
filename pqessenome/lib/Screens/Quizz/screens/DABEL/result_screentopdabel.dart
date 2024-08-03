@@ -3,13 +3,17 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDABEL.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionstopDABEL.dart';
 
-class ResultScreenDABEL extends StatelessWidget {
-  const ResultScreenDABEL({
+class ResultScreenTopDABEL extends StatelessWidget {
+  const ResultScreenTopDABEL({
     super.key,
-    required this.score,
+    required this.scoreLexDABEL,
+    required this.scoreTaxDABEL,
+    required this.scoreTopDABEL,
   });
 
-  final int score;
+  final int scoreLexDABEL;
+  final int scoreTaxDABEL;
+  final int scoreTopDABEL;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTopDABEL / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDABEL extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTopDABEL.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDABEL extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTopDABEL / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDABEL extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTopDABEL <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTopDABEL == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTopDABEL == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTopDABEL == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTopDABEL == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTopDABEL == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTopDABEL == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTopDABEL == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTopDABEL == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTopDABEL == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDABEL extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTopDABEL == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -226,7 +230,9 @@ class ResultScreenDABEL extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDABEL(
-                                      score: score,
+                                      scoreLexDABEL: scoreLexDABEL,
+                                      scoreTaxDABEL: scoreTaxDABEL,
+                                      scoreTopDABEL: scoreTopDABEL,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

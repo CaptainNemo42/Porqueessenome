@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDASAC.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionstopDASAC.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDAMOS.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAMOS/models/questionstaxDAMOS.dart';
 
-class ResultScreenDASAC extends StatelessWidget {
-  const ResultScreenDASAC({
+class ResultScreenDAMOS extends StatelessWidget {
+  const ResultScreenDAMOS({
     super.key,
-    required this.score,
+    required this.scoreLexDAMOS,
+    required this.scoreTaxDAMOS,
+    required this.scoreTopDAMOS,
   });
 
-  final int score;
+  final int scoreLexDAMOS;
+  final int scoreTaxDAMOS;
+  final int scoreTopDAMOS;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTaxDAMOS / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDASAC extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTaxDAMOS.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDASAC extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTaxDAMOS / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDASAC extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTaxDAMOS <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTaxDAMOS == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTaxDAMOS == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTaxDAMOS == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTaxDAMOS == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTaxDAMOS == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTaxDAMOS == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTaxDAMOS == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTaxDAMOS == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTaxDAMOS == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDASAC extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTaxDAMOS == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -225,8 +229,10 @@ class ResultScreenDASAC extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDASAC(
-                                      score: score,
+                                builder: (context) => EstrelasDAMOS(
+                                      scoreLexDAMOS: scoreLexDAMOS,
+                                      scoreTaxDAMOS: scoreTaxDAMOS,
+                                      scoreTopDAMOS: scoreTopDAMOS,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

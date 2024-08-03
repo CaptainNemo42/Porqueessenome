@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAENT/models/questionstopDAENT.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAENT/result_screenlexDAENT.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DAENT/result_screentopDAENT.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -14,13 +14,15 @@ class QuizTopScreenDAENT extends StatefulWidget {
 class _QuizTopScreenDAENTState extends State<QuizTopScreenDAENT> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAENT = 0;
+  int scoreTaxDAENT = 0;
+  int scoreTopDAENT = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTopDAENT++;
     }
     setState(() {});
   }
@@ -92,7 +94,9 @@ class _QuizTopScreenDAENTState extends State<QuizTopScreenDAENT> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAENT(
-                            score: score,
+                            scoreLexDAENT: scoreLexDAENT,
+                            scoreTaxDAENT: scoreTaxDAENT,
+                            scoreTopDAENT: scoreTopDAENT,
                           ),
                         ),
                       );

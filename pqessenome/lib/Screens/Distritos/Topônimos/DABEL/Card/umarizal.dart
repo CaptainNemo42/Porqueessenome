@@ -14,7 +14,7 @@ class _TUmarizalState extends State<TUmarizal> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -97,12 +97,14 @@ class _TUmarizalState extends State<TUmarizal> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                  "Relativo aos nomes sagrados de diferentes crenças, efemérides religiosas; associações religiosas; locais de culto.",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
+                "Relativo à índole vegetal.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
@@ -111,7 +113,7 @@ class _TUmarizalState extends State<TUmarizal> {
                   )),
               const Center(
                 child: Text(
-                  "Cristo Rei (AH-PR); Alá (lago- AM); Natal (AH- AC); Cruz de Malta (AH-SC); Santa Tereza (AH-GO);",
+                  "Campinas, Umarizal, Coqueiro, Castanheira, Mangueirão, Campina de Icoaraci, Mangueiras.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

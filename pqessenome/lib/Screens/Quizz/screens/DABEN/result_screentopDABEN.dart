@@ -3,13 +3,17 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDABEN.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEN/models/questionstopDABEN.dart';
 
-class ResultScreenDABEN extends StatelessWidget {
-  const ResultScreenDABEN({
+class ResultScreenTopDABEN extends StatelessWidget {
+  const ResultScreenTopDABEN({
     super.key,
-    required this.score,
+    required this.scoreLexDABEN,
+    required this.scoreTaxDABEN,
+    required this.scoreTopDABEN,
   });
 
-  final int score;
+  final int scoreLexDABEN;
+  final int scoreTaxDABEN;
+  final int scoreTopDABEN;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTopDABEN / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDABEN extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTopDABEN.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDABEN extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTopDABEN / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDABEN extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTopDABEN <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTopDABEN == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTopDABEN == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTopDABEN == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTopDABEN == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTopDABEN == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTopDABEN == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTopDABEN == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTopDABEN == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTopDABEN == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDABEN extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTopDABEN == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -226,7 +230,9 @@ class ResultScreenDABEN extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDABEN(
-                                      score: score,
+                                      scoreLexDABEN: scoreLexDABEN,
+                                      scoreTaxDABEN: scoreTopDABEN,
+                                      scoreTopDABEN: scoreTopDABEN,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

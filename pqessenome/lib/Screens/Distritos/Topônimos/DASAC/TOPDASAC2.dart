@@ -1,10 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/fatima.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/pedreira.dart';
-import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/Card/telegrafo.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DASAC/LDASAC.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/Card/fatima.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/Card/pedreira.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DASAC/Card/telegrafo.dart';
 
 class TOPDasac2 extends StatefulWidget {
   const TOPDasac2({super.key});
@@ -20,7 +20,7 @@ class _TOPDasac2State extends State<TOPDasac2> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -63,7 +63,7 @@ class _TOPDasac2State extends State<TOPDasac2> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Telegrafo()));
+                              builder: (context) => const TTelegrafo()));
                     },
                     icon: const Icon(Icons.library_books,
                         color: Color.fromRGBO(50, 50, 50, 1)),
@@ -90,7 +90,7 @@ class _TOPDasac2State extends State<TOPDasac2> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Pedreira()));
+                              builder: (context) => const TPedreira()));
                     },
                     icon: const Icon(Icons.library_books,
                         color: Color.fromRGBO(50, 50, 50, 1)),
@@ -117,7 +117,7 @@ class _TOPDasac2State extends State<TOPDasac2> {
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Fatima()));
+                              builder: (context) => const TFatima()));
                     },
                     icon: const Icon(Icons.library_books,
                         color: Color.fromRGBO(50, 50, 50, 1)),

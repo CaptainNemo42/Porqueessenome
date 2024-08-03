@@ -6,10 +6,14 @@ import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstaxDAGUA.
 class ResultScreenDAGUA extends StatelessWidget {
   const ResultScreenDAGUA({
     super.key,
-    required this.score,
+    required this.scoreLexDAGUA,
+    required this.scoreTaxDAGUA,
+    required this.scoreTopDAGUA,
   });
 
-  final int score;
+  final int scoreLexDAGUA;
+  final int scoreTaxDAGUA;
+  final int scoreTopDAGUA;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTaxDAGUA / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTaxDAGUA.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTaxDAGUA / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTaxDAGUA <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTaxDAGUA == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTaxDAGUA == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTaxDAGUA == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTaxDAGUA == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTaxDAGUA == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTaxDAGUA == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTaxDAGUA == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTaxDAGUA == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTaxDAGUA == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTaxDAGUA == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -226,7 +230,9 @@ class ResultScreenDAGUA extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDAGUA(
-                                      score: score,
+                                      scoreLexDAGUA: scoreLexDAGUA,
+                                      scoreTaxDAGUA: scoreTaxDAGUA,
+                                      scoreTopDAGUA: scoreTopDAGUA,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

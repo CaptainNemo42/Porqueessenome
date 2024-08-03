@@ -14,7 +14,7 @@ class _SaobrasState extends State<Saobras> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -118,6 +118,51 @@ class _SaobrasState extends State<Saobras> {
                   ),
                   textAlign: TextAlign.center,
                 ),
+              ),
+              FloatingActionButton(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                            title: const Column(
+                              children: [
+                                Text(
+                                  "Hagiotopônimos",
+                                  style: TextStyle(
+                                    fontFamily: "SemiBold",
+                                    color: Color.fromRGBO(50, 50, 50, 1),
+                                    fontSize: 20.0,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Divider(),
+                              ],
+                            ),
+                            content: const Text(
+                              "Relativos aos santos e santas do hagiológio romano.",
+                              style: TextStyle(
+                                fontFamily: "Light",
+                                color: Color.fromRGBO(50, 50, 50, 1),
+                                fontSize: 17.0,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            actions: [
+                              TextButton(
+                                  onPressed: () => Navigator.pop(context),
+                                  child: const Text(
+                                    "Fechar",
+                                    style: TextStyle(
+                                        fontFamily: "PoppinsBold",
+                                        color: Color.fromRGBO(255, 165, 0, 1),
+                                        fontSize: 25.0,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                            ],
+                          ));
+                },
+                backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+                child: const Icon(Icons.add),
               ),
             ])));
   }

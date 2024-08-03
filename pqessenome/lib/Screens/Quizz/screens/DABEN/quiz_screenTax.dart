@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEN/models/questionstaxDABEN.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEN/result_screenlexDABEN.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEN/result_screentaxDABEN.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 
@@ -14,13 +14,15 @@ class QuizTaxScreenDABEN extends StatefulWidget {
 class _QuizTaxScreenDABENState extends State<QuizTaxScreenDABEN> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDABEN = 0;
+  int scoreTaxDABEN = 0;
+  int scoreTopDABEN = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTaxDABEN++;
     }
     setState(() {});
   }
@@ -91,8 +93,10 @@ class _QuizTaxScreenDABENState extends State<QuizTaxScreenDABEN> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDABEN(
-                            score: score,
+                          builder: (_) => ResultScreenTaxDABEN(
+                            scoreLexDABEN: scoreLexDABEN,
+                            scoreTaxDABEN: scoreTaxDABEN,
+                            scoreTopDABEN: scoreTopDABEN,
                           ),
                         ),
                       );

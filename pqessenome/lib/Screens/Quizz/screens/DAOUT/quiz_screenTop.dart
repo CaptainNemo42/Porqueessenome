@@ -14,13 +14,15 @@ class QuizTopScreenDAOUT extends StatefulWidget {
 class _QuizTopScreenDAOUTState extends State<QuizTopScreenDAOUT> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAOUT = 0;
+  int scoreTaxDAOUT = 0;
+  int scoreTopDAOUT = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTopDAOUT++;
     }
     setState(() {});
   }
@@ -92,7 +94,9 @@ class _QuizTopScreenDAOUTState extends State<QuizTopScreenDAOUT> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAOUT(
-                            score: score,
+                            scoreLexDAOUT: scoreLexDAOUT,
+                            scoreTaxDAOUT: scoreTaxDAOUT,
+                            scoreTopDAOUT: scoreTopDAOUT,
                           ),
                         ),
                       );

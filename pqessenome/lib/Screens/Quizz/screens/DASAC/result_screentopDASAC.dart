@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/EstrelasDAGUA.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstopDAGUA.dart';
+import 'package:pqessenome/Screens/Quizz/EstrelasDASAC.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionstopDASAC.dart';
 
-class ResultScreenDAGUA extends StatelessWidget {
-  const ResultScreenDAGUA({
+class ResultScreenTopDASAC extends StatelessWidget {
+  const ResultScreenTopDASAC({
     super.key,
-    required this.score,
+    required this.scoreLexDASAC,
+    required this.scoreTaxDASAC,
+    required this.scoreTopDASAC,
   });
 
-  final int score;
+  final int scoreLexDASAC;
+  final int scoreTaxDASAC;
+  final int scoreTopDASAC;
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +58,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: score / 9,
+                        value: scoreTaxDASAC / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -62,7 +66,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          score.toString(),
+                          scoreTaxDASAC.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -72,7 +76,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(score / questions.length * 100).round()}%',
+                          '${(scoreTaxDASAC / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -85,7 +89,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (score <= 1)
+                if (scoreTaxDASAC <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -97,7 +101,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 2)
+                if (scoreTaxDASAC == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -109,7 +113,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 3)
+                if (scoreTaxDASAC == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +125,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 4)
+                if (scoreTaxDASAC == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -133,7 +137,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 5)
+                if (scoreTaxDASAC == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -145,7 +149,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 6)
+                if (scoreTaxDASAC == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -157,7 +161,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 7)
+                if (scoreTaxDASAC == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -169,7 +173,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 8)
+                if (scoreTaxDASAC == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -181,7 +185,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 9)
+                if (scoreTaxDASAC == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -193,7 +197,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 0)
+                if (scoreTaxDASAC == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +209,7 @@ class ResultScreenDAGUA extends StatelessWidget {
                       )
                     ],
                   ),
-                if (score == 10)
+                if (scoreTaxDASAC == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -225,8 +229,10 @@ class ResultScreenDAGUA extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => EstrelasDAGUA(
-                                      score: score,
+                                builder: (context) => EstrelasDASAC(
+                                      scoreLexDASAC: scoreLexDASAC,
+                                      scoreTaxDASAC: scoreTaxDASAC,
+                                      scoreTopDASAC: scoreTopDASAC,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,

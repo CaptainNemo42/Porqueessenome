@@ -14,7 +14,7 @@ class _TNazareState extends State<TNazare> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -33,7 +33,7 @@ class _TNazareState extends State<TNazare> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/Nazare.jpg',
+                'assets/Images/Nazaré.jpg',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -56,7 +56,7 @@ class _TNazareState extends State<TNazare> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Hagiotopônimo",
+              const Text("Hieretopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _TNazareState extends State<TNazare> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Hagiotopônimo",
+              const Text("Taxonomia: Hierotopônimo/Hagiotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -113,7 +113,7 @@ class _TNazareState extends State<TNazare> {
                   )),
               const Center(
                 child: Text(
-                  "Cristo Rei (AH-PR); Alá (lago- AM); Natal (AH- AC); Cruz de Malta (AH-SC); Santa Tereza (AH-GO);",
+                  "Nazaré, São Brás, São Clemente, Caruará, São Francisco, Fátima",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -121,6 +121,51 @@ class _TNazareState extends State<TNazare> {
                   ),
                   textAlign: TextAlign.center,
                 ),
+              ),
+              FloatingActionButton(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                            title: const Column(
+                              children: [
+                                Text(
+                                  "Hagiotopônimos",
+                                  style: TextStyle(
+                                    fontFamily: "SemiBold",
+                                    color: Color.fromRGBO(50, 50, 50, 1),
+                                    fontSize: 20.0,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Divider(),
+                              ],
+                            ),
+                            content: const Text(
+                              "Relativos aos santos e santas do hagiológio romano.",
+                              style: TextStyle(
+                                fontFamily: "Light",
+                                color: Color.fromRGBO(50, 50, 50, 1),
+                                fontSize: 17.0,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            actions: [
+                              TextButton(
+                                  onPressed: () => Navigator.pop(context),
+                                  child: const Text(
+                                    "Fechar",
+                                    style: TextStyle(
+                                        fontFamily: "PoppinsBold",
+                                        color: Color.fromRGBO(255, 165, 0, 1),
+                                        fontSize: 25.0,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                            ],
+                          ));
+                },
+                backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+                child: const Icon(Icons.add),
               ),
             ])));
   }

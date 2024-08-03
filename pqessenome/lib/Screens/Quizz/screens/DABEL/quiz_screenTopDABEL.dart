@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionslexDABEL.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screenlexDABEL.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screentopdabel.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
@@ -16,13 +16,15 @@ class QuizTopScreenDABEL extends StatefulWidget {
 class _QuizTopScreenDABELState extends State<QuizTopScreenDABEL> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDABEL = 0;
+  int scoreTaxDABEL = 0;
+  int scoreTopDABEL = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTopDABEL++;
     }
     setState(() {});
   }
@@ -36,19 +38,19 @@ class _QuizTopScreenDABELState extends State<QuizTopScreenDABEL> {
   }
 
   void showStarRating() {
-    if (score == 1) {
+    if (scoreTopDABEL == 1) {
       StarRating(size: 40.0, rating: 1);
     }
-    if (score == 2) {
+    if (scoreTopDABEL == 2) {
       StarRating(size: 40.0, rating: 2);
     }
-    if (score == 3) {
+    if (scoreTopDABEL == 3) {
       StarRating(size: 40.0, rating: 3);
     }
-    if (score == 4) {
+    if (scoreTopDABEL == 4) {
       StarRating(size: 40.0, rating: 4);
     }
-    if (score == 5) {
+    if (scoreTopDABEL == 5) {
       StarRating(size: 40.0, rating: 5);
     } else {
       StarRating(size: 40.0, rating: 0);
@@ -131,8 +133,10 @@ class _QuizTopScreenDABELState extends State<QuizTopScreenDABEL> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDABEL(
-                            score: score,
+                          builder: (_) => ResultScreenTopDABEL(
+                            scoreLexDABEL: scoreLexDABEL,
+                            scoreTaxDABEL: scoreTaxDABEL,
+                            scoreTopDABEL: scoreTopDABEL,
                           ),
                         ),
                       );

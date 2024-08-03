@@ -19,8 +19,8 @@ class _TOPDabel2State extends State<TOPDabel2> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
-            image: AssetImage("assets/Components/LOGOBG.png"),
+          title: const Image(
+            image: const AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
           ),

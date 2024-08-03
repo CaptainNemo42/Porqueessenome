@@ -14,13 +14,15 @@ class QuizTaxScreenDAGUA extends StatefulWidget {
 class _QuizTaxScreenDAGUAState extends State<QuizTaxScreenDAGUA> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAGUA = 0;
+  int scoreTaxDAGUA = 0;
+  int scoreTopDAGUA = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreLexDAGUA++;
     }
     setState(() {});
   }
@@ -92,7 +94,9 @@ class _QuizTaxScreenDAGUAState extends State<QuizTaxScreenDAGUA> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (_) => ResultScreenDAGUA(
-                            score: score,
+                            scoreLexDAGUA: scoreLexDAGUA,
+                            scoreTaxDAGUA: scoreTaxDAGUA,
+                            scoreTopDAGUA: scoreTopDAGUA,
                           ),
                         ),
                       );

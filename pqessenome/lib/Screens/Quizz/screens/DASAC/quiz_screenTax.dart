@@ -14,13 +14,15 @@ class QuizTaxScreenDASAC extends StatefulWidget {
 class _QuizTaxScreenDASACState extends State<QuizTaxScreenDASAC> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDASAC = 0;
+  int scoreTaxDASAC = 0;
+  int scoreTopDASAC = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreTaxDASAC++;
     }
     setState(() {});
   }
@@ -91,8 +93,10 @@ class _QuizTaxScreenDASACState extends State<QuizTaxScreenDASAC> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDASAC(
-                            score: score,
+                          builder: (_) => ResultScreenTaxDASAC(
+                            scoreLexDASAC: scoreLexDASAC,
+                            scoreTaxDASAC: scoreTaxDASAC,
+                            scoreTopDASAC: scoreTopDASAC,
                           ),
                         ),
                       );

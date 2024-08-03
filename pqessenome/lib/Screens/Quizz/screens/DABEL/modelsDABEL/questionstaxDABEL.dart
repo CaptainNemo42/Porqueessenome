@@ -34,7 +34,7 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '4. O bairro "Campina" é um antrotopônimo, o que isto significa"?',
+        '4. O bairro "Campina" é um antropotopônimo, o que isto significa"?',
     correctAnswerIndex: 3,
     options: [
       'a) Seu nome é relacionado ao conceito de "antropomorfismo"',
@@ -48,7 +48,7 @@ const List<Question> questions = [
     correctAnswerIndex: 3,
     options: [
       'a) Cardinotopônimo, de acordo com a geografia do nome',
-      'b) Antrotopônimo, relativo ao nome ter influência cultural',
+      'b) Antropotopônimo, relativo ao nome ter influência cultural',
       'c) Axiotopônimo, baseado em sua natureza titular',
       'd) Hagiotopônimo, relativo ao caráter religioso do nome',
     ],
@@ -82,7 +82,7 @@ const List<Question> questions = [
       'a) Historiotopônimo, devido ao caráter religioso',
       'b) Historiocardinotopônimo, deviso ao caráter histórico e social',
       'c) Hagiotopônimo, devido a presença de santos marcantes',
-      'd) Antrotopônimo',
+      'd) Antropotopônimo',
     ],
   ),
   Question(
@@ -90,7 +90,7 @@ const List<Question> questions = [
         '9. Com relação ao topônimo "Batista Campos", qual a alternativa correta?',
     correctAnswerIndex: 0,
     options: [
-      'a) Antrotopônimo',
+      'a) Antropotopônimo',
       'b) Historiotopônimo',
       'c) Cronotopônimo',
       'd) Poliotopônimo',
@@ -103,7 +103,7 @@ const List<Question> questions = [
     options: [
       'a) Litotopônimo',
       'b) Fitotopônimo',
-      'c) Antrotopônimo',
+      'c) Antropotopônimo',
       'd) Hagiotopônimo',
     ],
   ),

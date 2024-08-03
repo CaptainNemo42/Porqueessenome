@@ -14,7 +14,7 @@ class _TUniversitarioState extends State<TUniversitario> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -33,7 +33,7 @@ class _TUniversitarioState extends State<TUniversitario> {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               Image.asset(
-                'assets/Images/BatistaCampos.jpg',
+                'assets/Images/universitario.png',
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 250,
@@ -77,12 +77,15 @@ class _TUniversitarioState extends State<TUniversitario> {
                   fontSize: 20.0,
                 ),
               ),
-              const Text("Topônimo: Universitário",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
+              const Text(
+                "Topônimo: Universitário",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
               const Text("Taxonomia: Sociotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
@@ -90,19 +93,20 @@ class _TUniversitarioState extends State<TUniversitario> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
+              const Text(
+                  "Relativo às atividades profissionais aos locais de trabalho e aos pontos de encontro dos membros de uma comunidade.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Informações Enciclopédicas",
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +114,7 @@ class _TUniversitarioState extends State<TUniversitario> {
                   )),
               const Center(
                 child: Text(
-                  "Universalidade, totalidade.\nDenominação proposta por ser composto das universidades UFPA, UFRA, CPATU (Museu Emílio Goeldi)",
+                  "Universitário.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

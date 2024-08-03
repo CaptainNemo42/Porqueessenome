@@ -14,7 +14,7 @@ class _TRedutoState extends State<TReduto> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -113,7 +113,7 @@ class _TRedutoState extends State<TReduto> {
                   )),
               const Center(
                 child: Text(
-                  "Independência (AH- AC); rua Vinte e Um de Abril (SP).",
+                  "Reduto, Cabanagem, Val de Cans, Canudos, Cremação, Aeroporto, Natal do Murubira, Vila, Telégrafo.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

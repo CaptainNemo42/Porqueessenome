@@ -14,7 +14,7 @@ class _TSaofranciscoState extends State<TSaofrancisco> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -56,7 +56,7 @@ class _TSaofranciscoState extends State<TSaofrancisco> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Hagiotopônimo",
+              const Text("Hieretopônimo/Hagiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -90,19 +90,22 @@ class _TSaofranciscoState extends State<TSaofrancisco> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Natureza:",
+              const Text("Definição:",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Antropocultural",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Informações Enciclopédicas",
+              const Text(
+                "Relativos aos nomes sagrados de diferentes crenças, efemérides religiosas; locais de culto.",
+                style: TextStyle(
+                  fontFamily: "Light",
+                  color: Color.fromRGBO(50, 50, 50, 1),
+                  fontSize: 20.0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Text("Exemplos:",
                   style: TextStyle(
                     fontFamily: "SemiBold",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -110,7 +113,7 @@ class _TSaofranciscoState extends State<TSaofrancisco> {
                   )),
               const Center(
                 child: Text(
-                  "Francisco ( franco = line) Francês livre",
+                  "Nazaré, São Brás, São Clemente, Caruará, São Francisco, Fátima.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -118,6 +121,51 @@ class _TSaofranciscoState extends State<TSaofrancisco> {
                   ),
                   textAlign: TextAlign.center,
                 ),
+              ),
+              FloatingActionButton(
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                            title: const Column(
+                              children: [
+                                Text(
+                                  "Hagiotopônimos",
+                                  style: TextStyle(
+                                    fontFamily: "SemiBold",
+                                    color: Color.fromRGBO(50, 50, 50, 1),
+                                    fontSize: 20.0,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                Divider(),
+                              ],
+                            ),
+                            content: const Text(
+                              "Relativos aos santos e santas do hagiológio romano.",
+                              style: TextStyle(
+                                fontFamily: "Light",
+                                color: Color.fromRGBO(50, 50, 50, 1),
+                                fontSize: 17.0,
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            actions: [
+                              TextButton(
+                                  onPressed: () => Navigator.pop(context),
+                                  child: const Text(
+                                    "Fechar",
+                                    style: TextStyle(
+                                        fontFamily: "PoppinsBold",
+                                        color: Color.fromRGBO(255, 165, 0, 1),
+                                        fontSize: 25.0,
+                                        fontWeight: FontWeight.bold),
+                                  )),
+                            ],
+                          ));
+                },
+                backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
+                child: const Icon(Icons.add),
               ),
             ])));
   }

@@ -16,13 +16,15 @@ class QuizLexScreenDAENT extends StatefulWidget {
 class _QuizLexScreenDAENTState extends State<QuizLexScreenDAENT> {
   int? selectedAnswerIndex;
   int questionIndex = 0;
-  int score = 0;
+  int scoreLexDAENT = 0;
+  int scoreTaxDAENT = 0;
+  int scoreTopDAENT = 0;
 
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      score++;
+      scoreLexDAENT++;
     }
     setState(() {});
   }
@@ -36,19 +38,19 @@ class _QuizLexScreenDAENTState extends State<QuizLexScreenDAENT> {
   }
 
   void showStarRating() {
-    if (score == 1) {
+    if (scoreLexDAENT == 1) {
       StarRating(size: 40.0, rating: 1);
     }
-    if (score == 2) {
+    if (scoreLexDAENT == 2) {
       StarRating(size: 40.0, rating: 2);
     }
-    if (score == 3) {
+    if (scoreLexDAENT == 3) {
       StarRating(size: 40.0, rating: 3);
     }
-    if (score == 4) {
+    if (scoreLexDAENT == 4) {
       StarRating(size: 40.0, rating: 4);
     }
-    if (score == 5) {
+    if (scoreLexDAENT == 5) {
       StarRating(size: 40.0, rating: 5);
     } else {
       StarRating(size: 40.0, rating: 0);
@@ -131,8 +133,10 @@ class _QuizLexScreenDAENTState extends State<QuizLexScreenDAENT> {
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
-                          builder: (_) => ResultScreenDAENT(
-                            score: score,
+                          builder: (_) => ResultScreenLexDAENT(
+                            scoreLexDAENT: scoreLexDAENT,
+                            scoreTaxDAENT: scoreTaxDAENT,
+                            scoreTopDAENT: scoreTopDAENT,
                           ),
                         ),
                       );

@@ -2,7 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionDASAC.dart
 
 const List<Question> questions = [
   Question(
-    question: '1.Qual a natureza do topônimo "Batista Campos":',
+    question: '1. Qual a origem do nome :',
     correctAnswerIndex: 0,
     options: [
       'a) Antropocultural',
@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Qual a origem do nome Reduto:',
+    question: '2.  Qual a natureza do topônimo :',
     correctAnswerIndex: 2,
     options: [
       'a) Da planta Brocchinia reducta',
@@ -22,7 +22,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '3. Complete: Batista, baptizo que significa _________',
+    question: '3. Qual a natureza do topônimo ',
     correctAnswerIndex: 3,
     options: [
       'a) Batizar',
@@ -32,7 +32,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '4. Com relação a natureza antropocultural, é correto dizer:',
+    question: '4. Qual a natureza do topônimo :',
     correctAnswerIndex: 1,
     options: [
       'a) Se caracteriza pela história do local',
@@ -42,7 +42,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Qual a natureza do topônimo Umarizal:',
+    question: '5. Com relação ao topônimo , é correto afirmar:',
     correctAnswerIndex: 2,
     options: [
       'a) Geográfica e religiosa',
@@ -52,7 +52,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '6. Com relação ao topônimo Cidade Velha, é correto afirmar:',
+    question: '6. Complete: _________:',
     correctAnswerIndex: 3,
     options: [
       'a) Caracterizado pela população agrícola',
@@ -62,7 +62,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '7. Qual a natureza do topônimo Nazaré:',
+    question: '7. Com relação ao topônimo Cidade Velha, é correto afirmar :',
     correctAnswerIndex: 1,
     options: [
       'a) Geográfico, definido pela presença do mineral Nitzraréth',
@@ -72,7 +72,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Com relação ao topônimo Marco, é correto afirmar:',
+    question: '8. Qual a natureza do topônimo :',
     correctAnswerIndex: 0,
     options: [
       'a) Relativo a Germânico Marka, Sinal',
@@ -82,7 +82,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '9. Qual a natureza do topônimo São Brás:',
+    question: '9.Qual a natureza do topônimo "":',
     correctAnswerIndex: 3,
     options: [
       'a) Físico',
@@ -92,7 +92,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '10. Qual a natureza do topônimo São Brás:',
+    question: '10. Com relação a natureza , é correto dizer:',
     correctAnswerIndex: 3,
     options: [
       'a) Físico',
