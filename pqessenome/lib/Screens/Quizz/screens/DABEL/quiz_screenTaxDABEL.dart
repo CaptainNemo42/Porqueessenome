@@ -5,6 +5,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screentaxdabel.dar
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizTaxScreenDABEL extends StatefulWidget {
   const QuizTaxScreenDABEL({super.key});
@@ -19,12 +20,13 @@ class _QuizTaxScreenDABELState extends State<QuizTaxScreenDABEL> {
   int scoreLexDABEL = 0;
   int scoreTaxDABEL = 0;
   int scoreTopDABEL = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreTaxDABEL++;
+      playSound();
     }
     setState(() {});
   }
@@ -152,5 +154,11 @@ class _QuizTaxScreenDABELState extends State<QuizTaxScreenDABEL> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }

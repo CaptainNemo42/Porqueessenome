@@ -3,6 +3,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionstaxDASAC.
 import 'package:pqessenome/Screens/Quizz/screens/DASAC/result_screentaxDASAC.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizTaxScreenDASAC extends StatefulWidget {
   const QuizTaxScreenDASAC({super.key});
@@ -17,12 +18,13 @@ class _QuizTaxScreenDASACState extends State<QuizTaxScreenDASAC> {
   int scoreLexDASAC = 0;
   int scoreTaxDASAC = 0;
   int scoreTopDASAC = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreTaxDASAC++;
+      playSound();
     }
     setState(() {});
   }
@@ -112,5 +114,11 @@ class _QuizTaxScreenDASACState extends State<QuizTaxScreenDASAC> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }

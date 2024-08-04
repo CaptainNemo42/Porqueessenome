@@ -3,6 +3,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstopDAGUA.
 import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screentopDAGUA.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizTopScreenDAGUA extends StatefulWidget {
   const QuizTopScreenDAGUA({super.key});
@@ -17,12 +18,13 @@ class _QuizTopScreenDAGUAState extends State<QuizTopScreenDAGUA> {
   int scoreLexDAGUA = 0;
   int scoreTaxDAGUA = 0;
   int scoreTopDAGUA = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreTopDAGUA++;
+      playSound();
     }
     setState(() {});
   }
@@ -112,5 +114,11 @@ class _QuizTopScreenDAGUAState extends State<QuizTopScreenDAGUA> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }

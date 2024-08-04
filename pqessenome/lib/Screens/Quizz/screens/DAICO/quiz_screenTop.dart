@@ -3,6 +3,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionstopDAICO.
 import 'package:pqessenome/Screens/Quizz/screens/DAICO/result_screentopDAICO.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizTopScreenDAICO extends StatefulWidget {
   const QuizTopScreenDAICO({super.key});
@@ -17,12 +18,13 @@ class _QuizTopScreenDAICOState extends State<QuizTopScreenDAICO> {
   int scoreLexDAICO = 0;
   int scoreTaxDAICO = 0;
   int scoreTopDAICO = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreTopDAICO++;
+      playSound();
     }
     setState(() {});
   }
@@ -112,5 +114,11 @@ class _QuizTopScreenDAICOState extends State<QuizTopScreenDAICO> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }

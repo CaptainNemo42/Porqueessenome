@@ -110,7 +110,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 1),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -128,7 +127,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 1.5),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -146,7 +144,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 2),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -164,7 +161,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 2.5),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -182,7 +178,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 3),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -200,7 +195,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 3.5),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -218,7 +212,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 4),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -236,7 +229,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 4.5),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -254,7 +246,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 5),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -272,7 +263,6 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                       StarRating(size: 40.0, rating: 0),
                       GestureDetector(
                           onTap: () {
-                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(
@@ -295,7 +285,7 @@ class _ResultScreenLexDABELState extends State<ResultScreenLexDABEL> {
                           },
                           child: Image.asset(
                             key: _medalhaVazia,
-                            'assets/Components/MedalhaSilver.png',
+                            'assets/Components/MedalhaDabel.png',
                             height: 100,
                             width: 100,
                           )),

@@ -1,9 +1,12 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
+import 'package:pqessenome/Screens/Componentes/coach_mark.dart';
 import 'package:pqessenome/Screens/Quizz/EstrelasDAICO.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionstopDAICO.dart';
+import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
-class ResultScreenTopDAICO extends StatelessWidget {
+class ResultScreenTopDAICO extends StatefulWidget {
   const ResultScreenTopDAICO({
     super.key,
     required this.scoreLexDAICO,
@@ -14,6 +17,18 @@ class ResultScreenTopDAICO extends StatelessWidget {
   final int scoreLexDAICO;
   final int scoreTaxDAICO;
   final int scoreTopDAICO;
+
+  @override
+  State<ResultScreenTopDAICO> createState() => _ResultScreenTopDAICOState();
+}
+
+class _ResultScreenTopDAICOState extends State<ResultScreenTopDAICO> {
+  final player = AudioPlayer();
+  TutorialCoachMark? tutorialCoachMark;
+  List<TargetFocus> targets = [];
+
+  GlobalKey _medalha = GlobalKey();
+  GlobalKey _medalhaVazia = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +73,7 @@ class ResultScreenTopDAICO extends StatelessWidget {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: scoreTopDAICO / 9,
+                        value: widget.scoreTopDAICO / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -66,7 +81,7 @@ class ResultScreenTopDAICO extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          scoreTopDAICO.toString(),
+                          widget.scoreTopDAICO.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -76,7 +91,7 @@ class ResultScreenTopDAICO extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(scoreTopDAICO / questions.length * 100).round()}%',
+                          '${(widget.scoreTopDAICO / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -89,136 +104,192 @@ class ResultScreenTopDAICO extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (scoreTopDAICO <= 1)
+                if (widget.scoreTopDAICO <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 1),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 2)
+                if (widget.scoreTopDAICO == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 1.5),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 3)
+                if (widget.scoreTopDAICO == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 2),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 4)
+                if (widget.scoreTopDAICO == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 2.5),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 5)
+                if (widget.scoreTopDAICO == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 3),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 6)
+                if (widget.scoreTopDAICO == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 3.5),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 7)
+                if (widget.scoreTopDAICO == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 4),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 8)
+                if (widget.scoreTopDAICO == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 4.5),
-                      Image.asset(
-                        "assets/Components/MedalhaSilver.png",
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 9)
+                if (widget.scoreTopDAICO == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 5),
-                      Image.asset(
-                        'assets/Components/MedalhaSilver.png',
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 0)
+                if (widget.scoreTopDAICO == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 0),
-                      Image.asset(
-                        'assets/Components/MedalhaSilver.png',
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
-                if (scoreTopDAICO == 10)
+                if (widget.scoreTopDAICO == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       StarRating(size: 40.0, rating: 5),
-                      Image.asset(
-                        'assets/Components/MedalhaDabel.png',
-                        height: 50,
-                        width: 50,
-                      )
+                      GestureDetector(
+                          onTap: () {
+                            playSound();
+                            _showTutorialCoachMark();
+                          },
+                          child: Image.asset(
+                            key: _medalhaVazia,
+                            'assets/Components/MedalhaDabel.png',
+                            height: 100,
+                            width: 100,
+                          )),
                     ],
                   ),
                 const SizedBox(height: 10.0),
@@ -230,9 +301,9 @@ class ResultScreenTopDAICO extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => EstrelasDAICO(
-                                      scoreLexDAICO: scoreLexDAICO,
-                                      scoreTaxDAICO: scoreTaxDAICO,
-                                      scoreTopDAICO: scoreTopDAICO,
+                                      scoreLexDAICO: widget.scoreLexDAICO,
+                                      scoreTaxDAICO: widget.scoreTaxDAICO,
+                                      scoreTopDAICO: widget.scoreTopDAICO,
                                     )));
                       },
                       icon: const Icon(Icons.workspace_premium,
@@ -258,5 +329,69 @@ class ResultScreenTopDAICO extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/Discovery.mp3";
+    await player.play(AssetSource(soundPath));
+  }
+
+  void _showTutorialCoachMark() {
+    _initTargets();
+    tutorialCoachMark = TutorialCoachMark(
+        targets: targets,
+        pulseEnable: false,
+        colorShadow: Colors.black,
+        hideSkip: true)
+      ..show(context: context);
+  }
+
+  void _initTargets() {
+    targets = [
+      TargetFocus(
+          shape: ShapeLightFocus.Circle,
+          identify: "key1",
+          keyTarget: _medalha,
+          contents: [
+            TargetContent(
+                align: ContentAlign.top,
+                builder: (context, controller) {
+                  return CoachMarkDesc(
+                    text:
+                        "Parabéns, você ganhou uma medalha por sua excelência neste quizz!",
+                    skip: 'Pular',
+                    next: 'Próximo',
+                    onSkip: () {
+                      controller.skip();
+                    },
+                    onNext: () {
+                      controller.next();
+                    },
+                  );
+                })
+          ]),
+      TargetFocus(
+          shape: ShapeLightFocus.Circle,
+          identify: "key1",
+          keyTarget: _medalhaVazia,
+          contents: [
+            TargetContent(
+                align: ContentAlign.top,
+                builder: (context, controller) {
+                  return CoachMarkDesc(
+                    text: "Não desista, tente novamente!",
+                    skip: 'Pular',
+                    next: 'Próximo',
+                    onSkip: () {
+                      controller.skip();
+                    },
+                    onNext: () {
+                      controller.next();
+                    },
+                  );
+                })
+          ]),
+    ];
   }
 }

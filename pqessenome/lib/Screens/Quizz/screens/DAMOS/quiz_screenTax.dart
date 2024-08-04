@@ -3,6 +3,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAMOS/models/questionstaxDAMOS.
 import 'package:pqessenome/Screens/Quizz/screens/DAMOS/result_screentaxDAMOS.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizTaxScreenDAMOS extends StatefulWidget {
   const QuizTaxScreenDAMOS({super.key});
@@ -17,12 +18,13 @@ class _QuizTaxScreenDAMOSState extends State<QuizTaxScreenDAMOS> {
   int scoreLexDAMOS = 0;
   int scoreTaxDAMOS = 0;
   int scoreTopDAMOS = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreTaxDAMOS++;
+      playSound();
     }
     setState(() {});
   }
@@ -112,5 +114,11 @@ class _QuizTaxScreenDAMOSState extends State<QuizTaxScreenDAMOS> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }

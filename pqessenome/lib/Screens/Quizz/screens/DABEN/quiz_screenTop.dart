@@ -3,6 +3,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DABEN/models/questionstopDABEN.
 import 'package:pqessenome/Screens/Quizz/screens/DABEN/result_screentopDABEN.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizTopScreenDABEN extends StatefulWidget {
   const QuizTopScreenDABEN({super.key});
@@ -17,12 +18,13 @@ class _QuizTopScreenDABENState extends State<QuizTopScreenDABEN> {
   int scoreLexDABEN = 0;
   int scoreTaxDABEN = 0;
   int scoreTopDABEN = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreTopDABEN++;
+      playSound();
     }
     setState(() {});
   }
@@ -112,5 +114,11 @@ class _QuizTopScreenDABENState extends State<QuizTopScreenDABEN> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }

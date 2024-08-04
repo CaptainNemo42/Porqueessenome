@@ -3,6 +3,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAOUT/models/questionstopDAOUT.
 import 'package:pqessenome/Screens/Quizz/screens/DAOUT/result_screentopDAOUT.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizTopScreenDAOUT extends StatefulWidget {
   const QuizTopScreenDAOUT({super.key});
@@ -17,12 +18,13 @@ class _QuizTopScreenDAOUTState extends State<QuizTopScreenDAOUT> {
   int scoreLexDAOUT = 0;
   int scoreTaxDAOUT = 0;
   int scoreTopDAOUT = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreTopDAOUT++;
+      playSound();
     }
     setState(() {});
   }
@@ -112,5 +114,11 @@ class _QuizTopScreenDAOUTState extends State<QuizTopScreenDAOUT> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }

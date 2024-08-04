@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionslexDABEL.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEN/models/questionslexDABEN.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEN/result_screenlexDABEN.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class QuizLexScreenDABEN extends StatefulWidget {
   const QuizLexScreenDABEN({super.key});
@@ -19,12 +20,13 @@ class _QuizLexScreenDABENState extends State<QuizLexScreenDABEN> {
   int scoreLexDABEN = 0;
   int scoreTaxDABEN = 0;
   int scoreTopDABEN = 0;
-
+  final player = AudioPlayer();
   void pickAnswer(int value) {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
       scoreLexDABEN++;
+      playSound();
     }
     setState(() {});
   }
@@ -152,5 +154,11 @@ class _QuizLexScreenDABENState extends State<QuizLexScreenDABEN> {
         ),
       ),
     );
+  }
+
+  AudioPlayer audioPlayer = AudioPlayer();
+  Future<void> playSound() async {
+    String soundPath = "Sound/software-interface-remove-2576.wav";
+    await player.play(AssetSource(soundPath));
   }
 }
