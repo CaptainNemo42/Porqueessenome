@@ -23,8 +23,8 @@ class _MapaDABENState extends State<MapaDABEN> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-            "DABEL",
+          title: const Text(
+            "DABEN",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
                 color: Color.fromRGBO(50, 50, 50, 1),
@@ -579,7 +579,7 @@ class _MapaDABENState extends State<MapaDABEN> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      Parqueverde()));
+                                                      const Parqueverde()));
                                         },
                                         child: const Text(
                                           "Ver Mais",

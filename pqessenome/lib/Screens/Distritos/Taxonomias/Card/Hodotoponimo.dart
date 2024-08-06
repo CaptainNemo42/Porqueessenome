@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Landing/flashcard.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/quiz_screenTaxDABEL.dart';
 
 class Hodotoponimo extends StatefulWidget {
   const Hodotoponimo({super.key});
@@ -116,7 +117,13 @@ class _HodotoponimoState extends State<Hodotoponimo> {
               SizedBox(
                 width: 200,
                 child: TextButton.icon(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const QuizTaxScreenDABEL()));
+                    },
                     icon: const Icon(Icons.assignment_outlined,
                         color: Color.fromRGBO(50, 50, 50, 1)),
                     style: TextButton.styleFrom(

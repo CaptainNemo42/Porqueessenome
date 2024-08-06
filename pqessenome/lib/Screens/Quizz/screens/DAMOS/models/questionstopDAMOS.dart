@@ -2,7 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAMOS/models/questionDAMOS.dart
 
 const List<Question> questions = [
   Question(
-    question: '1. Qual a definição correta para o topônimo "Dimensiotopônimo"?',
+    question: '1. Qual a definição correta para o topônimo "Etnotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos nomes próprios',
@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Quais são exemplos dos "Antropotopônimos"?',
+    question: '2. Quais são exemplos dos "Historiotopônimo"?',
     correctAnswerIndex: 0,
     options: [
       'a) Batista campos, Campina',
@@ -29,12 +29,12 @@ const List<Question> questions = [
       'a) Animotopônimo, relativo a fauna',
       'b) Cronotopônimo, relativo a cor',
       'c) Litotopônimo, referente a litorais',
-      'd) Fitotopônimo, relativo a vegetação',
+      'd) Zootopônimo, relativo a vegetação',
     ],
   ),
   Question(
     question:
-        '4. Com relação ao topônimo "Hagiotopônimo", qual a informação verdadeira?',
+        '4. Com relação ao topônimo "Meteorotopônimo", qual a informação verdadeira?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos Deuses Tupi',
@@ -44,7 +44,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Qual dos seguintes é exemplo do Topônimo "Fitotopônimo"?',
+    question: '5. Qual dos seguintes é exemplo do Topônimo "Dimensiotopônimo"?',
     correctAnswerIndex: 3,
     options: [
       'a) Reduto',
@@ -60,12 +60,12 @@ const List<Question> questions = [
     options: [
       'a) Numerotopônimo, relativo a ordenação',
       'b) Morfotopônimo, referente a estruturas morfológicas',
-      'c) Historiotopônimo, relativo a figuras históricas',
+      'c) Historiocardinotopônimo, relativo a figuras históricas',
       'd) Meteorotônimo, referente a meteorologia',
     ],
   ),
   Question(
-    question: '7. Qual a definição correta para o topônimo "Cronotopônimo"?',
+    question: '7. Qual a definição correta para o topônimo "Hagiotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo a coloração do local',
@@ -75,17 +75,17 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Qual o Topônimo do bairro Nazaré?',
+    question: '8. Qual o Topônimo do bairro Bonfim?',
     correctAnswerIndex: 2,
     options: [
       'a) Antropotopônimo',
       'b) Historiotopônimo',
-      'c) Hagiotopônimo',
+      'c) Ecotopônimo',
       'd) N.D.A',
     ],
   ),
   Question(
-    question: '9. Qual o Topônimo relacionado aos nomes próprios?',
+    question: '9. Qual o Topônimo relacionado a cultura espiritual?',
     correctAnswerIndex: 0,
     options: [
       'a) Antropotopônimo, de natureza antropocultural',
@@ -101,7 +101,7 @@ const List<Question> questions = [
     options: [
       'a) Antropotopônimo, relativo aos nomes próprios',
       'b) Hagiotopônimo, referente a culinária',
-      'c) Astrotopônimo, referente aos corpos celestes',
+      'c) Etnotopônimo, referente aos elementos étnicos',
       'd) Somatopônimo, relativo as partes do corpo',
     ],
   ),

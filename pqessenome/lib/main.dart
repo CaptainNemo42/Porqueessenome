@@ -1,7 +1,6 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Quizz/Add_quizz.dart';
 import 'Screens/Landing.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 

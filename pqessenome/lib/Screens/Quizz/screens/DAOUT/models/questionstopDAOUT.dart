@@ -2,7 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAOUT/models/questionDAOUT.dart
 
 const List<Question> questions = [
   Question(
-    question: '1. Qual a definição correta para o topônimo "Dimensiotopônimo"?',
+    question: '1. Qual a definição correta para o topônimo "Corotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos nomes próprios',
@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Quais são exemplos dos "Antropotopônimos"?',
+    question: '2. Quais são exemplos dos "Historiocardinotopônimo"?',
     correctAnswerIndex: 0,
     options: [
       'a) Batista campos, Campina',
@@ -28,13 +28,13 @@ const List<Question> questions = [
     options: [
       'a) Animotopônimo, relativo a fauna',
       'b) Cronotopônimo, relativo a cor',
-      'c) Litotopônimo, referente a litorais',
-      'd) Fitotopônimo, relativo a vegetação',
+      'c) Hidrotopônimo, referente a litorais',
+      'd) Etnolitotopônimo, relativo a vegetação',
     ],
   ),
   Question(
     question:
-        '4. Com relação ao topônimo "Hagiotopônimo", qual a informação verdadeira?',
+        '4. Com relação ao topônimo "Brasília", qual a informação verdadeira?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos Deuses Tupi',
@@ -44,7 +44,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Qual dos seguintes é exemplo do Topônimo "Fitotopônimo"?',
+    question: '5. Qual dos seguintes é exemplo do Topônimo "Cromotopônimo"?',
     correctAnswerIndex: 3,
     options: [
       'a) Reduto',
@@ -65,7 +65,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '7. Qual a definição correta para o topônimo "Cronotopônimo"?',
+    question: '7. Qual a definição correta para o topônimo "Água Boa"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo a coloração do local',
@@ -75,7 +75,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Qual o Topônimo do bairro Nazaré?',
+    question: '8. Qual o Topônimo do bairro Itaiteua?',
     correctAnswerIndex: 2,
     options: [
       'a) Antropotopônimo',
@@ -85,12 +85,12 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '9. Qual o Topônimo relacionado aos nomes próprios?',
+    question: '9. Qual o Topônimo relacionado as cores?',
     correctAnswerIndex: 0,
     options: [
-      'a) Antropotopônimo, de natureza antropocultural',
-      'b) Antropotopônimo, de natureza antropocultural',
-      'c) Sociotopônimo, de natureza física',
+      'a) Cromotopônimo, de natureza antropocultural',
+      'b) Cronotopônimo, de natureza antropocultural',
+      'c) Corotopônimo, de natureza física',
       'd) Somatopônimo, de natureza física',
     ],
   ),

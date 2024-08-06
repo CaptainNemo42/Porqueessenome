@@ -2,8 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAENT/models/questionDAENT.dart
 
 const List<Question> questions = [
   Question(
-    question:
-        '1.A taxonomia é a ciência que classifica entidades e organismos, quando esta trata de topônimos, o que está sendo clássificado?',
+    question: '1. Qual a descrição correta para um Antropohistoriotopônimo?',
     correctAnswerIndex: 1,
     options: [
       'a) As ruas',
@@ -13,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Reduto é um Historiotopônimo, o que isto significa?',
+    question: '2. Guanabara é um Hidrotopônimo, o que isto significa?',
     correctAnswerIndex: 2,
     options: [
       'a) Seu nome vem do latim "Reducio"',
@@ -23,7 +22,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '3. Qual a descrição correta para um Fitotopônimo?',
+    question: '3. Qual a descrição correta para um Hidrotopônimo?',
     correctAnswerIndex: 0,
     options: [
       'a) Local nomeado relativo à vegetação',
@@ -33,8 +32,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question:
-        '4. O bairro "Campina" é um antropotopônimo, o que isto significa"?',
+    question: '4. O bairro "Zootofitotopônimo" é um , o que isto significa"?',
     correctAnswerIndex: 3,
     options: [
       'a) Seu nome é relacionado ao conceito de "antropomorfismo"',
@@ -44,7 +42,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Ao análisar o bairro "São Brás", se descobre um:',
+    question: '5. Ao análisar o bairro "Universitário", se descobre um:',
     correctAnswerIndex: 3,
     options: [
       'a) Cardinotopônimo, de acordo com a geografia do nome',
@@ -55,7 +53,7 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '6. Qual é o topônimo relacionado ao tempo, qual seu equivalente em DABEL?',
+        '6. Qual é o topônimo relacionado às atividades profissionais, qual seu equivalente em DAENT?',
     correctAnswerIndex: 1,
     options: [
       'a) Cronotopônimo, Cidade Nova',
@@ -66,7 +64,7 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '7. Com relação ao bairro Nazaré temos um hierotopônimo, qual a definição correta deste topônimo?',
+        '7. Com relação ao bairro Val-de-Cans temos um Antropotopônimo, qual a definição correta deste topônimo?',
     correctAnswerIndex: 0,
     options: [
       'a) Relativo aos nomes sagrados de diferentes crenças',
@@ -76,7 +74,8 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Com relação ao topônimo "Marco", qual a alternativa correta?',
+    question:
+        '8. Com relação ao topônimo "Zootopônimo", qual a alternativa correta?',
     correctAnswerIndex: 1,
     options: [
       'a) Historiotopônimo, devido ao caráter religioso',
@@ -87,7 +86,7 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '9. Com relação ao topônimo "Batista Campos", qual a alternativa correta?',
+        '9. Qual é o topônimo relacionado a índole animal e vegetal, qual seu equivalente em DAENT?',
     correctAnswerIndex: 0,
     options: [
       'a) Antropotopônimo',
@@ -98,7 +97,7 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '10. Com relação ao topônimo "Umarizal", qual a alternativa correta?',
+        '10. Com relação ao topônimo "Fitotopônimo", qual a alternativa correta?',
     correctAnswerIndex: 1,
     options: [
       'a) Litotopônimo',

@@ -56,7 +56,7 @@ class _TCremacaoState extends State<TCremacao> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antropotopônimo",
+              const Text("Historiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

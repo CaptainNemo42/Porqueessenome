@@ -14,7 +14,7 @@ class _FarolState extends State<Farol> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -56,7 +56,7 @@ class _FarolState extends State<Farol> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Historiocardiotopônimo",
+              const Text("Historiocardinotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, unnecessary_const
 
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/Card/aeroporto.dart';
@@ -35,9 +35,9 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-            "DABEL",
-            style: TextStyle(
+          title: const Text(
+            "DAMOS",
+            style: const TextStyle(
                 fontFamily: "PoppinsBold",
                 color: Color.fromRGBO(50, 50, 50, 1),
                 fontSize: 25.0,
@@ -524,7 +524,7 @@ class _MapaDAMOSState extends State<MapaDAMOS> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Farol\nTaxonomia: Historiocardiotopônimo",
+                                        "Município: Belém\nTopônimo: Farol\nTaxonomia: Historiocardinotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),

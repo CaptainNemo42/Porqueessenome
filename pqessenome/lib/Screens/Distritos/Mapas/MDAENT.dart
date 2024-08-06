@@ -25,8 +25,8 @@ class _MapaDAENTState extends State<MapaDAENT> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-            "DABEL",
+          title: const Text(
+            "DAENT",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
                 color: Color.fromRGBO(50, 50, 50, 1),

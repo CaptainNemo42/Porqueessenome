@@ -2,8 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionDASAC.dart
 
 const List<Question> questions = [
   Question(
-    question:
-        '1.A taxonomia é a ciência que classifica entidades e organismos, quando esta trata de topônimos, o que está sendo clássificado?',
+    question: '1. ',
     correctAnswerIndex: 1,
     options: [
       'a) As ruas',
@@ -13,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Reduto é um Historiotopônimo, o que isto significa?',
+    question: '2. ',
     correctAnswerIndex: 2,
     options: [
       'a) Seu nome vem do latim "Reducio"',
@@ -23,7 +22,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '3. Qual a descrição correta para um Fitotopônimo?',
+    question: '3. ',
     correctAnswerIndex: 0,
     options: [
       'a) Local nomeado relativo à vegetação',
@@ -33,8 +32,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question:
-        '4. O bairro "Campina" é um antropotopônimo, o que isto significa"?',
+    question: '4. O bairro "" é um , o que isto significa"?',
     correctAnswerIndex: 3,
     options: [
       'a) Seu nome é relacionado ao conceito de "antropomorfismo"',
@@ -44,7 +42,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Ao análisar o bairro "São Brás", se descobre um:',
+    question: '5. Ao análisar o bairro "", se descobre um:',
     correctAnswerIndex: 3,
     options: [
       'a) Cardinotopônimo, de acordo com a geografia do nome',
@@ -54,8 +52,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question:
-        '6. Qual é o topônimo relacionado ao tempo, qual seu equivalente em DABEL?',
+    question: '6. Qual é o topônimo relacionado ao, qual seu equivalente em ?',
     correctAnswerIndex: 1,
     options: [
       'a) Cronotopônimo, Cidade Nova',
@@ -66,7 +63,7 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '7. Com relação ao bairro Nazaré temos um hierotopônimo, qual a definição correta deste topônimo?',
+        '7. Com relação ao bairro  temos um , qual a definição correta deste topônimo?',
     correctAnswerIndex: 0,
     options: [
       'a) Relativo aos nomes sagrados de diferentes crenças',
@@ -76,7 +73,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Com relação ao topônimo "Marco", qual a alternativa correta?',
+    question: '8. Com relação ao topônimo "", qual a alternativa correta?',
     correctAnswerIndex: 1,
     options: [
       'a) Historiotopônimo, devido ao caráter religioso',

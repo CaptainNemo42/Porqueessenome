@@ -12,7 +12,7 @@ class MyProgressIndicator extends StatefulWidget {
 }
 
 class _MyProgressIndicatorState extends State<MyProgressIndicator> {
-  int timerSeconds = 45;
+  int timerSeconds = 65;
   Timer? _timer;
 
   @override
@@ -56,7 +56,7 @@ class _MyProgressIndicatorState extends State<MyProgressIndicator> {
         borderRadius: BorderRadius.circular(12),
         child: LinearProgressIndicator(
           minHeight: 20,
-          value: 1 - (timerSeconds / 45),
+          value: 1 - (timerSeconds / 65),
           backgroundColor: const Color.fromARGB(255, 252, 160, 135),
           color: const Color.fromARGB(255, 169, 87, 64),
           valueColor: const AlwaysStoppedAnimation(bgColor),

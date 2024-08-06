@@ -56,7 +56,7 @@ class _TUnaState extends State<TUna> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antropotopônimo",
+              const Text("Cromocardiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

@@ -56,7 +56,7 @@ class _TValdecansState extends State<TValdecans> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antropotopônimo",
+              const Text("Historiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

@@ -4,6 +4,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAENT/result_screentaxDAENT.dar
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
 
 class QuizTaxScreenDAENT extends StatefulWidget {
   const QuizTaxScreenDAENT({super.key});
@@ -63,6 +64,24 @@ class _QuizTaxScreenDAENTState extends State<QuizTaxScreenDAENT> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            Container(
+              padding: const EdgeInsets.only(right: 18.0),
+              alignment: Alignment.topCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.close,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                  ),
+                  const MyProgressIndicator(),
+                ],
+              ),
+            ),
             Text(
               question.question,
               style: const TextStyle(

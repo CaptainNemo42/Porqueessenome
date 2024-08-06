@@ -6,6 +6,7 @@ import 'package:pqessenome/Screens/Distritos/Lexicografias/DAENT/Card/curiouting
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAENT/Card/guanabara.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAENT/Card/universitario.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAENT/LDAENT.dart';
+import 'package:pqessenome/Screens/Distritos/Lexicografias/DAENT/LDAENT3.dart';
 
 class LDaent2 extends StatefulWidget {
   const LDaent2({super.key});
@@ -21,7 +22,7 @@ class _LDaent2State extends State<LDaent2> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -182,7 +183,7 @@ class _LDaent2State extends State<LDaent2> {
                     ),
                     const SizedBox(width: 10),
                     const Image(
-                      image: AssetImage("assets/Components/Component 7.png"),
+                      image: AssetImage("assets/Components/Component 9.png"),
                       height: 91.0,
                       width: 90.0,
                     ),
@@ -192,7 +193,7 @@ class _LDaent2State extends State<LDaent2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const LDaent()));
+                                builder: (context) => const LDaent3()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

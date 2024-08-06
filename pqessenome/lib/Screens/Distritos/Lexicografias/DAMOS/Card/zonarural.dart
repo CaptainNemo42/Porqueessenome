@@ -90,33 +90,6 @@ class _ZonaruralState extends State<Zonarural> {
                     fontSize: 20.0,
                   )),
               const Divider(),
-              const Text("Informações:",
-                  style: TextStyle(
-                      fontFamily: "SemiBold",
-                      color: Color.fromRGBO(50, 50, 50, 1),
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold)),
-              const Text(
-                "Município: Belém",
-                style: TextStyle(
-                  fontFamily: "Light",
-                  color: Color.fromRGBO(50, 50, 50, 1),
-                  fontSize: 20.0,
-                ),
-              ),
-              const Text("Topônimo: Zona Rural",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Text("Taxonomia: Antropotopônimo",
-                  style: TextStyle(
-                    fontFamily: "Light",
-                    color: Color.fromRGBO(50, 50, 50, 1),
-                    fontSize: 20.0,
-                  )),
-              const Divider(),
               const Text("Natureza:",
                   style: TextStyle(
                       fontFamily: "SemiBold",

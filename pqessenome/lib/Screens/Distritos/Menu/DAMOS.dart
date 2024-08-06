@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Lexicografias/DAMOS/LDAMOS.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/TOPDAMOS.dart';
-import 'package:pqessenome/Screens/Quizz/QuizzTIpoDaico.dart';
+import 'package:pqessenome/Screens/Quizz/QuizzTipoDamos.dart';
 import '../Mapas/MDAMOS.dart';
 
 class DAMOS extends StatefulWidget {
@@ -93,7 +93,7 @@ class _DAMOSState extends State<DAMOS> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      const QuizzTipoDaico()));
+                                      const QuizzTipoDamos()));
                         },
                         icon: const Icon(Icons.assignment_outlined,
                             color: Color.fromRGBO(50, 50, 50, 1)),

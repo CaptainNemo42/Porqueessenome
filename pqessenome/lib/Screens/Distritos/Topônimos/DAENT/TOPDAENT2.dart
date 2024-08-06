@@ -6,6 +6,7 @@ import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/curioutin
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/guanabara.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/universitario.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/TOPDAENT.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/TOPDAENT3.dart';
 
 class TOPDaent2 extends StatefulWidget {
   const TOPDaent2({super.key});
@@ -182,7 +183,7 @@ class _TOPDaent2State extends State<TOPDaent2> {
                     ),
                     const SizedBox(width: 10),
                     const Image(
-                      image: AssetImage("assets/Components/Component 7.png"),
+                      image: AssetImage("assets/Components/Component 9.png"),
                       height: 91.0,
                       width: 90.0,
                     ),
@@ -192,7 +193,7 @@ class _TOPDaent2State extends State<TOPDaent2> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const TOPDaent()));
+                                builder: (context) => const TOPDaent3()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

@@ -2,7 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DASAC/models/questionDASAC.dart
 
 const List<Question> questions = [
   Question(
-    question: '1. Qual a origem do nome :',
+    question: '1. Qual a origem do nome Maracangalha:',
     correctAnswerIndex: 0,
     options: [
       'a) Antropocultural',
@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2.  Qual a natureza do topônimo :',
+    question: '2.  Qual a natureza do topônimo Telégrafo:',
     correctAnswerIndex: 2,
     options: [
       'a) Da planta Brocchinia reducta',
@@ -22,7 +22,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '3. Qual a natureza do topônimo ',
+    question: '3. Qual a natureza do topônimo Barreiro',
     correctAnswerIndex: 3,
     options: [
       'a) Batizar',
@@ -32,17 +32,17 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '4. Qual a natureza do topônimo :',
+    question: '4. Complete: Mira + mar - mirare (verbo mirar) + _________',
     correctAnswerIndex: 1,
     options: [
-      'a) Se caracteriza pela história do local',
-      'b) Carrega o significado cultural e humano do nome',
-      'c) Ilustra a importância do espaço físico',
-      'd) Todas as anteriores',
+      'a) mare (subst. mar)',
+      'b) mara (adj. Hidrológico)',
+      'c) mari (subs. mar)',
+      'd) N.D.A.',
     ],
   ),
   Question(
-    question: '5. Com relação ao topônimo , é correto afirmar:',
+    question: '5. Com relação ao topônimo Maracangalha, é correto afirmar:',
     correctAnswerIndex: 2,
     options: [
       'a) Geográfica e religiosa',
@@ -52,7 +52,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '6. Complete: _________:',
+    question: '6. Com relação ao topônimo Sacramenta, é correto afirmar :',
     correctAnswerIndex: 3,
     options: [
       'a) Caracterizado pela população agrícola',
@@ -62,7 +62,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '7. Com relação ao topônimo Cidade Velha, é correto afirmar :',
+    question: '7. Qual a origem do nome Sacramenta:',
     correctAnswerIndex: 1,
     options: [
       'a) Geográfico, definido pela presença do mineral Nitzraréth',
@@ -72,7 +72,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Qual a natureza do topônimo :',
+    question: '8. Qual a natureza do topônimo Maracangalha:',
     correctAnswerIndex: 0,
     options: [
       'a) Relativo a Germânico Marka, Sinal',
@@ -82,7 +82,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '9.Qual a natureza do topônimo "":',
+    question: '9.Qual a natureza do topônimo "Barreiro":',
     correctAnswerIndex: 3,
     options: [
       'a) Físico',
@@ -92,7 +92,8 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '10. Com relação a natureza , é correto dizer:',
+    question:
+        '10. Com relação a natureza do topônimo "Telégrafo", é correto dizer:',
     correctAnswerIndex: 3,
     options: [
       'a) Físico',

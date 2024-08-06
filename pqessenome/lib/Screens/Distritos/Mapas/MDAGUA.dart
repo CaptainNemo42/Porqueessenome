@@ -21,8 +21,8 @@ class _MapaDAGUAState extends State<MapaDAGUA> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-            "DABEL",
+          title: const Text(
+            "DAGUA",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
                 color: Color.fromRGBO(50, 50, 50, 1),

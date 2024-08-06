@@ -24,8 +24,8 @@ class _MapaDAICOState extends State<MapaDAICO> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-            "DABEL",
+          title: const Text(
+            "DAICO",
             style: TextStyle(
                 fontFamily: "PoppinsBold",
                 color: Color.fromRGBO(50, 50, 50, 1),
@@ -70,7 +70,7 @@ class _MapaDAICOState extends State<MapaDAICO> {
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
-                                        "Município: Belém\nTopônimo: Cruzeiro\nTaxonomia: Historiocardiotopônimo",
+                                        "Município: Belém\nTopônimo: Cruzeiro\nTaxonomia: Historiocardinotopônimo",
                                         style: TextStyle(
                                           fontFamily: "Light",
                                           color: Color.fromRGBO(50, 50, 50, 1),

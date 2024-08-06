@@ -56,7 +56,7 @@ class _TFarolState extends State<TFarol> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Historiocardiotopônimo",
+              const Text("Historiocardinotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

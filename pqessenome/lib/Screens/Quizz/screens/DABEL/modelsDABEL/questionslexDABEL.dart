@@ -82,7 +82,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '9. Qual a natureza do topônimo São Brás:',
+    question: '9. Qual a natureza do topônimo Marco:',
     correctAnswerIndex: 3,
     options: [
       'a) Físico',
@@ -92,7 +92,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '10. Qual a natureza do topônimo São Brás:',
+    question: '10. Qual a natureza do topônimo Umarizal:',
     correctAnswerIndex: 3,
     options: [
       'a) Físico',

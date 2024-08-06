@@ -2,7 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DABEN/models/questionDABEN.dart
 
 const List<Question> questions = [
   Question(
-    question: '1. Qual a definição correta para o topônimo "Dimensiotopônimo"?',
+    question: '1. Qual a definição correta para o topônimo "Fitotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos nomes próprios',
@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Quais são exemplos dos "Antropotopônimos"?',
+    question: '2. Quais são exemplos dos "Hodotopônimo"?',
     correctAnswerIndex: 0,
     options: [
       'a) Batista campos, Campina',
@@ -24,17 +24,17 @@ const List<Question> questions = [
   Question(
     question:
         '3. Ao analisar os topônimos a seguir, qual a informação correta?',
-    correctAnswerIndex: 1,
+    correctAnswerIndex: 3,
     options: [
-      'a) Animotopônimo, relativo a fauna',
-      'b) Cronotopônimo, relativo a cor',
-      'c) Litotopônimo, referente a litorais',
-      'd) Fitotopônimo, relativo a vegetação',
+      'a) Hodotopônimo, relativo a fauna',
+      'b) Historiotopônimo, relativo a cor',
+      'c) Fitotopônimo, referente a litorais',
+      'd) Etnotopônimo, relativo aos elementos étnicos',
     ],
   ),
   Question(
     question:
-        '4. Com relação ao topônimo "Hagiotopônimo", qual a informação verdadeira?',
+        '4. Com relação ao topônimo "Historiotopônimo", qual a informação verdadeira?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos Deuses Tupi',
@@ -44,7 +44,8 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Qual dos seguintes é exemplo do Topônimo "Fitotopônimo"?',
+    question:
+        '5. Qual dos seguintes é exemplo do Topônimo "Cromocardiotopônimo"?',
     correctAnswerIndex: 3,
     options: [
       'a) Reduto',
@@ -59,13 +60,14 @@ const List<Question> questions = [
     correctAnswerIndex: 2,
     options: [
       'a) Numerotopônimo, relativo a ordenação',
-      'b) Morfotopônimo, referente a estruturas morfológicas',
+      'b) Dimensiotopônimo, referente aos acidentes geográficos',
       'c) Historiotopônimo, relativo a figuras históricas',
       'd) Meteorotônimo, referente a meteorologia',
     ],
   ),
   Question(
-    question: '7. Qual a definição correta para o topônimo "Cronotopônimo"?',
+    question:
+        '7. Qual a definição correta para o topônimo "Cromocardiotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo a coloração do local',
@@ -75,7 +77,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Qual o Topônimo do bairro Nazaré?',
+    question: '8. Qual o Topônimo do bairro Pratinha?',
     correctAnswerIndex: 2,
     options: [
       'a) Antropotopônimo',
@@ -85,7 +87,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '9. Qual o Topônimo relacionado aos nomes próprios?',
+    question: '9. Qual o topônimo relacionado a aos acidentes geográficos?',
     correctAnswerIndex: 0,
     options: [
       'a) Antropotopônimo, de natureza antropocultural',
@@ -97,12 +99,12 @@ const List<Question> questions = [
   Question(
     question:
         '10. Ao analisar os topônimos a seguir, qual a informação incorreta?',
-    correctAnswerIndex: 0,
+    correctAnswerIndex: 3,
     options: [
-      'a) Antropotopônimo, relativo aos nomes próprios',
-      'b) Hagiotopônimo, referente a culinária',
-      'c) Astrotopônimo, referente aos corpos celestes',
-      'd) Somatopônimo, relativo as partes do corpo',
+      'a) Dimensiotopônimo, relativo aos nomes próprios',
+      'b) Fitotopônimo, referente a culinária',
+      'c) Etnotopônimo, referente aos corpos celestes',
+      'd) Cromocardinotopônimo, Cromotopônimo + Cardinotopônimo',
     ],
   ),
 ];

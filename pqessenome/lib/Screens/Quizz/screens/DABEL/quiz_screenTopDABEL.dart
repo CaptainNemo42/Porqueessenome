@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating/flutter_rating.dart';
-import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionslexDABEL.dart';
+import 'package:pqessenome/Screens/Quizz/screens/DABEL/modelsDABEL/questionstopDABEL.dart';
 import 'package:pqessenome/Screens/Quizz/screens/DABEL/result_screentopdabel.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';

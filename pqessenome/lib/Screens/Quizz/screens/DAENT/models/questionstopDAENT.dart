@@ -2,7 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAENT/models/questionDAENT.dart
 
 const List<Question> questions = [
   Question(
-    question: '1. Qual a definição correta para o topônimo "Dimensiotopônimo"?',
+    question: '1. Qual a definição correta para o topônimo "Zootopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos nomes próprios',
@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Quais são exemplos dos "Antropotopônimos"?',
+    question: '2. Quais são exemplos dos "Fitotopônimo"?',
     correctAnswerIndex: 0,
     options: [
       'a) Batista campos, Campina',
@@ -26,15 +26,15 @@ const List<Question> questions = [
         '3. Ao analisar os topônimos a seguir, qual a informação correta?',
     correctAnswerIndex: 1,
     options: [
-      'a) Animotopônimo, relativo a fauna',
+      'a) Litotopônimo, relativo a fauna',
       'b) Cronotopônimo, relativo a cor',
-      'c) Litotopônimo, referente a litorais',
-      'd) Fitotopônimo, relativo a vegetação',
+      'c) Hidrotopônimo, referente a litorais',
+      'd) Ecotopônimo, relativo às habitações de um modo geral',
     ],
   ),
   Question(
     question:
-        '4. Com relação ao topônimo "Hagiotopônimo", qual a informação verdadeira?',
+        '4. Com relação ao topônimo "Curió-Utinga", qual a informação verdadeira?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos Deuses Tupi',
@@ -44,7 +44,8 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Qual dos seguintes é exemplo do Topônimo "Fitotopônimo"?',
+    question:
+        '5. Qual dos seguintes é exemplo do Topônimo "Antropohistoriotopônimo"?',
     correctAnswerIndex: 3,
     options: [
       'a) Reduto',
@@ -60,12 +61,12 @@ const List<Question> questions = [
     options: [
       'a) Numerotopônimo, relativo a ordenação',
       'b) Morfotopônimo, referente a estruturas morfológicas',
-      'c) Historiotopônimo, relativo a figuras históricas',
+      'c) Sociotopônimo, relativo aos pontos de encontro',
       'd) Meteorotônimo, referente a meteorologia',
     ],
   ),
   Question(
-    question: '7. Qual a definição correta para o topônimo "Cronotopônimo"?',
+    question: '7. Qual a definição correta para o topônimo "Historiotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo a coloração do local',
@@ -75,7 +76,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Qual o Topônimo do bairro Nazaré?',
+    question: '8. Qual o Topônimo do bairro Mangueirão?',
     correctAnswerIndex: 2,
     options: [
       'a) Antropotopônimo',
@@ -85,23 +86,23 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '9. Qual o Topônimo relacionado aos nomes próprios?',
+    question: '9. Qual o Topônimo relacionado à cultura e história?',
     correctAnswerIndex: 0,
     options: [
-      'a) Antropotopônimo, de natureza antropocultural',
-      'b) Antropotopônimo, de natureza antropocultural',
-      'c) Sociotopônimo, de natureza física',
+      'a) Antropohistoriotopônimo, de natureza Mista',
+      'b) Ergotopônimo, de natureza antropocultural',
+      'c) Antropohistoriotopônimo, de natureza física',
       'd) Somatopônimo, de natureza física',
     ],
   ),
   Question(
     question:
         '10. Ao analisar os topônimos a seguir, qual a informação incorreta?',
-    correctAnswerIndex: 0,
+    correctAnswerIndex: 2,
     options: [
-      'a) Antropotopônimo, relativo aos nomes próprios',
+      'a) Historiotopônimo, relativo aos nomes próprios',
       'b) Hagiotopônimo, referente a culinária',
-      'c) Astrotopônimo, referente aos corpos celestes',
+      'c) Historiotopônimo, referente a história',
       'd) Somatopônimo, relativo as partes do corpo',
     ],
   ),

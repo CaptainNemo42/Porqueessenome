@@ -79,7 +79,7 @@ class _QuizzTipoDaguaState extends State<QuizzTipoDagua> {
                       height: 5,
                     ),
                     const Text(
-                      "Lexicografias - DASAC",
+                      "Lexicografias - DAGUA",
                       style: TextStyle(
                           fontFamily: "Bold",
                           color: Color.fromARGB(255, 247, 102, 62),
@@ -125,7 +125,7 @@ class _QuizzTipoDaguaState extends State<QuizzTipoDagua> {
                           height: 5,
                         ),
                         const Text(
-                          "Taxonomias - DASAC",
+                          "Taxonomias - DAGUA",
                           style: TextStyle(
                               fontFamily: "Bold",
                               color: Color.fromARGB(255, 247, 102, 62),
@@ -171,7 +171,7 @@ class _QuizzTipoDaguaState extends State<QuizzTipoDagua> {
                           height: 5,
                         ),
                         const Text(
-                          "Toponímias - DASAC",
+                          "Toponímias - DAGUA",
                           style: TextStyle(
                               fontFamily: "Bold",
                               color: Color.fromARGB(255, 247, 102, 62),

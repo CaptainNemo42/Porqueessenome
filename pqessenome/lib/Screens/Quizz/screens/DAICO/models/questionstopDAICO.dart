@@ -2,7 +2,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionDAICO.dart
 
 const List<Question> questions = [
   Question(
-    question: '1. Qual a definição correta para o topônimo "Dimensiotopônimo"?',
+    question: '1. Qual a definição correta para o topônimo "Ecotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos nomes próprios',
@@ -12,7 +12,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '2. Quais são exemplos dos "Antropotopônimos"?',
+    question: '2. Quais são exemplos dos "Ecotopônimos"?',
     correctAnswerIndex: 0,
     options: [
       'a) Batista campos, Campina',
@@ -26,7 +26,7 @@ const List<Question> questions = [
         '3. Ao analisar os topônimos a seguir, qual a informação correta?',
     correctAnswerIndex: 1,
     options: [
-      'a) Animotopônimo, relativo a fauna',
+      'a) Hidrotopônimo, relativo a fauna',
       'b) Cronotopônimo, relativo a cor',
       'c) Litotopônimo, referente a litorais',
       'd) Fitotopônimo, relativo a vegetação',
@@ -34,7 +34,7 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '4. Com relação ao topônimo "Hagiotopônimo", qual a informação verdadeira?',
+        '4. Com relação ao topônimo "Historiocardinotopônimo", qual a informação verdadeira?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos Deuses Tupi',
@@ -44,7 +44,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '5. Qual dos seguintes é exemplo do Topônimo "Fitotopônimo"?',
+    question: '5. Qual dos seguintes é exemplo do Topônimo ""?',
     correctAnswerIndex: 3,
     options: [
       'a) Reduto',
@@ -58,14 +58,14 @@ const List<Question> questions = [
         '6. Ao analisar os topônimos a seguir, qual a informação correta?',
     correctAnswerIndex: 2,
     options: [
-      'a) Numerotopônimo, relativo a ordenação',
+      'a) Etnotopônimo, relativo a ordenação',
       'b) Morfotopônimo, referente a estruturas morfológicas',
       'c) Historiotopônimo, relativo a figuras históricas',
       'd) Meteorotônimo, referente a meteorologia',
     ],
   ),
   Question(
-    question: '7. Qual a definição correta para o topônimo "Cronotopônimo"?',
+    question: '7. Qual a definição correta para o topônimo "Ergotopônimo"?',
     correctAnswerIndex: 2,
     options: [
       'a) Relativo a coloração do local',
@@ -75,7 +75,7 @@ const List<Question> questions = [
     ],
   ),
   Question(
-    question: '8. Qual o Topônimo do bairro Nazaré?',
+    question: '8. Qual o Topônimo do bairro Agulha?',
     correctAnswerIndex: 2,
     options: [
       'a) Antropotopônimo',
