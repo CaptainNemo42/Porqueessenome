@@ -2,11 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Antropotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Astrotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Axiotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Cardinotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Corotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel2.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel7.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel5.dart';
 
 class TADabel extends StatefulWidget {
   const TADabel({super.key});
@@ -125,7 +124,8 @@ class _TADabelState extends State<TADabel> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Astrotoponimo()));
+                                  builder: (context) =>
+                                      const Cardinotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -136,34 +136,7 @@ class _TADabelState extends State<TADabel> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Astrotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Axiotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Axiotopônimos",
+                          "Cardinotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -199,6 +172,33 @@ class _TADabelState extends State<TADabel> {
                               fontWeight: FontWeight.bold),
                         )),
                   ),
+                  const SizedBox(height: 15.0),
+                  SizedBox(
+                    width: 280,
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Corotoponimo()));
+                        },
+                        icon: const Icon(Icons.notes,
+                            color: Color.fromRGBO(50, 50, 50, 1)),
+                        style: TextButton.styleFrom(
+                          elevation: 5,
+                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                          backgroundColor: const Color.fromRGBO(
+                              240, 240, 240, 1), // Background Color
+                        ),
+                        label: const Text(
+                          "Coronotopônimos",
+                          style: TextStyle(
+                              fontFamily: "SemiBold",
+                              color: Color.fromRGBO(50, 50, 50, 1),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -209,7 +209,7 @@ class _TADabelState extends State<TADabel> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const TADabel7()));
+                                    builder: (context) => const TADabel5()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child: const Icon(Icons.keyboard_arrow_left_outlined),
@@ -217,7 +217,7 @@ class _TADabelState extends State<TADabel> {
                         const SizedBox(width: 10),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 26.png"),
+                              AssetImage("assets/Components/Component 15.png"),
                           height: 91.0,
                           width: 90.0,
                         ),

@@ -106,7 +106,7 @@ class _LitotoponimoState extends State<Litotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text("Córrego do Barreiro (AM); Pedreiras (AH – MG).",
+              const Text("Terra Firme, Barreiro, Pedreira.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

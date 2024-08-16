@@ -106,7 +106,7 @@ class _CronotoponimoState extends State<Cronotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Velha Boipeba (AH – BA); Nova Viçosa (AH – BA)",
+                "Cidade Velha",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

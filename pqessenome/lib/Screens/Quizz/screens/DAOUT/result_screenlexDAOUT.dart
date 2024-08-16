@@ -281,6 +281,7 @@ class _ResultScreenLexDAOUTState extends State<ResultScreenLexDAOUT> {
                       StarRating(size: 40.0, rating: 5),
                       GestureDetector(
                           onTap: () {
+                            playSound();
                             _showTutorialCoachMark();
                           },
                           child: Image.asset(

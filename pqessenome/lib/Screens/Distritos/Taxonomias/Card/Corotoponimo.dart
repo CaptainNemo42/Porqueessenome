@@ -71,7 +71,7 @@ class _CorotoponimoState extends State<Corotoponimo> {
                 color: const Color.fromRGBO(255, 165, 0, 1),
                 child: const Center(
                   child: Text(
-                    "Corotopônimo",
+                    "Coronotopônimo",
                     style: TextStyle(
                         fontFamily: "PoppinsBold",
                         color: Color.fromRGBO(50, 50, 50, 1),
@@ -106,7 +106,7 @@ class _CorotoponimoState extends State<Corotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Brasil (AH – AM); Uruguai (AH – MG); Amazonas (AH – BA).",
+                "Brasília.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

@@ -6,8 +6,8 @@ const List<Question> questions = [
     correctAnswerIndex: 2,
     options: [
       'a) Relativo aos nomes próprios',
-      'b) Relativo as dimensões espaciais',
-      'c) Relativo a acidentes geográficos',
+      'b) Referente aos elementos étnicos',
+      'c) Relativos às habitações de um modo geral.',
       'd) Relativo a dimensões paralelas',
     ],
   ),
@@ -15,10 +15,10 @@ const List<Question> questions = [
     question: '2. Quais são exemplos dos "Ecotopônimos"?',
     correctAnswerIndex: 0,
     options: [
-      'a) Batista campos, Campina',
-      'b) Reduto, Umarizal',
-      'c) Marco, Vila',
-      'd) Reduto, Campina',
+      'a) Maracacuera',
+      'b) Tenoné',
+      'c) Parque Guajará',
+      'd) Águas Negras',
     ],
   ),
   Question(
@@ -28,29 +28,29 @@ const List<Question> questions = [
     options: [
       'a) Hidrotopônimo, relativo a fauna',
       'b) Cronotopônimo, relativo a cor',
-      'c) Litotopônimo, referente a litorais',
+      'c) Historiotopônimo, relativo a história',
       'd) Fitotopônimo, relativo a vegetação',
     ],
   ),
   Question(
     question:
         '4. Com relação ao topônimo "Historiocardinotopônimo", qual a informação verdadeira?',
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 0,
     options: [
-      'a) Relativo aos Deuses Tupi',
+      'a) Relativo a história e geografia',
       'b) Relativo ao caráter religioso',
       'c) Relativo aos santos em geral',
       'd) Ilustrado no bairro Marco',
     ],
   ),
   Question(
-    question: '5. Qual dos seguintes é exemplo do Topônimo ""?',
-    correctAnswerIndex: 3,
+    question: '5. Qual dos seguintes é exemplo do Topônimo "Historiotopônimo"?',
+    correctAnswerIndex: 0,
     options: [
-      'a) Reduto',
-      'b) Marco',
-      'c) Aeroporto',
-      'd) Campina',
+      'a) Ponta Grossa',
+      'b) Agulha',
+      'c) Paracuri',
+      'd) Cruzeiro',
     ],
   ),
   Question(
@@ -70,7 +70,7 @@ const List<Question> questions = [
     options: [
       'a) Relativo a coloração do local',
       'b) Referente ao caráter nostálgico',
-      'c) Relativo ao caráter cronológico',
+      'c) referente à cultura material do homem',
       'd) Referente a natureza temporária',
     ],
   ),
@@ -81,14 +81,14 @@ const List<Question> questions = [
       'a) Antropotopônimo',
       'b) Historiotopônimo',
       'c) Hagiotopônimo',
-      'd) N.D.A',
+      'd) Ergotopônimo',
     ],
   ),
   Question(
     question: '9. Qual o Topônimo relacionado aos nomes próprios?',
     correctAnswerIndex: 0,
     options: [
-      'a) Antropotopônimo, de natureza antropocultural',
+      'a) Antrotopônimo, de natureza antropocultural',
       'b) Antropotopônimo, de natureza antropocultural',
       'c) Sociotopônimo, de natureza física',
       'd) Somatopônimo, de natureza física',

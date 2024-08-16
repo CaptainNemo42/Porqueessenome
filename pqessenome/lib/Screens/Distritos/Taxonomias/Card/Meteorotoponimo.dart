@@ -106,7 +106,7 @@ class _MeteorotoponimoState extends State<Meteorotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Serra do Vento (PB); Trovão (AH – AM); Ventania (AH – SP).",
+                "Chapéu Virado.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

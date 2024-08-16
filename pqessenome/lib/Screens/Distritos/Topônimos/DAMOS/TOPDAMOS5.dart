@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/aeroporto.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/mangueiras.dart';
-import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/maracaja.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/nataldomurubira.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/Card/zonarural.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/TOPDAMOS.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/TOPDAMOS4.dart';
-import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAMOS/TOPDAMOS6.dart';
 
 class TOPDamos5 extends StatefulWidget {
   const TOPDamos5({super.key});
@@ -115,33 +115,6 @@ class _TOPDamos5State extends State<TOPDamos5> {
               SizedBox(
                 width: 250,
                 child: TextButton.icon(
-                    onPressed: () {
-                      Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const TMaracaja()));
-                    },
-                    icon: const Icon(Icons.library_books,
-                        color: Color.fromRGBO(50, 50, 50, 1)),
-                    style: TextButton.styleFrom(
-                      elevation: 5,
-                      shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                      backgroundColor: const Color.fromRGBO(
-                          240, 240, 240, 1), // Background Color
-                    ),
-                    label: const Text(
-                      "Maracajá",
-                      style: TextStyle(
-                          fontFamily: "SemiBold",
-                          color: Color.fromRGBO(50, 50, 50, 1),
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold),
-                    )),
-              ),
-              const SizedBox(height: 15.0),
-              SizedBox(
-                width: 250,
-                child: TextButton.icon(
                   onPressed: () {
                     Navigator.pushReplacement(
                         context,
@@ -166,6 +139,33 @@ class _TOPDamos5State extends State<TOPDamos5> {
                   ),
                 ),
               ),
+              const SizedBox(height: 15.0),
+              SizedBox(
+                width: 250,
+                child: TextButton.icon(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const TZonarural()));
+                    },
+                    icon: const Icon(Icons.library_books,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                    style: TextButton.styleFrom(
+                      elevation: 5,
+                      shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                      backgroundColor: const Color.fromRGBO(
+                          240, 240, 240, 1), // Background Color
+                    ),
+                    label: const Text(
+                      "Zona Rural",
+                      style: TextStyle(
+                          fontFamily: "SemiBold",
+                          color: Color.fromRGBO(50, 50, 50, 1),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold),
+                    )),
+              ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
@@ -183,7 +183,7 @@ class _TOPDamos5State extends State<TOPDamos5> {
                     ),
                     const SizedBox(width: 10),
                     const Image(
-                      image: AssetImage("assets/Components/Component 20.png"),
+                      image: AssetImage("assets/Components/Component 19.png"),
                       height: 91.0,
                       width: 90.0,
                     ),
@@ -193,7 +193,7 @@ class _TOPDamos5State extends State<TOPDamos5> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const TOPDamos6()));
+                                builder: (context) => const TOPDamos()));
                       },
                       backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                       child: const Icon(Icons.keyboard_arrow_right_outlined),

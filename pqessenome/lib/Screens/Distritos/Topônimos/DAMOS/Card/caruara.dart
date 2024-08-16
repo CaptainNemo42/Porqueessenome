@@ -56,7 +56,7 @@ class _TCaruaraState extends State<TCaruara> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Hieretopônimo/Mitotopônimo",
+              const Text("Mitotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

@@ -99,21 +99,6 @@ class _CromotoponimoState extends State<Cromotoponimo> {
                 textAlign: TextAlign.center,
               ),
               const Divider(),
-              const Text("Exemplos:",
-                  style: TextStyle(
-                      fontFamily: "SemiBold",
-                      color: Color.fromRGBO(50, 50, 50, 1),
-                      fontSize: 17.0,
-                      fontWeight: FontWeight.bold)),
-              const Text(
-                "Rio Branco (AM); Serra Azul (SP).",
-                style: TextStyle(
-                  fontFamily: "Light",
-                  color: Color.fromRGBO(50, 50, 50, 1),
-                  fontSize: 17.0,
-                ),
-                textAlign: TextAlign.center,
-              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

@@ -40,24 +40,24 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
               Text("Flashcard $value de 10",
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: LinearProgressIndicator(
                   backgroundColor: Colors.white,
-                  valueColor: AlwaysStoppedAnimation(
-                    const Color.fromARGB(255, 247, 102, 62),
+                  valueColor: const AlwaysStoppedAnimation(
+                    Color.fromARGB(255, 247, 102, 62),
                   ),
                   minHeight: 5,
                   value: _initial,
                 ),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               SizedBox(
                   width: 300,
                   height: 300,
@@ -67,13 +67,13 @@ class _HomePageState extends State<HomePage> {
                           text: quesAnsList[_currentIndexNumber].question),
                       back: ReusableCard(
                           text: quesAnsList[_currentIndexNumber].answer))),
-              Text("Toque para ver a resposta",
+              const Text("Toque para ver a resposta",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold)),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
@@ -84,11 +84,11 @@ class _HomePageState extends State<HomePage> {
                         },
                         icon: const Icon(Icons.arrow_back,
                             color: Color.fromRGBO(50, 50, 50, 1)),
-                        label: Text(""),
+                        label: const Text(""),
                         style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            padding: EdgeInsets.only(
+                            padding: const EdgeInsets.only(
                                 right: 20, left: 25, top: 15, bottom: 15))),
                     ElevatedButton.icon(
                         onPressed: () {
@@ -97,11 +97,11 @@ class _HomePageState extends State<HomePage> {
                         },
                         icon: const Icon(Icons.arrow_forward,
                             color: Color.fromRGBO(50, 50, 50, 1)),
-                        label: Text(""),
+                        label: const Text(""),
                         style: ElevatedButton.styleFrom(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            padding: EdgeInsets.only(
+                            padding: const EdgeInsets.only(
                                 right: 20, left: 25, top: 15, bottom: 15)))
                   ])
             ])));

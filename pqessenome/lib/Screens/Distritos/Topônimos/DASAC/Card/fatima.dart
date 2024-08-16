@@ -56,7 +56,7 @@ class _TFatimaState extends State<TFatima> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Hieretopônimo/Hagiotopônimo",
+              const Text("Hagiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

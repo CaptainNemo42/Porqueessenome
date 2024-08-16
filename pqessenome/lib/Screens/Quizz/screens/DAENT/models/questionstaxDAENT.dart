@@ -3,21 +3,21 @@ import 'package:pqessenome/Screens/Quizz/screens/DAENT/models/questionDAENT.dart
 const List<Question> questions = [
   Question(
     question: '1. Qual a descrição correta para um Antropohistoriotopônimo?',
-    correctAnswerIndex: 1,
+    correctAnswerIndex: 0,
     options: [
-      'a) As ruas',
-      'b) O nome geográfico de uma região',
-      'c) A geografia de um distrito',
-      'd) Um Bairro',
+      'a) Antrotopônimo + Historiotopônimo',
+      'b) Antropônimo + Historiotopônimo',
+      'c) Antrotopônimo + Hodotopônimo',
+      'd) Antrotopônimo + Cardinotopônimo',
     ],
   ),
   Question(
     question: '2. Guanabara é um Hidrotopônimo, o que isto significa?',
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 0,
     options: [
-      'a) Seu nome vem do latim "Reducio"',
-      'b) A origem de sua região está no domínio histórico',
-      'c) Seu nome é ligado a história da região',
+      'a) Resultante de acidentes hidrográficos em geral',
+      'b) Topônimo de índole mineral',
+      'c) Resultante do caráter aquático',
       'd) N.D.A.',
     ],
   ),
@@ -27,27 +27,28 @@ const List<Question> questions = [
     options: [
       'a) Local nomeado relativo à vegetação',
       'b) Local nomeado relativo à fitoalquimia',
-      'c) Antropônimo dado ao nome de fitoplânctons',
+      'c) Relativo à acidentes hidrográficos',
       'd) Topônimo dado ao nome de vegetações',
     ],
   ),
   Question(
-    question: '4. O bairro "Zootofitotopônimo" é um , o que isto significa"?',
+    question:
+        '4. O bairro "São Clemente" é um Hagiotopônimo, o que isto significa"?',
     correctAnswerIndex: 3,
     options: [
-      'a) Seu nome é relacionado ao conceito de "antropomorfismo"',
+      'a) Possuí caráter relativo aos nomes próprios',
       'b) A região foi nomeada por movimentos culturais',
       'c) A nomenclatura suposta é de caráter antropofágico',
-      'd) Possuí caráter relativo aos nomes próprios',
+      'd) Seu nome é relacionado ao conceito religioso',
     ],
   ),
   Question(
     question: '5. Ao análisar o bairro "Universitário", se descobre um:',
-    correctAnswerIndex: 3,
+    correctAnswerIndex: 2,
     options: [
       'a) Cardinotopônimo, de acordo com a geografia do nome',
       'b) Antropotopônimo, relativo ao nome ter influência cultural',
-      'c) Axiotopônimo, baseado em sua natureza titular',
+      'c) Sociotopônimo, Relativo às atividades profissionais',
       'd) Hagiotopônimo, relativo ao caráter religioso do nome',
     ],
   ),
@@ -56,10 +57,10 @@ const List<Question> questions = [
         '6. Qual é o topônimo relacionado às atividades profissionais, qual seu equivalente em DAENT?',
     correctAnswerIndex: 1,
     options: [
-      'a) Cronotopônimo, Cidade Nova',
-      'b) Cronotopônimo, Cidade Velha',
-      'c) Cromotopônimo, Cidade Nova',
-      'd) Axiotopônimo, Cidade Velha',
+      'a) Cronotopônimo, Curió-Utinga',
+      'b) Sociotopônimo, Universitário',
+      'c) Cromotopônimo, Aurá',
+      'd) Axiotopônimo, Águas Lindas',
     ],
   ),
   Question(
@@ -67,7 +68,7 @@ const List<Question> questions = [
         '7. Com relação ao bairro Val-de-Cans temos um Antropotopônimo, qual a definição correta deste topônimo?',
     correctAnswerIndex: 0,
     options: [
-      'a) Relativo aos nomes sagrados de diferentes crenças',
+      'a) Relativo aos nomes próprios individuais',
       'b) Relativo a descoberta de hieroglifos',
       'c) Relativo ao caráter histórico',
       'd) Relativo a presença de hierarquias sociais',
@@ -76,12 +77,12 @@ const List<Question> questions = [
   Question(
     question:
         '8. Com relação ao topônimo "Zootopônimo", qual a alternativa correta?',
-    correctAnswerIndex: 1,
+    correctAnswerIndex: 2,
     options: [
-      'a) Historiotopônimo, devido ao caráter religioso',
-      'b) Historiocardinotopônimo, deviso ao caráter histórico e social',
-      'c) Hagiotopônimo, devido a presença de santos marcantes',
-      'd) Antropotopônimo',
+      'a) Relativo à índole vegetal',
+      'b) Relativo às características dimensionais dos acidentes',
+      'c) Relativo a índole animal',
+      'd) Zootopônimo + Fitotopônimo',
     ],
   ),
   Question(
@@ -89,10 +90,10 @@ const List<Question> questions = [
         '9. Qual é o topônimo relacionado a índole animal e vegetal, qual seu equivalente em DAENT?',
     correctAnswerIndex: 0,
     options: [
-      'a) Antropotopônimo',
-      'b) Historiotopônimo',
-      'c) Cronotopônimo',
-      'd) Poliotopônimo',
+      'a) Zootofitotopônimo, Curió-Utinga',
+      'b) Zootopônimo, Universitário',
+      'c) Antropohistoriotopônimo, Souza',
+      'd) Poliotopônimo, Mangueirão',
     ],
   ),
   Question(
@@ -100,10 +101,10 @@ const List<Question> questions = [
         '10. Com relação ao topônimo "Fitotopônimo", qual a alternativa correta?',
     correctAnswerIndex: 1,
     options: [
-      'a) Litotopônimo',
-      'b) Fitotopônimo',
-      'c) Antropotopônimo',
-      'd) Hagiotopônimo',
+      'a) Relativo ao caráter histórico',
+      'b) Relativo a vegetação',
+      'c) Relativo aos nomes sagrados de diferentes crenças',
+      'd) Relativo a presença de hierarquias sociais',
     ],
   ),
 ];

@@ -106,7 +106,7 @@ class _FitotoponimoState extends State<Fitotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Estrela (AH- BA); Saturno (AH- ES).",
+                "Campinas, Umarizal, Coqueiro, Castanheira, Mangueirão, Campina de Icoaraci, Mangueiras.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

@@ -106,7 +106,7 @@ class _DimensiotoponimoState extends State<Dimensiotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Ilha Comprida (AM); Serra Curta (BA); Larga (AH – GO); Morro Alto (GO); Córrego Fundo (MT).",
+                "Parque Verde, Marambaia, Parque Guajará, Porto Arthur, Praia Grande.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

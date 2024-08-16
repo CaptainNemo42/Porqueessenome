@@ -106,7 +106,7 @@ class _SociotoponimoState extends State<Sociotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Sapateiro (serra do. SP); Pracinha (AH – SP).",
+                "Universitário.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

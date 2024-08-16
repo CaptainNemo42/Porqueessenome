@@ -56,7 +56,7 @@ class _TSouzaState extends State<TSouza> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antropotopônimo",
+              const Text("Antropohistoriotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

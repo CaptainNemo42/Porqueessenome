@@ -2,29 +2,29 @@ import 'package:pqessenome/Screens/Quizz/screens/DAOUT/models/questionDAOUT.dart
 
 const List<Question> questions = [
   Question(
-    question: '1. Qual a definição correta para o topônimo "Corotopônimo"?',
-    correctAnswerIndex: 2,
+    question: '1. Qual a definição correta para o topônimo "Etnotopônimo"?',
+    correctAnswerIndex: 0,
     options: [
-      'a) Relativo aos nomes próprios',
-      'b) Relativo as dimensões espaciais',
-      'c) Relativo a acidentes geográficos',
-      'd) Relativo a dimensões paralelas',
+      'a) Referente aos elementos étnicos',
+      'b) Relativo às atividades profissionais',
+      'c) Encerra indicadores cronológicos',
+      'd) Relativo aos nomes de cidades',
     ],
   ),
   Question(
     question: '2. Quais são exemplos dos "Historiocardinotopônimo"?',
     correctAnswerIndex: 0,
     options: [
-      'a) Batista campos, Campina',
-      'b) Reduto, Umarizal',
-      'c) Marco, Vila',
-      'd) Reduto, Campina',
+      'a) Farol, São João do Outeiro',
+      'b) Souza, Itaiteua',
+      'c) Farol, Una',
+      'd) Itaiteua, Brasília',
     ],
   ),
   Question(
     question:
         '3. Ao analisar os topônimos a seguir, qual a informação correta?',
-    correctAnswerIndex: 1,
+    correctAnswerIndex: 2,
     options: [
       'a) Animotopônimo, relativo a fauna',
       'b) Cronotopônimo, relativo a cor',
@@ -37,20 +37,20 @@ const List<Question> questions = [
         '4. Com relação ao topônimo "Brasília", qual a informação verdadeira?',
     correctAnswerIndex: 2,
     options: [
-      'a) Relativo aos Deuses Tupi',
-      'b) Relativo ao caráter religioso',
-      'c) Relativo aos santos em geral',
-      'd) Ilustrado no bairro Marco',
+      'a) Animotopônimo, relativo a fauna',
+      'b) Cronotopônimo, relativo a cor',
+      'c) Hidrotopônimo, referente a litorais',
+      'd) Etnolitotopônimo, relativo a vegetação',
     ],
   ),
   Question(
     question: '5. Qual dos seguintes é exemplo do Topônimo "Cromotopônimo"?',
-    correctAnswerIndex: 3,
+    correctAnswerIndex: 0,
     options: [
-      'a) Reduto',
-      'b) Marco',
+      'a) Una',
+      'b) Brasília',
       'c) Aeroporto',
-      'd) Campina',
+      'd) Cidade Velha',
     ],
   ),
   Question(
@@ -60,27 +60,27 @@ const List<Question> questions = [
     options: [
       'a) Numerotopônimo, relativo a ordenação',
       'b) Morfotopônimo, referente a estruturas morfológicas',
-      'c) Historiotopônimo, relativo a figuras históricas',
+      'c) Sociotopônimo, relativo às atividades profissionais',
       'd) Meteorotônimo, referente a meteorologia',
     ],
   ),
   Question(
     question: '7. Qual a definição correta para o topônimo "Água Boa"?',
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 0,
     options: [
-      'a) Relativo a coloração do local',
-      'b) Referente ao caráter nostálgico',
-      'c) Relativo ao caráter cronológico',
-      'd) Referente a natureza temporária',
+      'a) Hidrotopônimo',
+      'b) Dimensiotopônimo',
+      'c) Fitotopônimo',
+      'd) Zootopônimo',
     ],
   ),
   Question(
     question: '8. Qual o Topônimo do bairro Itaiteua?',
     correctAnswerIndex: 2,
     options: [
-      'a) Antropotopônimo',
+      'a) Zooetnotopônimo',
       'b) Historiotopônimo',
-      'c) Hagiotopônimo',
+      'c) Etnolitopônimo',
       'd) N.D.A',
     ],
   ),
@@ -90,7 +90,7 @@ const List<Question> questions = [
     options: [
       'a) Cromotopônimo, de natureza antropocultural',
       'b) Cronotopônimo, de natureza antropocultural',
-      'c) Corotopônimo, de natureza física',
+      'c) Coronotopônimo, de natureza física',
       'd) Somatopônimo, de natureza física',
     ],
   ),

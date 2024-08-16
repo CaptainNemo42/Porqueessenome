@@ -113,7 +113,7 @@ class _TMaracacueraState extends State<TMaracacuera> {
                   )),
               const Center(
                 child: Text(
-                  "Maracacuera.",
+                  "Maracacuera, Bonfim.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

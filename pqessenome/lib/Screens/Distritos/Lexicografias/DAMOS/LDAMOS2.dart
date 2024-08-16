@@ -22,7 +22,7 @@ class _LDamos2State extends State<LDamos2> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -183,7 +183,7 @@ class _LDamos2State extends State<LDamos2> {
                     ),
                     const SizedBox(width: 10),
                     const Image(
-                      image: AssetImage("assets/Components/Component 20.png"),
+                      image: AssetImage("assets/Components/Component 21.png"),
                       height: 91.0,
                       width: 90.0,
                     ),

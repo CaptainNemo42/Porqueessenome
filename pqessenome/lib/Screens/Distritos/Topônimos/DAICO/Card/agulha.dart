@@ -56,7 +56,7 @@ class _TAgulhaState extends State<TAgulha> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antropohistoriotopônimo",
+              const Text("Acuculaergotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),

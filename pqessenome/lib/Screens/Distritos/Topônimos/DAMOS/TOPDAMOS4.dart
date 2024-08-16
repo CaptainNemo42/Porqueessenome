@@ -183,7 +183,7 @@ class _TOPDamos4State extends State<TOPDamos4> {
                     ),
                     const SizedBox(width: 10),
                     const Image(
-                      image: AssetImage("assets/Components/Component 20.png"),
+                      image: AssetImage("assets/Components/Component 18.png"),
                       height: 91.0,
                       width: 90.0,
                     ),

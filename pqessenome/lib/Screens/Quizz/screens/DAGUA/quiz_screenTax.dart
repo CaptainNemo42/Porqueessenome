@@ -3,6 +3,7 @@ import 'package:pqessenome/Screens/Quizz/screens/DAGUA/models/questionstaxDAGUA.
 import 'package:pqessenome/Screens/Quizz/screens/DAGUA/result_screentaxDAGUA.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/answer_card.dart';
 import 'package:pqessenome/Screens/Quizz/widgets/next_button.dart';
+import 'package:pqessenome/Screens/Componentes/linear_progress_indicator_widget.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 class QuizTaxScreenDAGUA extends StatefulWidget {
@@ -23,7 +24,7 @@ class _QuizTaxScreenDAGUAState extends State<QuizTaxScreenDAGUA> {
     selectedAnswerIndex = value;
     final question = questions[questionIndex];
     if (selectedAnswerIndex == question.correctAnswerIndex) {
-      scoreLexDAGUA++;
+      scoreTaxDAGUA++;
       playSound();
     }
     setState(() {});
@@ -63,6 +64,24 @@ class _QuizTaxScreenDAGUAState extends State<QuizTaxScreenDAGUA> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            Container(
+              padding: const EdgeInsets.only(right: 18.0),
+              alignment: Alignment.topCenter,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  IconButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    icon: const Icon(Icons.close,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                  ),
+                  const MyProgressIndicator(),
+                ],
+              ),
+            ),
             Text(
               question.question,
               style: const TextStyle(

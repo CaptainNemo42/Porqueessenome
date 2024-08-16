@@ -56,7 +56,7 @@ class _AgulhaState extends State<Agulha> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Antropohistoriotopônimo",
+              const Text("Acuculaergotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _AgulhaState extends State<Agulha> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Antropohistoriotopônimo",
+              const Text("Taxonomia: Acuculaergotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

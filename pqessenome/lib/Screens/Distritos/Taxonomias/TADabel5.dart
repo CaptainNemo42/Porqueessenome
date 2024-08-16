@@ -1,12 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Historiotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Hodotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Litotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Meteorotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Zootoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/sociotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel4.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel6.dart';
 
 class TADabel5 extends StatefulWidget {
   const TADabel5({super.key});
@@ -98,8 +96,7 @@ class _TADabel5State extends State<TADabel5> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) =>
-                                      const Historiotoponimo()));
+                                  builder: (context) => const Sociotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -110,7 +107,7 @@ class _TADabel5State extends State<TADabel5> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Historiotopônimos",
+                          "Sociotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -126,7 +123,7 @@ class _TADabel5State extends State<TADabel5> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Hodotoponimo()));
+                                  builder: (context) => const Zootoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -137,62 +134,7 @@ class _TADabel5State extends State<TADabel5> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Hodotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Litotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Litotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      const Meteorotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Meteorotopônimos",
+                          "Zootopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -218,7 +160,7 @@ class _TADabel5State extends State<TADabel5> {
                         const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 30.png"),
+                              AssetImage("assets/Components/Component 19.png"),
                           height: 91.0,
                           width: 90.0,
                         ),
@@ -228,7 +170,7 @@ class _TADabel5State extends State<TADabel5> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const TADabel6()));
+                                    builder: (context) => const TADabel()));
                           },
                           backgroundColor: const Color.fromRGBO(255, 165, 0, 1),
                           child:

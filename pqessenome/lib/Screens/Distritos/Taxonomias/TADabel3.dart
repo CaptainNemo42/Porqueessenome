@@ -1,9 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Dirrematoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Ecotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Ergotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Fitotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/HIdrotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Hieretoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Historiotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel2.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel4.dart';
 
@@ -97,8 +98,89 @@ class _TADabel3State extends State<TADabel3> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
+                                  builder: (context) => const Fitotoponimo()));
+                        },
+                        icon: const Icon(Icons.notes,
+                            color: Color.fromRGBO(50, 50, 50, 1)),
+                        style: TextButton.styleFrom(
+                          elevation: 5,
+                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                          backgroundColor: const Color.fromRGBO(
+                              240, 240, 240, 1), // Background Color
+                        ),
+                        label: const Text(
+                          "Fitotopônimos",
+                          style: TextStyle(
+                              fontFamily: "SemiBold",
+                              color: Color.fromRGBO(50, 50, 50, 1),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  const SizedBox(height: 15.0),
+                  SizedBox(
+                    width: 280,
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Hidrotoponimo()));
+                        },
+                        icon: const Icon(Icons.notes,
+                            color: Color.fromRGBO(50, 50, 50, 1)),
+                        style: TextButton.styleFrom(
+                          elevation: 5,
+                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                          backgroundColor: const Color.fromRGBO(
+                              240, 240, 240, 1), // Background Color
+                        ),
+                        label: const Text(
+                          "Hidrotopônimos",
+                          style: TextStyle(
+                              fontFamily: "SemiBold",
+                              color: Color.fromRGBO(50, 50, 50, 1),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  const SizedBox(height: 15.0),
+                  SizedBox(
+                    width: 280,
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Hieretoponimo()));
+                        },
+                        icon: const Icon(Icons.notes,
+                            color: Color.fromRGBO(50, 50, 50, 1)),
+                        style: TextButton.styleFrom(
+                          elevation: 5,
+                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                          backgroundColor: const Color.fromRGBO(
+                              240, 240, 240, 1), // Background Color
+                        ),
+                        label: const Text(
+                          "Hierotopônimos",
+                          style: TextStyle(
+                              fontFamily: "SemiBold",
+                              color: Color.fromRGBO(50, 50, 50, 1),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  const SizedBox(height: 15.0),
+                  SizedBox(
+                    width: 280,
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
                                   builder: (context) =>
-                                      const Dirrematoponimo()));
+                                      const Historiotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -109,88 +191,7 @@ class _TADabel3State extends State<TADabel3> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Dirrematopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Ecotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Ecotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Ergotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Ergotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Ergotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Ergotopônimos",
+                          "Historiotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -216,7 +217,7 @@ class _TADabel3State extends State<TADabel3> {
                         const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 28.png"),
+                              AssetImage("assets/Components/Component 17.png"),
                           height: 91.0,
                           width: 90.0,
                         ),

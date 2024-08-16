@@ -72,7 +72,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: widget.scoreLexDABEL / 9,
+                        value: widget.scoreTaxDABEL / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -80,7 +80,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                     Column(
                       children: [
                         Text(
-                          widget.scoreLexDABEL.toString(),
+                          widget.scoreTaxDABEL.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(widget.scoreLexDABEL / questions.length * 100).round()}%',
+                          '${(widget.scoreTaxDABEL / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (widget.scoreLexDABEL <= 1)
+                if (widget.scoreTaxDABEL <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -120,7 +120,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 2)
+                if (widget.scoreTaxDABEL == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -137,7 +137,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 3)
+                if (widget.scoreTaxDABEL == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -154,7 +154,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 4)
+                if (widget.scoreTaxDABEL == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -171,7 +171,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 5)
+                if (widget.scoreTaxDABEL == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -188,7 +188,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 6)
+                if (widget.scoreTaxDABEL == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +205,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 7)
+                if (widget.scoreTaxDABEL == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -222,7 +222,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 8)
+                if (widget.scoreTaxDABEL == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -239,7 +239,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 9)
+                if (widget.scoreTaxDABEL == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -256,7 +256,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 0)
+                if (widget.scoreTaxDABEL == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -273,7 +273,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 10)
+                if (widget.scoreTaxDABEL == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -372,7 +372,7 @@ class _ResultScreenTaxDABELState extends State<ResultScreenTaxDABEL> {
           ]),
       TargetFocus(
           shape: ShapeLightFocus.Circle,
-          identify: "key1",
+          identify: "key2",
           keyTarget: _medalhaVazia,
           contents: [
             TargetContent(

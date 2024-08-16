@@ -106,8 +106,7 @@ class _HodotoponimoState extends State<Hodotoponimo> {
                       color: Color.fromRGBO(50, 50, 50, 1),
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
-              const Text(
-                  "Estradas (AH-AM); Rua da Palha (AH-BA); Travessa (AH-BA).",
+              const Text("Pratinha, Tapanã.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

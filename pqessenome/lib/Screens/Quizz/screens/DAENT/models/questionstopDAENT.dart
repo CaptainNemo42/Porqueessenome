@@ -5,20 +5,20 @@ const List<Question> questions = [
     question: '1. Qual a definição correta para o topônimo "Zootopônimo"?',
     correctAnswerIndex: 2,
     options: [
-      'a) Relativo aos nomes próprios',
-      'b) Relativo as dimensões espaciais',
+      'a) Relativo a vegetação',
+      'b) Relativo a índole animal',
       'c) Relativo a acidentes geográficos',
       'd) Relativo a dimensões paralelas',
     ],
   ),
   Question(
     question: '2. Quais são exemplos dos "Fitotopônimo"?',
-    correctAnswerIndex: 0,
+    correctAnswerIndex: 2,
     options: [
-      'a) Batista campos, Campina',
-      'b) Reduto, Umarizal',
-      'c) Marco, Vila',
-      'd) Reduto, Campina',
+      'a) Castanheira, Guanabara',
+      'b) Condor, Ariramba',
+      'c) Castanheira, Mangueirão',
+      'd) Reduto, Mangueirão',
     ],
   ),
   Question(
@@ -39,8 +39,8 @@ const List<Question> questions = [
     options: [
       'a) Relativo aos Deuses Tupi',
       'b) Relativo ao caráter religioso',
-      'c) Relativo aos santos em geral',
-      'd) Ilustrado no bairro Marco',
+      'c) Composto por palavras tupi',
+      'd) Relativo a vegetação',
     ],
   ),
   Question(
@@ -48,10 +48,10 @@ const List<Question> questions = [
         '5. Qual dos seguintes é exemplo do Topônimo "Antropohistoriotopônimo"?',
     correctAnswerIndex: 3,
     options: [
-      'a) Reduto',
-      'b) Marco',
-      'c) Aeroporto',
-      'd) Campina',
+      'a) Curió-Utinga',
+      'b) Universitário',
+      'c) Souza',
+      'd) Castanheira',
     ],
   ),
   Question(
@@ -59,7 +59,7 @@ const List<Question> questions = [
         '6. Ao analisar os topônimos a seguir, qual a informação correta?',
     correctAnswerIndex: 2,
     options: [
-      'a) Numerotopônimo, relativo a ordenação',
+      'a) Dimensiotopônimo, relativo aos acidentes geográficos',
       'b) Morfotopônimo, referente a estruturas morfológicas',
       'c) Sociotopônimo, relativo aos pontos de encontro',
       'd) Meteorotônimo, referente a meteorologia',
@@ -67,21 +67,21 @@ const List<Question> questions = [
   ),
   Question(
     question: '7. Qual a definição correta para o topônimo "Historiotopônimo"?',
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 1,
     options: [
       'a) Relativo a coloração do local',
-      'b) Referente ao caráter nostálgico',
+      'b) Referente aos movimentos de cunho histórico',
       'c) Relativo ao caráter cronológico',
       'd) Referente a natureza temporária',
     ],
   ),
   Question(
     question: '8. Qual o Topônimo do bairro Mangueirão?',
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 1,
     options: [
       'a) Antropotopônimo',
-      'b) Historiotopônimo',
-      'c) Hagiotopônimo',
+      'b) Fitotopônimo',
+      'c) Dimensiotopônimo',
       'd) N.D.A',
     ],
   ),
@@ -97,12 +97,12 @@ const List<Question> questions = [
   ),
   Question(
     question:
-        '10. Ao analisar os topônimos a seguir, qual a informação incorreta?',
+        '10. Ao analisar os topônimos a seguir, qual a informação correta?',
     correctAnswerIndex: 2,
     options: [
       'a) Historiotopônimo, relativo aos nomes próprios',
       'b) Hagiotopônimo, referente a culinária',
-      'c) Historiotopônimo, referente a história',
+      'c) Fitotopônimo, relativo à índole vegetal',
       'd) Somatopônimo, relativo as partes do corpo',
     ],
   ),

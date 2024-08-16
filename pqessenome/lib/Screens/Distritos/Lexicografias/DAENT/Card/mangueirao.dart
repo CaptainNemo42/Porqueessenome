@@ -14,7 +14,7 @@ class _MangueiraoState extends State<Mangueirao> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
-          title: Image(
+          title: const Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
             width: 90.0,
@@ -56,7 +56,7 @@ class _MangueiraoState extends State<Mangueirao> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Historiotopônimo",
+              const Text("Fitotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _MangueiraoState extends State<Mangueirao> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Historiotopônimo",
+              const Text("Taxonomia: Fitotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

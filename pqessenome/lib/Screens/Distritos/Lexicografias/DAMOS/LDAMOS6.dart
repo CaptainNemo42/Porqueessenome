@@ -19,6 +19,7 @@ class _LDamos6State extends State<LDamos6> {
         appBar: AppBar(
           toolbarHeight: 90,
           centerTitle: true,
+          // ignore: prefer_const_constructors
           title: Image(
             image: AssetImage("assets/Components/LOGOBG.png"),
             height: 91.0,
@@ -98,7 +99,7 @@ class _LDamos6State extends State<LDamos6> {
                     ),
                     const SizedBox(width: 10),
                     const Image(
-                      image: AssetImage("assets/Components/Component 20.png"),
+                      image: AssetImage("assets/Components/Component 25.png"),
                       height: 91.0,
                       width: 90.0,
                     ),

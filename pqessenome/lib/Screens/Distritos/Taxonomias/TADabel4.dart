@@ -1,10 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Fitotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Geomorfotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/HIdrotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Hieretoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Historiotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Hodotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Litotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Meteorotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel3.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel5.dart';
 
@@ -98,7 +98,7 @@ class _TADabel4State extends State<TADabel4> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Fitotoponimo()));
+                                  builder: (context) => const Hodotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -109,7 +109,34 @@ class _TADabel4State extends State<TADabel4> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Fitotopônimos",
+                          "Hodotopônimos",
+                          style: TextStyle(
+                              fontFamily: "SemiBold",
+                              color: Color.fromRGBO(50, 50, 50, 1),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  const SizedBox(height: 15.0),
+                  SizedBox(
+                    width: 280,
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Litotoponimo()));
+                        },
+                        icon: const Icon(Icons.notes,
+                            color: Color.fromRGBO(50, 50, 50, 1)),
+                        style: TextButton.styleFrom(
+                          elevation: 5,
+                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                          backgroundColor: const Color.fromRGBO(
+                              240, 240, 240, 1), // Background Color
+                        ),
+                        label: const Text(
+                          "Litotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -126,7 +153,7 @@ class _TADabel4State extends State<TADabel4> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      const Geomorfotoponimo()));
+                                      const Meteorotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -137,7 +164,7 @@ class _TADabel4State extends State<TADabel4> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Geomorfotopônimos",
+                          "Meteorotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -153,7 +180,8 @@ class _TADabel4State extends State<TADabel4> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Hidrotoponimo()));
+                                  builder: (context) =>
+                                      const Historiotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
                             color: Color.fromRGBO(50, 50, 50, 1)),
@@ -164,34 +192,7 @@ class _TADabel4State extends State<TADabel4> {
                               240, 240, 240, 1), // Background Color
                         ),
                         label: const Text(
-                          "Hidrotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Hieretoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Hierotopônimos",
+                          "Historiotopônimos",
                           style: TextStyle(
                               fontFamily: "SemiBold",
                               color: Color.fromRGBO(50, 50, 50, 1),
@@ -217,7 +218,7 @@ class _TADabel4State extends State<TADabel4> {
                         const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 29.png"),
+                              AssetImage("assets/Components/Component 18.png"),
                           height: 91.0,
                           width: 90.0,
                         ),

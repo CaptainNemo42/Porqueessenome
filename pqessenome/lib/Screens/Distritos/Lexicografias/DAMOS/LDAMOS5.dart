@@ -183,7 +183,7 @@ class _LDamos5State extends State<LDamos5> {
                     ),
                     const SizedBox(width: 10),
                     const Image(
-                      image: AssetImage("assets/Components/Component 20.png"),
+                      image: AssetImage("assets/Components/Component 24.png"),
                       height: 91.0,
                       width: 90.0,
                     ),

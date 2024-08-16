@@ -106,7 +106,7 @@ class _HieretoponimoState extends State<Hieretoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Cristo Rei (AH – PR); Ala (lago – AM); Natal (AH – AC); Cruz de Malta (AH – SC); Santa Tereza (AH – GO); Santana da Boa Vista (AH – RS); Lago Curupira (AM); Ribeirão Saci (ES).",
+                "Nazaré, São Brás, São Clemente, Caruará, São Francisco, Fátima.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

@@ -72,7 +72,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: widget.scoreLexDABEL / 9,
+                        value: widget.scoreTopDABEL / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -80,7 +80,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                     Column(
                       children: [
                         Text(
-                          widget.scoreLexDABEL.toString(),
+                          widget.scoreTopDABEL.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(widget.scoreLexDABEL / questions.length * 100).round()}%',
+                          '${(widget.scoreTopDABEL / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (widget.scoreLexDABEL <= 1)
+                if (widget.scoreTopDABEL <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -120,7 +120,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 2)
+                if (widget.scoreTopDABEL == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -137,7 +137,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 3)
+                if (widget.scoreTopDABEL == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -154,7 +154,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 4)
+                if (widget.scoreTopDABEL == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -171,7 +171,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 5)
+                if (widget.scoreTopDABEL == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -188,7 +188,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 6)
+                if (widget.scoreTopDABEL == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -205,7 +205,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 7)
+                if (widget.scoreTopDABEL == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -222,7 +222,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 8)
+                if (widget.scoreTopDABEL == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -239,7 +239,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 9)
+                if (widget.scoreTopDABEL == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -256,7 +256,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 0)
+                if (widget.scoreTopDABEL == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -273,7 +273,7 @@ class _ResultScreenTopDABELState extends State<ResultScreenTopDABEL> {
                           )),
                     ],
                   ),
-                if (widget.scoreLexDABEL == 10)
+                if (widget.scoreTopDABEL == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

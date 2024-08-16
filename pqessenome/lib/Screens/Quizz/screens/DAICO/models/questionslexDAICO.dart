@@ -73,11 +73,11 @@ const List<Question> questions = [
   ),
   Question(
     question: '8. Qual a natureza do topônimo Paracuri:',
-    correctAnswerIndex: 0,
+    correctAnswerIndex: 3,
     options: [
       'a) Relativo a Germânico Marka, Sinal',
       'b) Definido no aspecto comercial de produto, marca',
-      'c) Relativo ao conceito de Markup, Distinguir',
+      'b) Relativo ao tupi',
       'd) Nenhuma das alternativas',
     ],
   ),

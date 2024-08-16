@@ -56,7 +56,7 @@ class _TSaobrasState extends State<TSaobras> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Hieretopônimo",
+              const Text("Hagiotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _TSaobrasState extends State<TSaobras> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Hieretopônimo/Hagiotopônimo",
+              const Text("Taxonomia: Hagiotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

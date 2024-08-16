@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/aguaslindas.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/Card/aura.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/TOPDAENT.dart';
 import 'package:pqessenome/Screens/Distritos/Top%C3%B4nimos/DAENT/TOPDAENT2.dart';
@@ -74,6 +75,33 @@ class _TOPDaent3State extends State<TOPDaent3> {
                     ),
                     label: const Text(
                       "Aurá",
+                      style: TextStyle(
+                          fontFamily: "SemiBold",
+                          color: Color.fromRGBO(50, 50, 50, 1),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold),
+                    )),
+              ),
+              const SizedBox(height: 15.0),
+              SizedBox(
+                width: 250,
+                child: TextButton.icon(
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const TAguaslindas()));
+                    },
+                    icon: const Icon(Icons.library_books,
+                        color: Color.fromRGBO(50, 50, 50, 1)),
+                    style: TextButton.styleFrom(
+                      elevation: 5,
+                      shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                      backgroundColor: const Color.fromRGBO(
+                          240, 240, 240, 1), // Background Color
+                    ),
+                    label: const Text(
+                      "Águas Lindas",
                       style: TextStyle(
                           fontFamily: "SemiBold",
                           color: Color.fromRGBO(50, 50, 50, 1),

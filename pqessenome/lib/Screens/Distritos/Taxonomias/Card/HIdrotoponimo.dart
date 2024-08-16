@@ -106,7 +106,7 @@ class _HidrotoponimoState extends State<Hidrotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Água Boa (AH – MG); Córrego Novo (AH – MG).",
+                "Águas Lindas, Aurá, Guanabara, Águas Negras, Baía do Sol, Guamá, Água Boa, Miramar.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

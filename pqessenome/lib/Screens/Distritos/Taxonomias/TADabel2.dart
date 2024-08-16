@@ -1,10 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Cardinotoponimo.dart';
-import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Corotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Cromotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Dimensiotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Ecotoponimo.dart';
+import 'package:pqessenome/Screens/Distritos/Taxonomias/Card/Ergotoponimo.dart';
 import 'package:pqessenome/Screens/Distritos/Taxonomias/TADabel3.dart';
 import 'TADabel.dart';
 
@@ -98,61 +98,6 @@ class _TADabel2State extends State<TADabel2> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) =>
-                                      const Cardinotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Cardinotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const Corotoponimo()));
-                        },
-                        icon: const Icon(Icons.notes,
-                            color: Color.fromRGBO(50, 50, 50, 1)),
-                        style: TextButton.styleFrom(
-                          elevation: 5,
-                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
-                          backgroundColor: const Color.fromRGBO(
-                              240, 240, 240, 1), // Background Color
-                        ),
-                        label: const Text(
-                          "Corotopônimos",
-                          style: TextStyle(
-                              fontFamily: "SemiBold",
-                              color: Color.fromRGBO(50, 50, 50, 1),
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold),
-                        )),
-                  ),
-                  const SizedBox(height: 15.0),
-                  SizedBox(
-                    width: 280,
-                    child: TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
                                   builder: (context) => const Cromotoponimo()));
                         },
                         icon: const Icon(Icons.notes,
@@ -200,6 +145,60 @@ class _TADabel2State extends State<TADabel2> {
                               fontWeight: FontWeight.bold),
                         )),
                   ),
+                  const SizedBox(height: 15.0),
+                  SizedBox(
+                    width: 280,
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Ecotoponimo()));
+                        },
+                        icon: const Icon(Icons.notes,
+                            color: Color.fromRGBO(50, 50, 50, 1)),
+                        style: TextButton.styleFrom(
+                          elevation: 5,
+                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                          backgroundColor: const Color.fromRGBO(
+                              240, 240, 240, 1), // Background Color
+                        ),
+                        label: const Text(
+                          "Ecotopônimos",
+                          style: TextStyle(
+                              fontFamily: "SemiBold",
+                              color: Color.fromRGBO(50, 50, 50, 1),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
+                  const SizedBox(height: 15.0),
+                  SizedBox(
+                    width: 280,
+                    child: TextButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Ergotoponimo()));
+                        },
+                        icon: const Icon(Icons.notes,
+                            color: Color.fromRGBO(50, 50, 50, 1)),
+                        style: TextButton.styleFrom(
+                          elevation: 5,
+                          shadowColor: const Color.fromRGBO(50, 50, 50, 1),
+                          backgroundColor: const Color.fromRGBO(
+                              240, 240, 240, 1), // Background Color
+                        ),
+                        label: const Text(
+                          "Ergotopônimos",
+                          style: TextStyle(
+                              fontFamily: "SemiBold",
+                              color: Color.fromRGBO(50, 50, 50, 1),
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -218,7 +217,7 @@ class _TADabel2State extends State<TADabel2> {
                         const SizedBox(width: 15),
                         const Image(
                           image:
-                              AssetImage("assets/Components/Component 27.png"),
+                              AssetImage("assets/Components/Component 16.png"),
                           height: 91.0,
                           width: 90.0,
                         ),

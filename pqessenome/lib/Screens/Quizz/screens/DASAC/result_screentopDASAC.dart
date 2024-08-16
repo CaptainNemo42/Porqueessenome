@@ -73,7 +73,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                       width: 250,
                       child: CircularProgressIndicator(
                         strokeWidth: 10,
-                        value: widget.scoreTaxDASAC / 9,
+                        value: widget.scoreTopDASAC / 9,
                         color: Colors.green,
                         backgroundColor: Colors.white,
                       ),
@@ -81,7 +81,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                     Column(
                       children: [
                         Text(
-                          widget.scoreTaxDASAC.toString(),
+                          widget.scoreTopDASAC.toString(),
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                         ),
                         const SizedBox(height: 10),
                         Text(
-                          '${(widget.scoreTaxDASAC / questions.length * 100).round()}%',
+                          '${(widget.scoreTopDASAC / questions.length * 100).round()}%',
                           style: const TextStyle(
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
@@ -104,7 +104,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                   ],
                 ),
                 const SizedBox(height: 10.0),
-                if (widget.scoreTaxDASAC <= 1)
+                if (widget.scoreTopDASAC <= 1)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -121,7 +121,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 2)
+                if (widget.scoreTopDASAC == 2)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -138,7 +138,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 3)
+                if (widget.scoreTopDASAC == 3)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -155,7 +155,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 4)
+                if (widget.scoreTopDASAC == 4)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -172,7 +172,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 5)
+                if (widget.scoreTopDASAC == 5)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -189,7 +189,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 6)
+                if (widget.scoreTopDASAC == 6)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -206,7 +206,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 7)
+                if (widget.scoreTopDASAC == 7)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -223,7 +223,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 8)
+                if (widget.scoreTopDASAC == 8)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -240,7 +240,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 9)
+                if (widget.scoreTopDASAC == 9)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -257,7 +257,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 0)
+                if (widget.scoreTopDASAC == 0)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -274,7 +274,7 @@ class _ResultScreenTopDASACState extends State<ResultScreenTopDASAC> {
                           )),
                     ],
                   ),
-                if (widget.scoreTaxDASAC == 10)
+                if (widget.scoreTopDASAC == 10)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

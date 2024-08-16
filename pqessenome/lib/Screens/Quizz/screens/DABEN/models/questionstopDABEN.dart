@@ -7,28 +7,28 @@ const List<Question> questions = [
     options: [
       'a) Relativo aos nomes próprios',
       'b) Relativo as dimensões espaciais',
-      'c) Relativo a acidentes geográficos',
-      'd) Relativo a dimensões paralelas',
+      'c) Relativo ao caráter histórico',
+      'd) Relativo a vegetação',
     ],
   ),
   Question(
     question: '2. Quais são exemplos dos "Hodotopônimo"?',
-    correctAnswerIndex: 0,
+    correctAnswerIndex: 3,
     options: [
-      'a) Batista campos, Campina',
-      'b) Reduto, Umarizal',
+      'a) Coqueiro, Campina',
+      'b) Chapéu Virado',
       'c) Marco, Vila',
-      'd) Reduto, Campina',
+      'd) Pratinha, Tapanã',
     ],
   ),
   Question(
     question:
         '3. Ao analisar os topônimos a seguir, qual a informação correta?',
-    correctAnswerIndex: 3,
+    correctAnswerIndex: 2,
     options: [
       'a) Hodotopônimo, relativo a fauna',
       'b) Historiotopônimo, relativo a cor',
-      'c) Fitotopônimo, referente a litorais',
+      'c) Fitotopônimo, referente a Vegetais',
       'd) Etnotopônimo, relativo aos elementos étnicos',
     ],
   ),
@@ -39,19 +39,19 @@ const List<Question> questions = [
     options: [
       'a) Relativo aos Deuses Tupi',
       'b) Relativo ao caráter religioso',
-      'c) Relativo aos santos em geral',
-      'd) Ilustrado no bairro Marco',
+      'c) Relativo movimentos de cunho histórico',
+      'd) Ilustrado no bairro Tapanã',
     ],
   ),
   Question(
     question:
         '5. Qual dos seguintes é exemplo do Topônimo "Cromocardiotopônimo"?',
-    correctAnswerIndex: 3,
+    correctAnswerIndex: 1,
     options: [
-      'a) Reduto',
-      'b) Marco',
-      'c) Aeroporto',
-      'd) Campina',
+      'a) Pratinha',
+      'b) Una',
+      'c) Tapanã',
+      'd) Parque Verde',
     ],
   ),
   Question(
@@ -59,31 +59,31 @@ const List<Question> questions = [
         '6. Ao analisar os topônimos a seguir, qual a informação correta?',
     correctAnswerIndex: 2,
     options: [
-      'a) Numerotopônimo, relativo a ordenação',
-      'b) Dimensiotopônimo, referente aos acidentes geográficos',
+      'a) Cromocardinotopônimo, relativo a ordenação',
+      'b) Geomorfotopônimo, referente aos acidentes geográficos',
       'c) Historiotopônimo, relativo a figuras históricas',
-      'd) Meteorotônimo, referente a meteorologia',
+      'd) Hagiotopônimo, relativos aos santos e santas',
     ],
   ),
   Question(
     question:
         '7. Qual a definição correta para o topônimo "Cromocardiotopônimo"?',
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 0,
     options: [
-      'a) Relativo a coloração do local',
-      'b) Referente ao caráter nostálgico',
-      'c) Relativo ao caráter cronológico',
+      'a) Cromotopônimo + Cardinotopônimo',
+      'b) Cromotopônimo + Cardiotopônimo',
+      'c) Relativo a coloração',
       'd) Referente a natureza temporária',
     ],
   ),
   Question(
     question: '8. Qual o Topônimo do bairro Pratinha?',
-    correctAnswerIndex: 2,
+    correctAnswerIndex: 3,
     options: [
       'a) Antropotopônimo',
       'b) Historiotopônimo',
       'c) Hagiotopônimo',
-      'd) N.D.A',
+      'd) Hodotopônimo',
     ],
   ),
   Question(
@@ -92,17 +92,17 @@ const List<Question> questions = [
     options: [
       'a) Antropotopônimo, de natureza antropocultural',
       'b) Antropotopônimo, de natureza antropocultural',
-      'c) Sociotopônimo, de natureza física',
+      'c) Dimensiotopônimo, de natureza física',
       'd) Somatopônimo, de natureza física',
     ],
   ),
   Question(
     question:
-        '10. Ao analisar os topônimos a seguir, qual a informação incorreta?',
+        '10. Ao analisar os topônimos a seguir, qual a informação correta?',
     correctAnswerIndex: 3,
     options: [
       'a) Dimensiotopônimo, relativo aos nomes próprios',
-      'b) Fitotopônimo, referente a culinária',
+      'b) Sociotopônimo, de natureza física',
       'c) Etnotopônimo, referente aos corpos celestes',
       'd) Cromocardinotopônimo, Cromotopônimo + Cardinotopônimo',
     ],

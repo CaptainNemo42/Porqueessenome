@@ -106,7 +106,7 @@ class _HistoriotoponimoState extends State<Historiotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Independência (AH-AC); rua Vinte e Um de Abril (SP).",
+                "Reduto, Cabanagem, Val de Cans, Canudos, Cremação, Aeroporto, Natal do Murubira, Vila, Telégrafo.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

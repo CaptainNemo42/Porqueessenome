@@ -106,7 +106,7 @@ class _EtnotoponimoState extends State<Etnotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Guarani (AH – PE); Ilha do Francês (RJ).",
+                "Jurunas, Paracuri, Tenoné, Carananduba, Marahú, Murubira, Sucurijuquara.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

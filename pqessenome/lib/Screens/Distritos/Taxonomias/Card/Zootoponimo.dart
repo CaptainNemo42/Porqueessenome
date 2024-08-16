@@ -106,7 +106,7 @@ class _ZootoponimoState extends State<Zootoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Rio do Boi (MG); Lagoa da Onça (RJ); Vacaria (AH – RS).",
+                "Condor, Ariramba, Maracajá.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

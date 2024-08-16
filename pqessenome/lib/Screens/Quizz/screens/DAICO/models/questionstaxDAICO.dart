@@ -3,12 +3,12 @@ import 'package:pqessenome/Screens/Quizz/screens/DAICO/models/questionDAICO.dart
 const List<Question> questions = [
   Question(
     question: '1. Qual a descrição correta para um Fitotopônimo?',
-    correctAnswerIndex: 1,
+    correctAnswerIndex: 0,
     options: [
-      'a) As ruas',
-      'b) O nome geográfico de uma região',
-      'c) A geografia de um distrito',
-      'd) Um Bairro',
+      'a) Relativo à índole vegetal',
+      'b) Relativo a índole animal',
+      'c) Relativo a fenômenos atmosféricos',
+      'd) Relativo às vias de comunicação',
     ],
   ),
   Question(
@@ -25,28 +25,28 @@ const List<Question> questions = [
     question: '3. Qual a descrição correta para um Historiocardinotopônimo?',
     correctAnswerIndex: 0,
     options: [
-      'a) Local nomeado relativo à vegetação',
-      'b) Local nomeado relativo à fitoalquimia',
-      'c) Antropônimo dado ao nome de fitoplânctons',
-      'd) Topônimo dado ao nome de vegetações',
+      'a) Antrotopônimo + Historiotopônimo',
+      'b) Historiotopônimo + Cardiotopônimo',
+      'c) Historiotopônimo + Cardinotopônimo',
+      'd) Antrotopônimo + Cardinotopônimo',
     ],
   ),
   Question(
     question: '4. O bairro "Agulha" é um Ergotopônimo, o que isto significa"?',
-    correctAnswerIndex: 3,
+    correctAnswerIndex: 0,
     options: [
-      'a) Seu nome é relacionado ao conceito de "antropomorfismo"',
-      'b) A região foi nomeada por movimentos culturais',
-      'c) A nomenclatura suposta é de caráter antropofágico',
+      'a) Referente à cultura material do homem',
+      'b) Referente à habitação em geral',
+      'c) Referente a grupos étnicos',
       'd) Possuí caráter relativo aos nomes próprios',
     ],
   ),
   Question(
     question: '5. Ao análisar o bairro "Tenoné", se descobre um:',
-    correctAnswerIndex: 3,
+    correctAnswerIndex: 1,
     options: [
       'a) Cardinotopônimo, de acordo com a geografia do nome',
-      'b) Antropotopônimo, relativo ao nome ter influência cultural',
+      'b) Etnotopônimo, Referente aos elementos étnicos',
       'c) Axiotopônimo, baseado em sua natureza titular',
       'd) Hagiotopônimo, relativo ao caráter religioso do nome',
     ],
@@ -56,19 +56,19 @@ const List<Question> questions = [
         '6. Qual é o topônimo relacionado às etnias, qual seu equivalente em DAICO?',
     correctAnswerIndex: 1,
     options: [
-      'a) Cronotopônimo, Cidade Nova',
-      'b) Cronotopônimo, Cidade Velha',
-      'c) Cromotopônimo, Cidade Nova',
-      'd) Axiotopônimo, Cidade Velha',
+      'a) Etnotopônimo, Tenoné',
+      'b) Ecotopônimo, Cidade Velha',
+      'c) Etnotopônimo, Águas Negras',
+      'd) Ecotopônimo, Agulha',
     ],
   ),
   Question(
     question:
         '7. Com relação ao bairro Maracacuera temos um Ecotopônimo, qual a definição correta deste topônimo?',
-    correctAnswerIndex: 0,
+    correctAnswerIndex: 1,
     options: [
       'a) Relativo aos nomes sagrados de diferentes crenças',
-      'b) Relativo a descoberta de hieroglifos',
+      'b) Relativo às habitações de um modo geral',
       'c) Relativo ao caráter histórico',
       'd) Relativo a presença de hierarquias sociais',
     ],
@@ -76,11 +76,11 @@ const List<Question> questions = [
   Question(
     question:
         '8. Com relação ao topônimo "Campina de Icoaraci", qual a alternativa correta?',
-    correctAnswerIndex: 1,
+    correctAnswerIndex: 2,
     options: [
       'a) Historiotopônimo, devido ao caráter religioso',
-      'b) Historiocardinotopônimo, deviso ao caráter histórico e social',
-      'c) Hagiotopônimo, devido a presença de santos marcantes',
+      'b) Historiocardinotopônimo, devido ao caráter histórico e social',
+      'c) Fitotopônimo, relativo à índole vegetal',
       'd) Antropotopônimo',
     ],
   ),
@@ -91,7 +91,7 @@ const List<Question> questions = [
     options: [
       'a) Antropotopônimo',
       'b) Historiotopônimo',
-      'c) Cronotopônimo',
+      'c) Historiocardinotopônimo',
       'd) Poliotopônimo',
     ],
   ),
@@ -103,7 +103,7 @@ const List<Question> questions = [
       'a) Litotopônimo',
       'b) Fitotopônimo',
       'c) Antropotopônimo',
-      'd) Hagiotopônimo',
+      'd) Etnotopônimo',
     ],
   ),
 ];

@@ -106,7 +106,7 @@ class _EcotoponimoState extends State<Ecotoponimo> {
                       fontSize: 17.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Casa da Telha (AH – BA); Ocauçu (AH – SP).",
+                "Maracacuera, Bonfim.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),

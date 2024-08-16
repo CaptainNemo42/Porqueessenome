@@ -98,21 +98,6 @@ class _CardinotoponimoState extends State<Cardinotoponimo> {
                 ),
               ),
               const Divider(),
-              const Text("Exemplos:",
-                  style: TextStyle(
-                      fontFamily: "SemiBold",
-                      color: Color.fromRGBO(50, 50, 50, 1),
-                      fontSize: 17.0,
-                      fontWeight: FontWeight.bold)),
-              const Text(
-                "Serra do Norte (MT), Praia do Leste (PR).",
-                style: TextStyle(
-                  fontFamily: "Light",
-                  color: Color.fromRGBO(50, 50, 50, 1),
-                  fontSize: 17.0,
-                ),
-                textAlign: TextAlign.center,
-              ),
               const SizedBox(height: 30.0),
               SizedBox(
                 width: 200,

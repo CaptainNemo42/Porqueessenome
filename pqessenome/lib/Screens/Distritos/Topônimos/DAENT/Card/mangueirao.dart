@@ -56,7 +56,7 @@ class _TMangueiraoState extends State<TMangueirao> {
               const SizedBox(
                 height: 10,
               ),
-              const Text("Historiotopônimo",
+              const Text("Fitotopônimo",
                   style: TextStyle(
                       fontFamily: "SemiBold",
                       color: Color.fromRGBO(50, 50, 50, 1),
@@ -83,7 +83,7 @@ class _TMangueiraoState extends State<TMangueirao> {
                     color: Color.fromRGBO(50, 50, 50, 1),
                     fontSize: 20.0,
                   )),
-              const Text("Taxonomia: Historiotopônimo",
+              const Text("Taxonomia: Fitotopônimo",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),
@@ -97,7 +97,7 @@ class _TMangueiraoState extends State<TMangueirao> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo aos movimentos de cunho histórico e social",
+                "Relativo à índole vegetal.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
@@ -113,7 +113,7 @@ class _TMangueiraoState extends State<TMangueirao> {
                   )),
               const Center(
                 child: Text(
-                  "Reduto, Cabanagem, Val de Cans, Canudos, Cremação, Aeroporto, Natal do Murubira, Vila, Telégrafo.",
+                  "Campinas, Umarizal, Coqueiro, Castanheira, Mangueirão, Campina de Icoaraci, Mangueiras.",
                   style: TextStyle(
                     fontFamily: "Light",
                     color: Color.fromRGBO(50, 50, 50, 1),

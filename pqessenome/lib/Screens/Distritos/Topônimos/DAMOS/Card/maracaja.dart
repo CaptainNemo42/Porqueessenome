@@ -97,7 +97,7 @@ class _TMaracajaState extends State<TMaracaja> {
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold)),
               const Text(
-                "Relativo a índole animal, representado por indivíduos domésticos e da mesma 9spécie em grupos.",
+                "Relativo a índole animal, representado por indivíduos domésticos e da mesma espécie em grupos.",
                 style: TextStyle(
                   fontFamily: "Light",
                   color: Color.fromRGBO(50, 50, 50, 1),
